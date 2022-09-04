@@ -1,0 +1,15 @@
+C:\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Service.deps.json
+C:\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Service.dll
+C:\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Service.pdb
+C:\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.csproj.AssemblyReference.cache
+C:\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.AssemblyInfoInputs.cache
+C:\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.AssemblyInfo.cs
+C:\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.csproj.CoreCompileInputs.cache
+C:\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.dll
+C:\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\refint\CustomerAccount.Service.dll
+C:\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.pdb
+C:\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\ref\CustomerAccount.Service.dll
+C:\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Storage.dll
+C:\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Storage.pdb
+C:\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.csproj.CopyComplete

@@ -1,0 +1,14 @@
+C:\group7\Server\Bank\CustomerAccount.Storage\bin\Debug\net6.0\CustomerAccount.Storage.deps.json
+C:\group7\Server\Bank\CustomerAccount.Storage\bin\Debug\net6.0\CustomerAccount.Storage.dll
+C:\group7\Server\Bank\CustomerAccount.Storage\bin\Debug\net6.0\CustomerAccount.Storage.pdb
+C:\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.csproj.AssemblyReference.cache
+C:\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.GeneratedMSBuildEditorConfig.editorconfig
+C:\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.AssemblyInfoInputs.cache
+C:\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.AssemblyInfo.cs
+C:\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.csproj.CoreCompileInputs.cache
+C:\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.dll
+C:\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\refint\CustomerAccount.Storage.dll
+C:\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.pdb
+C:\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\ref\CustomerAccount.Storage.dll
+C:\group7\Server\Bank\CustomerAccount.Storage\bin\Debug\net6.0\CustomerAccount.Storage.runtimeconfig.json
+C:\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.genruntimeconfig.cache
