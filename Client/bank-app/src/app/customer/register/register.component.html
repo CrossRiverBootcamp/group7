@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+        <mat-card class="box">
+            <mat-card-header>
+                <mat-card-title>Register</mat-card-title>
+            </mat-card-header>
+            <form class="example-form" [formGroup]="RegisterForm">
+                <mat-card-content>
+                    <mat-form-field class="example-full-width">
+                        <input formControlName="firstName" matInput placeholder="FirstName">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <input formControlName="lastName" matInput placeholder="LastName">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <input formControlName="email" type="email" matInput placeholder="Email">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <input formControlName="password" matInput placeholder="Password">
+                    </mat-form-field>
+                </mat-card-content>
+                <button mat-stroked-button color="accent" class="btn-block" (click)="register()">Register</button>
+                <nav>
+                    <a routerLink="logIn">LogIn</a>
+                </nav>
+            </form>
+        </mat-card>
+    </div>
+</body>
+
+</html>
