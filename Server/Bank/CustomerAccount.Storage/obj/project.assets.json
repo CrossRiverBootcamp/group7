@@ -1996,8 +1996,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\Exceptions.csproj": {
-              "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\Exceptions.csproj"
+            "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj": {
+              "projectPath": "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj"
             }
           }
         }

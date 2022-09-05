@@ -12,11 +12,6 @@ C:\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.S
 C:\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\ref\CustomerAccount.Storage.dll
 C:\group7\Server\Bank\CustomerAccount.Storage\bin\Debug\net6.0\CustomerAccount.Storage.runtimeconfig.json
 C:\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.genruntimeconfig.cache
-C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.csproj.AssemblyReference.cache
-C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.AssemblyInfoInputs.cache
-C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.AssemblyInfo.cs
-C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.csproj.CoreCompileInputs.cache
-C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.dll
-C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\refint\CustomerAccount.Storage.dll
-C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.pdb
+C:\group7\Server\Bank\CustomerAccount.Storage\bin\Debug\net6.0\Exceptions.dll
+C:\group7\Server\Bank\CustomerAccount.Storage\bin\Debug\net6.0\Exceptions.pdb
+C:\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.csproj.CopyComplete

@@ -7,9 +7,14 @@ namespace CustomerAccount.Storage;
 
 public class AccountStorage : IAccountStorage
 {
+    private readonly IDbContextFactory<BankDbContext> _factory;
+    public AccountStorage(IDbContextFactory<BankDbContext> factory)
+    {
+        _factory = factory;
+    }
     public async Task<bool> createNewAccount(Account account, Customer customer)
     {
-        using (var _BankDbContext = new BankDbContext())
+        using var _BankDbContext = _factory.CreateDbContext();
         {
             try
             {
@@ -28,7 +33,7 @@ public class AccountStorage : IAccountStorage
 
     public async Task<bool> cheackAcountExist(string email)
     {
-        using (var _BankDbContext = new BankDbContext())
+        using var _BankDbContext = _factory.CreateDbContext();
         {
             try
             {
@@ -48,7 +53,7 @@ public class AccountStorage : IAccountStorage
 
     public async Task<Account> getAccountCustomerInfo(int accountID)
     {
-        using (var _BankDbContext = new BankDbContext())
+        using var _BankDbContext = _factory.CreateDbContext();
         {
             try
             {
