@@ -6,15 +6,20 @@ namespace CustomerAccount.Storage;
 
 public class AccountStorage : IAccountStorage
 {
+    private readonly IDbContextFactory<BankDbContext> _factory;
+    public AccountStorage(IDbContextFactory<BankDbContext> factory)
+    {
+        _factory = factory;
+    }
     public async Task<bool> createNewAccount(Account account, Customer customer)
     {
-        using (var _BankDbContext = new BankDbContext())
+        using var context = _factory.CreateDbContext();
         {
             try
             {
-                account.Customer = (await _BankDbContext.Customers.AddAsync(customer)).Entity;
-                await _BankDbContext.Accounts.AddAsync(account);
-                await _BankDbContext.SaveChangesAsync();
+                account.Customer = (await context.Customers.AddAsync(customer)).Entity;
+                await context.Accounts.AddAsync(account);
+                await context.SaveChangesAsync();
                 return true;
 
             }
@@ -27,12 +32,12 @@ public class AccountStorage : IAccountStorage
 
     public async Task<bool> cheackAcountExist(string email)
     {
-        using (var _BankDbContext = new BankDbContext())
+        using var context = _factory.CreateDbContext();
         {
             try
             {
                
-               if(await _BankDbContext.Customers.FirstOrDefaultAsync(customer => customer.Email== email) ==null )
+               if(await context.Customers.FirstOrDefaultAsync(customer => customer.Email== email) ==null )
                 {
                     return false;
                 }
@@ -48,11 +53,11 @@ public class AccountStorage : IAccountStorage
 
     public async Task<Account> getAccountCustomerInfo(int accountID)
     {
-        using (var _BankDbContext = new BankDbContext())
+        using var context = _factory.CreateDbContext();
         {
             try
             {
-                var account = await _BankDbContext.Accounts.Where(account => account.ID == accountID).Include(A=>A.Customer).FirstOrDefaultAsync();
+                var account = await context.Accounts.Where(account => account.ID == accountID).Include(customer=>customer.Customer).FirstOrDefaultAsync();
                 if (account != null)
                 {
                     return account;

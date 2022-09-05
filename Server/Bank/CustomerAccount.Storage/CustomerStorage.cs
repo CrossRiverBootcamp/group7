@@ -7,13 +7,20 @@ namespace CustomerAccount.Storage;
 
 public class CustomerStorage : ICustomerStorage
 {
+    private readonly IDbContextFactory<BankDbContext> _factory;
+    public CustomerStorage(IDbContextFactory<BankDbContext> factory)
+    {
+        _factory = factory;
+    }
+
     public async Task<int> login(string email, string password)
     {
-        using (var _BankDbContext = new BankDbContext())
+
+        using var context = _factory.CreateDbContext();
         {
             try
             {
-                Customer customer = await _BankDbContext.Customers.FirstOrDefaultAsync(customer => customer.Email == email && customer.Password == password);
+                Customer customer = await context.Customers.FirstOrDefaultAsync(customer => customer.Email == email && customer.Password == password);
                 if (customer != null)
                 {
                     return await findAccountByCustomerID(customer.ID);
@@ -35,11 +42,11 @@ public class CustomerStorage : ICustomerStorage
 
     public async Task<int> findAccountByCustomerID(int customerID)
     {
-        using (var _BankDbContext = new BankDbContext())
+        using var context = _factory.CreateDbContext();
         {
             try
             {
-                Account account = await _BankDbContext.Accounts.FirstOrDefaultAsync(account => account.CustomerID == customerID);
+                Account account = await context.Accounts.FirstOrDefaultAsync(account => account.CustomerID == customerID);
                 if(account != null)
                 {
                     return account.ID; ;

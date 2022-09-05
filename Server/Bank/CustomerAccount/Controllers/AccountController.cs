@@ -23,7 +23,7 @@ public class AccountController : ControllerBase
 
     // POST/
     [HttpPost]
-    public async Task<ActionResult<bool>> addNewAccount([FromBody] CustomerDTO customer)
+    public async Task<ActionResult<bool>> createNewAccount([FromBody] CustomerDTO customer)
     {
         CustomerModel newAcustomer = _IMapper.Map<CustomerDTO, CustomerModel>(customer);
         return await _AccountService.createNewAccount(newAcustomer);
@@ -34,7 +34,7 @@ public class AccountController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<AccountCustomerInfoDTO>> getAccountCustomerInfo(int accountID)
     {
-        AccountCustomerInfoModel accountInfo= _AccountService.getAccountCustomerInfo(accountID);
+        AccountCustomerInfoModel accountInfo= _AccountService.getAccountCustomerInfo(accountID).Result;
         AccountCustomerInfoDTO newAcustomer = _IMapper.Map<AccountCustomerInfoModel, AccountCustomerInfoDTO>(accountInfo);
         return newAcustomer;
     }
