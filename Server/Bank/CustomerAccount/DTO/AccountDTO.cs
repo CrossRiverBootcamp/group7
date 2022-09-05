@@ -4,9 +4,6 @@ namespace CustomerAccount.WebApi.DTO
 {
     public class AccountDTO
     {
-        //[Required]
-        //public int ID { get; set; }
-
         [Required]
         public int CustomerID { get; set; }
 

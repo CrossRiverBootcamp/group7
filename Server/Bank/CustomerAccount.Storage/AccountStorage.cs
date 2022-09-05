@@ -6,20 +6,15 @@ namespace CustomerAccount.Storage;
 
 public class AccountStorage : IAccountStorage
 {
-    private readonly IDbContextFactory<BankDbContext> _factory;
-    public AccountStorage(IDbContextFactory<BankDbContext> factory)
-    {
-        _factory = factory;
-    }
     public async Task<bool> createNewAccount(Account account, Customer customer)
     {
-        using var context = _factory.CreateDbContext();
+        using (var _BankDbContext = new BankDbContext())
         {
             try
             {
-                account.Customer = (await context.Customers.AddAsync(customer)).Entity;
-                await context.Accounts.AddAsync(account);
-                await context.SaveChangesAsync();
+                account.Customer = (await _BankDbContext.Customers.AddAsync(customer)).Entity;
+                await _BankDbContext.Accounts.AddAsync(account);
+                await _BankDbContext.SaveChangesAsync();
                 return true;
 
             }
@@ -32,45 +27,43 @@ public class AccountStorage : IAccountStorage
 
     public async Task<bool> cheackAcountExist(string email)
     {
-        using var context = _factory.CreateDbContext();
+        using (var _BankDbContext = new BankDbContext())
         {
             try
             {
-               
-               if(await context.Customers.FirstOrDefaultAsync(customer => customer.Email== email) ==null )
+               if(await _BankDbContext.Customers.FirstOrDefaultAsync(customer => customer.Email== email) ==null )
                 {
                     return false;
                 }
                 return true;
 
             }
-            catch
+            catch(Exception)
             {
-                throw new Exception();
+                throw new Exception("internal error");
             }
         }
     }
 
     public async Task<Account> getAccountCustomerInfo(int accountID)
     {
-        using var context = _factory.CreateDbContext();
+        using (var _BankDbContext = new BankDbContext())
         {
             try
             {
-                var account = await context.Accounts.Where(account => account.ID == accountID).Include(customer=>customer.Customer).FirstOrDefaultAsync();
+                var account = await _BankDbContext.Accounts.Where(account => account.ID == accountID).Include(A=>A.Customer).FirstOrDefaultAsync();
                 if (account != null)
                 {
                     return account;
                 }
                 else
                 {
-                    throw new Exception();
+                    throw new ArgumentNullException("city");
                 }
-
             }
-            catch
+            catch(Exception)
             {
-                throw new Exception();
+                throw new Exception("internal error");
             }
         }
     }

@@ -27,9 +27,8 @@ public class CustomerStorage : ICustomerStorage
                 }
                 else
                 {
-                    return 0; //לשנות לאקספשין
+                    throw new ArgumentNullException("customer");
                 }
-
             }
             catch
             {
@@ -51,12 +50,15 @@ public class CustomerStorage : ICustomerStorage
                 {
                     return account.ID; ;
                 }
-                return -1;
+                else
+                {
+                    throw new ArgumentNullException("account");
+                }
 
             }
-            catch
+            catch(Exception)
             {
-                throw new Exception();
+                throw new Exception("internal error");
             }
         }
     }
