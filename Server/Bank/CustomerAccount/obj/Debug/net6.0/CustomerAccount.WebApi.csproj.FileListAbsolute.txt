@@ -64,3 +64,13 @@ C:\group7\Server\Bank\CustomerAccount\bin\Debug\net6.0\CustomerAccount.Storage.p
 C:\group7\Server\Bank\CustomerAccount\bin\Debug\net6.0\AutoMapper.dll
 C:\group7\Server\Bank\CustomerAccount\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\group7\Server\Bank\CustomerAccount\bin\Debug\net6.0\AutoMapper.Collection.dll
+C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.csproj.AssemblyReference.cache
+C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.AssemblyInfoInputs.cache
+C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.AssemblyInfo.cs
+C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.dll
+C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount\obj\Debug\net6.0\refint\CustomerAccount.WebApi.dll
+C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.pdb

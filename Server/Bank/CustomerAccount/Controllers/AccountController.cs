@@ -26,7 +26,8 @@ public class AccountController : ControllerBase
     public async Task<ActionResult<bool>> createNewAccount([FromBody] CustomerDTO customer)
     {
         CustomerModel newAcustomer = _IMapper.Map<CustomerDTO, CustomerModel>(customer);
-        return await _AccountService.createNewAccount(newAcustomer);
+        var result = await _AccountService.createNewAccount(newAcustomer);
+        return Ok(result);
 
     }
 
