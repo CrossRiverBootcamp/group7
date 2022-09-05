@@ -1,3 +1,4 @@
+using CoronaApp.Api.Midllewares;
 using CustomerAccount.Service;
 using CustomerAccount.Service.Interfaces;
 using CustomerAccount.Storage;
@@ -26,7 +27,12 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors(options => {
+    options.AllowAnyOrigin();
+    options.AllowAnyMethod();
+    options.AllowAnyHeader();
+});
+app.UseHandlerErrorsMiddleware();
 app.UseAuthorization();
 
 app.MapControllers();

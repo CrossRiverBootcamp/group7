@@ -4,10 +4,6 @@ namespace CustomerAccount.WebApi.DTO
 {
     public class CustomerDTO
     {
-
-        //[Required]
-        //public int ID { get; set; }
-
         [Required]
         [MinLength(2)]
         public string FirstName { get; set; }

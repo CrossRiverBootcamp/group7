@@ -31,7 +31,6 @@ public class AccountStorage : IAccountStorage
         {
             try
             {
-               
                if(await _BankDbContext.Customers.FirstOrDefaultAsync(customer => customer.Email== email) ==null )
                 {
                     return false;
@@ -39,9 +38,9 @@ public class AccountStorage : IAccountStorage
                 return true;
 
             }
-            catch
+            catch(Exception)
             {
-                throw new Exception();
+                throw new Exception("internal error");
             }
         }
     }
@@ -59,13 +58,12 @@ public class AccountStorage : IAccountStorage
                 }
                 else
                 {
-                    throw new Exception();
+                    throw new ArgumentNullException("city");
                 }
-
             }
-            catch
+            catch(Exception)
             {
-                throw new Exception();
+                throw new Exception("internal error");
             }
         }
     }

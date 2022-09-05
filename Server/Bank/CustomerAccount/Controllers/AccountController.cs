@@ -27,7 +27,7 @@ public class AccountController : ControllerBase
     {
         CustomerModel newAcustomer = _IMapper.Map<CustomerDTO, CustomerModel>(customer);
         return await _AccountService.createNewAccount(newAcustomer);
-        
+
     }
 
     // GET/
