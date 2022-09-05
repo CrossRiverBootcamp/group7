@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <mat-card *ngIf="account" class="example-card">
+        <mat-card-title>Account Information</mat-card-title>
+        <mat-card-content>
+            <p>Wellcome</p>
+            <p>{{account.firstName}}  </p>
+            <p>{{account.lastName}}  </p>
+            <br>
+            <p>Your account created at: </p>
+            <p>{{account.openDate | date}}  </p>
+            <p>Your balance account is: </p>
+            <p>{{account.balance}}  </p>
+        </mat-card-content>
+    </mat-card>
+</body>
+
+</html>
