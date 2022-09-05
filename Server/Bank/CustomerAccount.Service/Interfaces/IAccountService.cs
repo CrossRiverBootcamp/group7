@@ -8,4 +8,7 @@ public interface IAccountService
 {
     public Task<bool> createNewAccount(CustomerModel customer);
 
+    public Task<AccountCustomerInfoModel> getAccountCustomerInfo(int accountID);
+
+
 }

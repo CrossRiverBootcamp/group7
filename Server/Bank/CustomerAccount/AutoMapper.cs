@@ -20,6 +20,7 @@ public class AutoMapper : Profile
                         .MapFrom(src => src.Customer.LastName))
                .ForMember(des => des.Email, opts => opts
                         .MapFrom(src => src.Customer.Email));
+        CreateMap<AccountCustomerInfoModel, AccountCustomerInfoDTO>();
 
     }
 }
