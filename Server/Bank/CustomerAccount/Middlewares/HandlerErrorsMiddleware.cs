@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Exceptions;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using System;
@@ -45,6 +46,16 @@ public class HandlerErrorsMiddleware
                 case KeyNotFoundException e:
                     // not found error
                     await response.WriteAsync("Oppps... \n Page Not Found!");
+                    response.StatusCode = (int)HttpStatusCode.NotFound;
+                    break;
+                case CreateUserException e:
+                    // create user error
+                    await response.WriteAsync("Oppps... \n user didn't found!");
+                    response.StatusCode = (int)HttpStatusCode.NotFound;
+                    break;
+                case DbContextException e:
+                    // DbContext error
+                    await response.WriteAsync("Oppps... \n DbContext error!");
                     response.StatusCode = (int)HttpStatusCode.NotFound;
                     break;
                 default:

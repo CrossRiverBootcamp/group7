@@ -1,5 +1,6 @@
 ﻿using CustomerAccount.Storage.Entites;
 using CustomerAccount.Storage.Interfaces;
+using Exceptions;
 using Microsoft.EntityFrameworkCore;
 
 namespace CustomerAccount.Storage;
@@ -20,7 +21,7 @@ public class AccountStorage : IAccountStorage
             }
             catch
             {
-                throw new Exception();
+                throw new CreateUserException();
             }
         }
     }
@@ -38,9 +39,9 @@ public class AccountStorage : IAccountStorage
                 return true;
 
             }
-            catch(Exception)
+            catch
             {
-                throw new Exception("internal error");
+                throw new DbContextException();
             }
         }
     }
@@ -58,12 +59,12 @@ public class AccountStorage : IAccountStorage
                 }
                 else
                 {
-                    throw new ArgumentNullException("city");
+                    throw new UserNotFoundException();
                 }
             }
-            catch(Exception)
+            catch
             {
-                throw new Exception("internal error");
+                throw new DbContextException();
             }
         }
     }

@@ -1,6 +1,7 @@
 ﻿
 using CustomerAccount.Storage.Entites;
 using CustomerAccount.Storage.Interfaces;
+using Exceptions;
 using Microsoft.EntityFrameworkCore;
 
 namespace CustomerAccount.Storage;
@@ -25,7 +26,7 @@ public class CustomerStorage : ICustomerStorage
             }
             catch
             {
-                throw new Exception();
+                throw new DbContextException();
             }
         }
     }
@@ -49,9 +50,9 @@ public class CustomerStorage : ICustomerStorage
                 }
 
             }
-            catch(Exception)
+            catch
             {
-                throw new Exception("internal error");
+                throw new DbContextException();
             }
         }
     }
