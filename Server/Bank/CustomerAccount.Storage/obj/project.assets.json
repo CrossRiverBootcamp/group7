@@ -671,6 +671,16 @@
             "rid": "win"
           }
         }
+      },
+      "Exceptions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Exceptions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Exceptions.dll": {}
+        }
       }
     }
   },
@@ -1935,6 +1945,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Exceptions/1.0.0": {
+      "type": "project",
+      "path": "../Exception/Exceptions.csproj",
+      "msbuildProject": "../Exception/Exceptions.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1942,6 +1957,7 @@
       "AutoMapper >= 11.0.1",
       "AutoMapper.Collection >= 8.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
+      "Exceptions >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.8",
@@ -1974,7 +1990,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\Exceptions.csproj": {
+              "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\Exceptions.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
