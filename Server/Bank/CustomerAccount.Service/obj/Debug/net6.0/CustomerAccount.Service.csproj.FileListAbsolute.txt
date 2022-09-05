@@ -13,3 +13,5 @@ C:\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\ref\CustomerAccou
 C:\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Storage.dll
 C:\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Storage.pdb
 C:\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.csproj.CopyComplete
+C:\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\Exceptions.dll
+C:\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\Exceptions.pdb

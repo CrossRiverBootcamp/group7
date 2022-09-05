@@ -1,5 +1,6 @@
 ﻿
 
+using CustomerAccount.Service;
 using CustomerAccount.Storage;
 using CustomerAccount.Storage.Entites;
 using CustomerAccount.Storage.Interfaces;
@@ -16,6 +17,7 @@ namespace CustomerAccount.Services.Extensions
 
             services.AddScoped<ICustomerStorage, CustomerStorage>();
             services.AddScoped<IAccountStorage, AccountStorage>();
+            services.AddScoped<IAuthorizationFuncs , AuthorizationFuncs>();
             services.AddDbContextFactory<BankDbContext>(opt => opt.UseSqlServer(connection));
         }
     }
