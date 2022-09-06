@@ -1,6 +1,7 @@
 ﻿
 
 using CustomerAccount.Service;
+using CustomerAccount.Service.Interfaces;
 using CustomerAccount.Storage;
 using CustomerAccount.Storage.Entites;
 using CustomerAccount.Storage.Interfaces;
@@ -14,7 +15,6 @@ namespace CustomerAccount.Services.Extensions
         public static void AddServiceExtension(this IServiceCollection services, string connection)
         {
             //builder.Services.AddScoped<ICustomerStorage, CustomerStorage>();
-
             services.AddScoped<ICustomerStorage, CustomerStorage>();
             services.AddScoped<IAccountStorage, AccountStorage>();
             services.AddScoped<IAuthorizationFuncs , AuthorizationFuncs>();

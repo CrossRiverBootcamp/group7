@@ -32,7 +32,7 @@ public class AccountController : ControllerBase
     }
 
     // GET/
-    [HttpGet]
+    [HttpGet("{accountID}")]
     public async Task<ActionResult<AccountCustomerInfoDTO>> getAccountCustomerInfo(int accountID)
     {
         AccountCustomerInfoModel accountInfo= _AccountService.getAccountCustomerInfo(accountID).Result;

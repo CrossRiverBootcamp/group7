@@ -1,4 +1,4 @@
-﻿namespace CustomerAccount.Service;
+﻿namespace CustomerAccount.Service.Interfaces;
 public interface IAuthorizationFuncs
 {
     public string GenerateSalt(int nSalt);

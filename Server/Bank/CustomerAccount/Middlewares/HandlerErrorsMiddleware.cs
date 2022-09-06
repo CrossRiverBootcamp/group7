@@ -40,7 +40,7 @@ public class HandlerErrorsMiddleware
             {
                 case ArgumentNullException e:
                     // custom application error
-                    await response.WriteAsync("Oppps... \n the argument {e.Message} is null!");
+                    await response.WriteAsync($"Oppps... \n the argument {e.Message} is null!");
                     response.StatusCode = (int)HttpStatusCode.BadRequest;
                     break;
                 case KeyNotFoundException e:
@@ -48,15 +48,15 @@ public class HandlerErrorsMiddleware
                     await response.WriteAsync("Oppps... \n Page Not Found!");
                     response.StatusCode = (int)HttpStatusCode.NotFound;
                     break;
-                case CreateUserException e:
-                    // create user error
+                case UserNotFoundException e:
+                    // user didn't found error
                     await response.WriteAsync("Oppps... \n user didn't found!");
-                    response.StatusCode = (int)HttpStatusCode.NotFound;
+                    response.StatusCode = (int)HttpStatusCode.NotFound;//לשנות ל401!!
                     break;
                 case DbContextException e:
                     // DbContext error
                     await response.WriteAsync("Oppps... \n DbContext error!");
-                    response.StatusCode = (int)HttpStatusCode.NotFound;
+                    response.StatusCode = (int)HttpStatusCode.NotExtended;
                     break;
                 default:
                     // unhandled error

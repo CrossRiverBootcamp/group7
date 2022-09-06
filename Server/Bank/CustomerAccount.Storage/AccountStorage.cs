@@ -22,11 +22,10 @@ public class AccountStorage : IAccountStorage
                 await _BankDbContext.Accounts.AddAsync(account);
                 await _BankDbContext.SaveChangesAsync();
                 return true;
-
             }
             catch
             {
-                throw new CreateUserException();
+                return false;
             }
         }
     }

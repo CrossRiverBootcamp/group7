@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
-builder.Services.AddServiceExtension(builder.Configuration.GetConnectionString("zipi"));
+builder.Services.AddServiceExtension(builder.Configuration.GetConnectionString("Shira"));
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddControllers();
 

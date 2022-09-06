@@ -16,7 +16,6 @@ public class CustomerStorage : ICustomerStorage
 
     public async Task<int> login(string email, string password)
     {
-
         using var context = _factory.CreateDbContext();
         {
             try
@@ -28,7 +27,7 @@ public class CustomerStorage : ICustomerStorage
                 }
                 else
                 {
-                    throw new ArgumentNullException("customer");
+                    throw new UserNotFoundException();
                 }
             }
             catch
@@ -55,7 +54,6 @@ public class CustomerStorage : ICustomerStorage
                 {
                     throw new ArgumentNullException("account");
                 }
-
             }
             catch
             {
