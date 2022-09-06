@@ -8,7 +8,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace CoronaApp.Api.Midllewares;
+namespace CustomerAccount.Api.Midllewares;
 public class HandlerErrorsMiddleware
 {
     private RequestDelegate _next;
@@ -40,18 +40,20 @@ public class HandlerErrorsMiddleware
             {
                 case ArgumentNullException e:
                     // custom application error
-                    await response.WriteAsync($"Oppps... \n the argument {e.Message} is null!");
+                   await response.WriteAsJsonAsync($"Oppps... \n the argument {e.Message} is null!");
                     response.StatusCode = (int)HttpStatusCode.BadRequest;
                     break;
                 case KeyNotFoundException e:
                     // not found error
                     await response.WriteAsync("Oppps... \n Page Not Found!");
                     response.StatusCode = (int)HttpStatusCode.NotFound;
+
                     break;
                 case UserNotFoundException e:
                     // user didn't found error
-                    await response.WriteAsync("Oppps... \n user didn't found!");
-                    response.StatusCode = (int)HttpStatusCode.NotFound;//לשנות ל401!!
+                    await response.WriteAsJsonAsync("Oppps... \n user didn't found!");
+                   var a = response.BodyWriter;
+                    response.StatusCode = (int)HttpStatusCode.Unauthorized;
                     break;
                 case DbContextException e:
                     // DbContext error

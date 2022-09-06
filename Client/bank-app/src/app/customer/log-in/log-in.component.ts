@@ -50,6 +50,16 @@ export class LogInComponent implements OnInit {
           cancelButtonText:"Click her to register"    
         }).then( ()=> this._router.navigate(['register']))
       }
-    })    
+    }),(error: { message: string }) =>{
+      Swal.fire({
+        title:"Oppps...",
+        text:"hhhh",
+        icon: "error",
+        cancelButtonText:"Click her to register"    
+      }).then( ()=> this._router.navigate(['register']))
+    
+    };
+
+   
   }
 }

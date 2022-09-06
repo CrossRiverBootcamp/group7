@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CustomerAccount.Storage.Migrations
 {
-    [DbContext(typeof(BankDbContext))]
+    [DbContext(typeof(CustomerAccountDbContext))]
     [Migration("20220904124522_001")]
     partial class _001
     {

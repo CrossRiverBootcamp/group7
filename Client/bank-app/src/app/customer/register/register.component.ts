@@ -17,7 +17,6 @@ import { CustomerModule } from '../customer.module';
 })
 export class RegisterComponent implements OnInit {
 
-
   newCustomer: CustomerModel = {
     id: 0,
     firstName: '',

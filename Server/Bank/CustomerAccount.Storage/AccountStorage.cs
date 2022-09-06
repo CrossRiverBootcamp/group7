@@ -7,8 +7,8 @@ namespace CustomerAccount.Storage;
 
 public class AccountStorage : IAccountStorage
 {
-    private readonly IDbContextFactory<BankDbContext> _factory;
-    public AccountStorage(IDbContextFactory<BankDbContext> factory)
+    private readonly IDbContextFactory<CustomerAccountDbContext> _factory;
+    public AccountStorage(IDbContextFactory<CustomerAccountDbContext> factory)
     {
         _factory = factory;
     }

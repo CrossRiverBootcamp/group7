@@ -8,7 +8,7 @@ using CustomerAccount.Storage.Interfaces;
 
 namespace CustomerAccount.Service;
 
-public class AccountService : IAccountService
+public class AccountService : ITransactionService
 {
 
     IMapper _IMapper;

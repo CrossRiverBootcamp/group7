@@ -8,7 +8,7 @@ using CustomerAccount.Storage.Interfaces;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<ITransactionService, AccountService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddServiceExtension(builder.Configuration.GetConnectionString("Shira"));
 builder.Services.AddAutoMapper(typeof(Program));
@@ -21,7 +21,8 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline
+app.UseHandlerErrorsMiddleware();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -34,7 +35,6 @@ app.UseCors(options => {
     options.AllowAnyMethod();
     options.AllowAnyHeader();
 });
-app.UseHandlerErrorsMiddleware();
 app.UseAuthorization();
 
 app.MapControllers();

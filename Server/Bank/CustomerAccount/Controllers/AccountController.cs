@@ -12,10 +12,10 @@ namespace CustomerAccount.WebApi.Controllers;
 [ApiController]
 public class AccountController : ControllerBase
 {
-    IAccountService _AccountService;
+    ITransactionService _AccountService;
     IMapper _IMapper;
 
-    public AccountController(IAccountService AccountService, IMapper IMapper)
+    public AccountController(ITransactionService AccountService, IMapper IMapper)
     {
         _AccountService = AccountService;
         _IMapper = IMapper;

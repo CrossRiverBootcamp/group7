@@ -8,8 +8,8 @@ namespace CustomerAccount.Storage;
 
 public class CustomerStorage : ICustomerStorage
 {
-    private readonly IDbContextFactory<BankDbContext> _factory;
-    public CustomerStorage(IDbContextFactory<BankDbContext> factory)
+    private readonly IDbContextFactory<CustomerAccountDbContext> _factory;
+    public CustomerStorage(IDbContextFactory<CustomerAccountDbContext> factory)
     {
         _factory = factory;
     }
@@ -30,8 +30,12 @@ public class CustomerStorage : ICustomerStorage
                     throw new UserNotFoundException();
                 }
             }
-            catch
+            catch(Exception ex)
             {
+                if(ex is UserNotFoundException)
+                {
+                    throw new Exception();
+                }
                 throw new DbContextException();
             }
         }

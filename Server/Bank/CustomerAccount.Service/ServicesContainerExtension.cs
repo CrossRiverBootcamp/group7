@@ -18,7 +18,7 @@ namespace CustomerAccount.Services.Extensions
             services.AddScoped<ICustomerStorage, CustomerStorage>();
             services.AddScoped<IAccountStorage, AccountStorage>();
             services.AddScoped<IAuthorizationFuncs , AuthorizationFuncs>();
-            services.AddDbContextFactory<BankDbContext>(opt => opt.UseSqlServer(connection));
+            services.AddDbContextFactory<CustomerAccountDbContext>(opt => opt.UseSqlServer(connection));
         }
     }
 }
