@@ -1,0 +1,5 @@
+C:\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.csproj.AssemblyReference.cache
+C:\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.AssemblyInfoInputs.cache
+C:\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.AssemblyInfo.cs
+C:\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.csproj.CoreCompileInputs.cache

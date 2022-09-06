@@ -1,0 +1,6 @@
+C:\group7\Server\Bank\Transaction.WebApi\obj\Debug\net6.0\Transaction.WebApi.csproj.AssemblyReference.cache
+C:\group7\Server\Bank\Transaction.WebApi\obj\Debug\net6.0\Transaction.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\group7\Server\Bank\Transaction.WebApi\obj\Debug\net6.0\Transaction.WebApi.AssemblyInfoInputs.cache
+C:\group7\Server\Bank\Transaction.WebApi\obj\Debug\net6.0\Transaction.WebApi.AssemblyInfo.cs
+C:\group7\Server\Bank\Transaction.WebApi\obj\Debug\net6.0\Transaction.WebApi.csproj.CoreCompileInputs.cache
+C:\group7\Server\Bank\Transaction.WebApi\obj\Debug\net6.0\Transaction.WebApi.MvcApplicationPartsAssemblyInfo.cache
