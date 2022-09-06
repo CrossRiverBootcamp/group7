@@ -17,8 +17,8 @@ export class LogInComponent implements OnInit {
     password: ''
   }
   LogInForm: FormGroup = new FormGroup({
-    email: new FormControl("", Validators.required),
-    password: new FormControl("", Validators.required)
+    email: new FormControl("", [Validators.required,Validators.email]),
+    password: new FormControl("", [Validators.required,Validators.minLength(4)])
   });
   constructor(private _customService:CustomerService ,private _router: Router,private _currentUserService: CurrentUserService) { }
 
@@ -35,6 +35,7 @@ export class LogInComponent implements OnInit {
     this.newUser.password = this.LogInForm.controls["password"].value;
     this._customService.logIn(this.newUser).subscribe(data=>{
       if(data != 0){
+        this._currentUserService.accuontId=data
         Swal.fire({
           title:"Hi!!",
           text:"wellcame :)",
