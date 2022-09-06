@@ -1,5 +1,12 @@
-C:\group7\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.csproj.AssemblyReference.cache
-C:\group7\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.GeneratedMSBuildEditorConfig.editorconfig
-C:\group7\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.AssemblyInfoInputs.cache
-C:\group7\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.AssemblyInfo.cs
-C:\group7\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.csproj.CoreCompileInputs.cache
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.csproj.AssemblyReference.cache
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.AssemblyInfoInputs.cache
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.AssemblyInfo.cs
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.csproj.CoreCompileInputs.cache
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Transaction.Storage.deps.json
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Transaction.Storage.dll
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Transaction.Storage.pdb
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.dll
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\refint\Transaction.Storage.dll
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.pdb
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\ref\Transaction.Storage.dll

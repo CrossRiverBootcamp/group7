@@ -15,7 +15,7 @@ public class AccountController : ControllerBase
     IAccountService _AccountService;
     IMapper _IMapper;
 
-    public AccountController( IAccountService AccountService, IMapper IMapper)
+    public AccountController(IAccountService AccountService, IMapper IMapper)
     {
         _AccountService = AccountService;
         _IMapper = IMapper;
