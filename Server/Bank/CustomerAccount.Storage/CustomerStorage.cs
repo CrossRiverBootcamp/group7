@@ -8,15 +8,14 @@ namespace CustomerAccount.Storage;
 
 public class CustomerStorage : ICustomerStorage
 {
-    private readonly IDbContextFactory<BankDbContext> _factory;
-    public CustomerStorage(IDbContextFactory<BankDbContext> factory)
+    private readonly IDbContextFactory<CustomerAccountDbContext> _factory;
+    public CustomerStorage(IDbContextFactory<CustomerAccountDbContext> factory)
     {
         _factory = factory;
     }
 
     public async Task<int> login(string email, string password)
     {
-
         using var context = _factory.CreateDbContext();
         {
             try
@@ -28,11 +27,15 @@ public class CustomerStorage : ICustomerStorage
                 }
                 else
                 {
-                    throw new ArgumentNullException("customer");
+                    throw new UserNotFoundException();
                 }
             }
-            catch
+            catch(Exception ex)
             {
+                if(ex is UserNotFoundException)
+                {
+                    throw new Exception();
+                }
                 throw new DbContextException();
             }
         }
@@ -55,7 +58,6 @@ public class CustomerStorage : ICustomerStorage
                 {
                     throw new ArgumentNullException("account");
                 }
-
             }
             catch
             {

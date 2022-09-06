@@ -9,19 +9,21 @@
 </head>
 
 <body>
-    <mat-card *ngIf="account" class="example-card">
-        <mat-card-title>Account Information</mat-card-title>
-        <mat-card-content>
-            <p>Wellcome</p>
-            <p>{{account.firstName}}  </p>
-            <p>{{account.lastName}}  </p>
-            <br>
-            <p>Your account created at: </p>
-            <p>{{account.openDate | date}}  </p>
-            <p>Your balance account is: </p>
-            <p>{{account.balance}}  </p>
-        </mat-card-content>
-    </mat-card>
+    <div class="container">
+        <img src="./././assets/logo.jpg" class="logo">
+        <mat-card *ngIf="account" class="example-card">
+            <mat-card-title>Account Information</mat-card-title>
+            <mat-card-content>
+                <p>Wellcome</p>
+                <p>{{account.firstName}} {{account.lastName}} </p>
+                <br>
+                <p>Your account created at: </p>
+                <p>{{account.openDate | date:'short'}} </p>
+                <p>Your balance account is: </p>
+                <p>{{account.balance}} $</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
 </body>
 
 </html>

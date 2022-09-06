@@ -8,7 +8,7 @@ using CustomerAccount.Storage.Interfaces;
 
 namespace CustomerAccount.Service;
 
-public class AccountService : IAccountService
+public class AccountService : ITransactionService
 {
 
     IMapper _IMapper;
@@ -26,9 +26,8 @@ public class AccountService : IAccountService
         if (await _AccountStorage.cheackAcountExist(customer.Email) == false)
         {
             Customer newCustomer = _IMapper.Map<CustomerModel, Customer>(customer);
-            var salt = _AuthorizationFuncs.GenerateSalt(8);
-            newCustomer.Password = _AuthorizationFuncs.HashPassword(newCustomer.Password, salt, 1000, 8);
-
+            /*var salt = _AuthorizationFuncs.GenerateSalt(8);
+            newCustomer.Password = _AuthorizationFuncs.HashPassword(newCustomer.Password, salt, 1000, 8);*/
             AccountModel accunt = new AccountModel() { Balance = 1000, OpenDate = DateTime.Now };
             Account newAccont = _IMapper.Map<AccountModel, Account>(accunt);
             return await _AccountStorage.createNewAccount(newAccont, newCustomer);

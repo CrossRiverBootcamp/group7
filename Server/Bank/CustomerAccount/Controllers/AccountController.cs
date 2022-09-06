@@ -12,10 +12,10 @@ namespace CustomerAccount.WebApi.Controllers;
 [ApiController]
 public class AccountController : ControllerBase
 {
-    IAccountService _AccountService;
+    ITransactionService _AccountService;
     IMapper _IMapper;
 
-    public AccountController(IAccountService AccountService, IMapper IMapper)
+    public AccountController(ITransactionService AccountService, IMapper IMapper)
     {
         _AccountService = AccountService;
         _IMapper = IMapper;
@@ -26,12 +26,13 @@ public class AccountController : ControllerBase
     public async Task<ActionResult<bool>> createNewAccount([FromBody] CustomerDTO customer)
     {
         CustomerModel newAcustomer = _IMapper.Map<CustomerDTO, CustomerModel>(customer);
-        return await _AccountService.createNewAccount(newAcustomer);
+        var result = await _AccountService.createNewAccount(newAcustomer);
+        return Ok(result);
 
     }
 
     // GET/
-    [HttpGet]
+    [HttpGet("{accountID}")]
     public async Task<ActionResult<AccountCustomerInfoDTO>> getAccountCustomerInfo(int accountID)
     {
         AccountCustomerInfoModel accountInfo= _AccountService.getAccountCustomerInfo(accountID).Result;

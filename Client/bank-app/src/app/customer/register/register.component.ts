@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Subscriber } from 'rxjs';
 import { CustomerModel } from 'src/app/models/customer.model';
 import { LogInModel } from 'src/app/models/logIn.model';
+import { AccountService } from 'src/app/service/account.service';
 import { CurrentUserService } from 'src/app/service/current-user.service';
 import { CustomerService } from 'src/app/service/customer.service';
 import Swal from 'sweetalert2';
@@ -16,7 +17,6 @@ import { CustomerModule } from '../customer.module';
 })
 export class RegisterComponent implements OnInit {
 
-
   newCustomer: CustomerModel = {
     id: 0,
     firstName: '',
@@ -25,12 +25,12 @@ export class RegisterComponent implements OnInit {
     password: ''
   };
   RegisterForm: FormGroup = new FormGroup({
-    firstName: new FormControl("", Validators.required),
-    lastName: new FormControl("", Validators.required),
-    email: new FormControl("", Validators.required),
-    password: new FormControl("", Validators.required)
+    firstName: new FormControl("", [Validators.required,Validators.minLength(2)]),
+    lastName: new FormControl("", [Validators.required,Validators.minLength(2)]),
+    email: new FormControl("", [Validators.required,Validators.email]),
+    password: new FormControl("", [Validators.required,Validators.minLength(4)])
   });
-  constructor(private _customService: CustomerService, private _router: Router, private _currentUserService: CurrentUserService) { }
+  constructor(private _accountService: AccountService, private _router: Router, private _currentUserService: CurrentUserService) { }
 
   ngOnInit(): void {
 
@@ -40,7 +40,7 @@ export class RegisterComponent implements OnInit {
     this.newCustomer.lastName = this.RegisterForm.controls["lastName"].value
     this.newCustomer.email = this.RegisterForm.controls["email"].value;
     this.newCustomer.password = this.RegisterForm.controls["password"].value;
-    this._customService.register(this.newCustomer).subscribe(data => {
+    this._accountService.createNewAccount(this.newCustomer).subscribe(data => {
       if (data) {
         let user: LogInModel = {
           email: this.newCustomer.email,

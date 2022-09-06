@@ -7,13 +7,4 @@ export interface AccountModel{
   openDate:Date;
   balance:number;
 
-  // constructor() {
-  //   this.id = 0;
-  //   this.customerId = 0;
-  //   this.firstName = ""; 
-  //   this.lastName = "";
-  //   this.email = "";
-  //   this.openDate = new Date();
-  //   this.balance = 0;
-  // }
 }

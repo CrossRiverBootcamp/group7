@@ -7,7 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center">
+    <!-- <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center"> -->
+      <div class="container">
+        <img src="./././assets/logo.jpg" class="logo">
         <mat-card class="box">
           <mat-card-header>
             <mat-card-title>Log in</mat-card-title>
@@ -17,14 +19,16 @@
               <mat-form-field class="example-full-width">
                 <input matInput placeholder="email" formControlName="email" required>
               </mat-form-field>
+              <br>
               <mat-form-field class="example-full-width">
                 <input matInput placeholder="Password" formControlName="password" required>
               </mat-form-field>
+              <br>
             </mat-card-content>
-            <button mat-stroked-button color="accent" class="btn-block" (click)="logIn()">Log in</button>
-            <nav>
-                <a routerLink="Register">Register</a>
-            </nav>
+            <button mat-stroked-button color="primary" class="btn-block" (click)="logIn()">Log in</button>
+            <br>
+            <br>
+                <a routerLink="/register">new?  register now</a>
           </form>
         </mat-card>
       </div>

@@ -16,7 +16,4 @@ export class CustomerService {
     return this._http.post<number>(this.baseUrl,user)
   }
 
-  register(customer: CustomerModel):Observable<boolean> {
-    return this._http.post<boolean>(this.baseUrl,customer)
-  }
 }

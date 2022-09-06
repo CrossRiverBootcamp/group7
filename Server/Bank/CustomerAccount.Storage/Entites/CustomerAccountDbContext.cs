@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CustomerAccount.Storage.Entites;
 
-public class BankDbContext : DbContext
+public class CustomerAccountDbContext : DbContext
 {
-    public BankDbContext(DbContextOptions<BankDbContext> options) : base(options)
+    public CustomerAccountDbContext(DbContextOptions<CustomerAccountDbContext> options) : base(options)
     {
 
     }

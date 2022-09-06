@@ -10,7 +10,8 @@
 
 <body>
 
-    <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <div class="container">
+        <img src="./././assets/logo.jpg" class="logo">
         <mat-card class="box">
             <mat-card-header>
                 <mat-card-title>Register</mat-card-title>
@@ -20,20 +21,23 @@
                     <mat-form-field class="example-full-width">
                         <input formControlName="firstName" matInput placeholder="FirstName">
                     </mat-form-field>
+                    <br>
                     <mat-form-field class="example-full-width">
                         <input formControlName="lastName" matInput placeholder="LastName">
                     </mat-form-field>
+                    <br>
                     <mat-form-field class="example-full-width">
                         <input formControlName="email" type="email" matInput placeholder="Email">
                     </mat-form-field>
+                    <br>
                     <mat-form-field class="example-full-width">
                         <input formControlName="password" matInput placeholder="Password">
                     </mat-form-field>
                 </mat-card-content>
                 <button mat-stroked-button color="accent" class="btn-block" (click)="register()">Register</button>
-                <nav>
-                    <a routerLink="logIn">LogIn</a>
-                </nav>
+                <br>
+                <br>
+                <a routerLink="/logIn">logIn</a>
             </form>
         </mat-card>
     </div>
