@@ -12,7 +12,6 @@
           "AutoMapper.Collection": "8.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "CustomerAccount.Service": "1.0.0",
-          "CustomerAccount.Storage": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.8",
           "Swashbuckle.AspNetCore": "6.2.3"
         },

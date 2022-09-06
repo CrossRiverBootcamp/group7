@@ -2161,7 +2161,6 @@
       "AutoMapper.Collection >= 8.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "CustomerAccount.Service >= 1.0.0",
-      "CustomerAccount.Storage >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.8",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
@@ -2200,9 +2199,6 @@
           "projectReferences": {
             "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj": {
               "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj"
-            },
-            "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
-              "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj"
             }
           }
         }

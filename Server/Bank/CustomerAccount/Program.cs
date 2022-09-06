@@ -1,4 +1,4 @@
-using CoronaApp.Api.Midllewares;
+using CustomerAccount.Api.Midllewares;
 using CustomerAccount.Service;
 using CustomerAccount.Service.Interfaces;
 using CustomerAccount.Services.Extensions;
@@ -8,7 +8,7 @@ using CustomerAccount.Storage.Interfaces;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddScoped<ITransactionService, AccountService>();
+builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddServiceExtension(builder.Configuration.GetConnectionString("Shira"));
 builder.Services.AddAutoMapper(typeof(Program));

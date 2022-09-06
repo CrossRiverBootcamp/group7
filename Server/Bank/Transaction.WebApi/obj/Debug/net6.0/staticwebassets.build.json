@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ENMpQc1fYvmXgYVKMIOTsz7CNBxQmhtSiiDGjdCUen0=",
+  "Source": "Transaction.WebApi",
+  "BasePath": "_content/Transaction.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -208,9 +208,6 @@
             "projectReferences": {
               "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj": {
                 "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj"
-              },
-              "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
-                "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj"
               }
             }
           }

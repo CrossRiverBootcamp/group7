@@ -1,7 +1,12 @@
+using Transaction.Api.Midllewares;
+using Transaction.Service;
+using Transaction.Service.Interfaces;
+using Transaction.Services.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddScoped<ICustomerService, CustomerService>();
+builder.Services.AddScoped<ITransactionService, TransactionService>();
 builder.Services.AddServiceExtension(builder.Configuration.GetConnectionString("Shira"));
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddControllers();

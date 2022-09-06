@@ -16,6 +16,6 @@ public class Transaction
 
     [Required]
     public DateTime OpenDate { get; set; }
-    public Status Status { get; set; }
+    public int Status { get; set; }
     public string FailureReason { get; set; }
 }
