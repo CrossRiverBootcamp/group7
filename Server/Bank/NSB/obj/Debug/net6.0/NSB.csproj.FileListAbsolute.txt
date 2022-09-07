@@ -1,0 +1,12 @@
+C:\group7\Server\Bank\NSB\bin\Debug\net6.0\NSB.deps.json
+C:\group7\Server\Bank\NSB\bin\Debug\net6.0\NSB.dll
+C:\group7\Server\Bank\NSB\bin\Debug\net6.0\NSB.pdb
+C:\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.csproj.AssemblyReference.cache
+C:\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.GeneratedMSBuildEditorConfig.editorconfig
+C:\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.AssemblyInfoInputs.cache
+C:\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.AssemblyInfo.cs
+C:\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.csproj.CoreCompileInputs.cache
+C:\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.dll
+C:\group7\Server\Bank\NSB\obj\Debug\net6.0\refint\NSB.dll
+C:\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.pdb
+C:\group7\Server\Bank\NSB\obj\Debug\net6.0\ref\NSB.dll

@@ -30,7 +30,7 @@ public class AccountStorage : IAccountStorage
         }
     }
 
-    public async Task<bool> cheackAcountExist(string email)
+    public async Task<bool> emailExist(string email)
     {
         using var _BankDbContext = _factory.CreateDbContext();
         {
@@ -72,7 +72,74 @@ public class AccountStorage : IAccountStorage
             }
         }
     }
+
+    public async Task<bool> accountExist(int accountID)
+    {
+        using var _BankDbContext = _factory.CreateDbContext();
+        {
+            try
+            {
+                if (await _BankDbContext.Accounts.FirstOrDefaultAsync(account => account.ID == accountID) == null)
+                {
+                    return false;
+                }
+                return true;
+
+            }
+            catch
+            {
+                throw new DbContextException();
+            }
+        }
+    }
+
+    public async Task<bool> balanceCheacking( float ammount, int accountID)
+    {
+        using var _BankDbContext = _factory.CreateDbContext();
+        {
+            try
+            {
+                var account = await _BankDbContext.Accounts.FirstOrDefaultAsync(account => account.ID == accountID);
+                if (account.Balance < ammount)
+                {
+                    return false;
+                }
+                return true;
+
+            }
+            catch
+            {
+                throw new DbContextException();
+            }
+        }
+    }
+
+  
+
+    public async Task<bool> updateBalance(float ammount, int fromAccountID, int toAccountID)
+    {
+        using var _BankDbContext = _factory.CreateDbContext();
+        {
+            try
+            {
+                var fromAccount = await _BankDbContext.Accounts.FirstOrDefaultAsync(account => account.ID == fromAccountID);
+                fromAccount.Balance-=ammount;
+                var toAccount = await _BankDbContext.Accounts.FirstOrDefaultAsync(account => account.ID == toAccountID);
+                toAccount.Balance+= ammount;
+                _BankDbContext.Entry(family).CurrentValues.SetValues(family1);
+
+                _BankDbContext.SaveChangesAsync();
+                return true;
+
+            }
+            catch
+            {
+                throw new DbContextException();
+            }
+        }
+    }
 }
+
 
 
 

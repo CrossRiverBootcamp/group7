@@ -1,5 +1,5 @@
 ﻿
-using CustomerAccount.Storage.Entites;
+
 using Microsoft.EntityFrameworkCore;
 
 namespace CustomerAccount.Storage.Entites;

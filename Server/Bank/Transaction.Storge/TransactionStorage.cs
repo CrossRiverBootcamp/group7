@@ -12,19 +12,19 @@ public class TransactionStorage : ITransactionStorage
     {
         _factory = factory;
     }
-    public async Task<bool> createTransaction(Entites.Transaction transaction)
+    public async Task<Storage.Entites.Transaction> createTransaction(Entites.Transaction transaction)
     {
         using var _TransactionDbContext = _factory.CreateDbContext();
         {
             try
             {
-                await _TransactionDbContext.Transactions.AddAsync(transaction);
+                var newTransaction=(await _TransactionDbContext.Transactions.AddAsync(transaction)).Entity;
                 await _TransactionDbContext.SaveChangesAsync();
-                return true;
+                return newTransaction;
             }
             catch
             {
-                return false;
+                throw new Exception();
             }
         }
     }
