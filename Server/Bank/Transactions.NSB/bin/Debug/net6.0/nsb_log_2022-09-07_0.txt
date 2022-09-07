@@ -1,0 +1,19 @@
+﻿2022-09-07 12:17:12.296 INFO  Logging to 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-07 12:17:12.597 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-07 12:17:12.602 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-07 12:17:12.604 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-07 12:17:19.784 INFO  Executing 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-07 12:17:20.197 INFO  Executing saga creation scripts:
+C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-07 12:34:16.765 INFO  Logging to 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-07 12:38:27.547 INFO  Logging to 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-07 12:40:45.825 INFO  Logging to 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-07 12:44:56.073 INFO  Logging to 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-07 12:44:56.464 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-07 12:44:56.469 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-07 12:44:56.474 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-07 12:45:02.579 INFO  Executing 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-07 12:45:02.707 INFO  Executing saga creation scripts:
+C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-07 12:45:03.028 ERROR Your license has expired
+2022-09-07 12:45:48.551 INFO  Received TransactionMessage,  TransactionID = 3

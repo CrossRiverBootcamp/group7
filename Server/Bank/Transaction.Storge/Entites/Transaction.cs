@@ -6,6 +6,8 @@ namespace Transaction.Storage.Entites;
 public class Transaction
 {
     [Required]
+    public int ID { get; set; }
+    [Required]
     public int FromAccountId { get; set; }
 
     [Required]
@@ -17,5 +19,6 @@ public class Transaction
     [Required]
     public DateTime OpenDate { get; set; }
     public int Status { get; set; }
-    public string FailureReason { get; set; }
+
+    public string? FailureReason { get; set; }
 }

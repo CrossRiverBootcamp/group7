@@ -1,6 +1,7 @@
 ﻿
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using NServiceBus;
 using Transaction.Service.Interfaces;
 using Transaction.Service.Models;
 using Transaction.WebApi.DTO;
@@ -12,13 +13,16 @@ namespace Transaction.WebApi.Controllers;
 [ApiController]
 public class TransactionController : ControllerBase
 {
+
     ITransactionService _TransactionService;
     IMapper _IMapper;
+    IMessageSession _messageSession;
 
-    public TransactionController(ITransactionService TransactionService, IMapper IMapper)
+    public TransactionController(ITransactionService TransactionService, IMapper IMapper, IMessageSession messageSession)
     {
         _TransactionService = TransactionService;
         _IMapper = IMapper;
+        _messageSession = messageSession;
     }
 
     // POST/
@@ -26,7 +30,7 @@ public class TransactionController : ControllerBase
     public async Task<ActionResult<bool>> createTransaction([FromBody] TransactionDTO transaction)
     {
         TransactionModel newTansaction = _IMapper.Map<TransactionDTO, TransactionModel>(transaction);
-        var result = await _TransactionService.createTransaction(newTansaction);
+        var result = await _TransactionService.createTransaction(newTansaction, _messageSession);
         return Ok(result);
 
     }

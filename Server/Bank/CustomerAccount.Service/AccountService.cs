@@ -23,7 +23,7 @@ public class AccountService : IAccountService
     }
     public async Task<bool> createNewAccount(CustomerModel customer)
     {
-        if (await _AccountStorage.cheackAcountExist(customer.Email) == false)
+        if (await _AccountStorage.emailExist(customer.Email) == false)
         {
             Customer newCustomer = _IMapper.Map<CustomerModel, Customer>(customer);
             /*var salt = _AuthorizationFuncs.GenerateSalt(8);
@@ -44,6 +44,21 @@ public class AccountService : IAccountService
         Account account = await _AccountStorage.getAccountCustomerInfo(accountID);
         AccountCustomerInfoModel accountInfo = _IMapper.Map<Account, AccountCustomerInfoModel>(account);
         return accountInfo;
+
+
+    }
+
+    public async Task<bool> updateBalance(UpdateBalanceModel updateBalance)
+    {
+        if (await _AccountStorage.accountExist(updateBalance.FromAccountId) == false || await _AccountStorage.accountExist(updateBalance.ToAccountId) == false)
+        {
+
+        }
+        if (await _AccountStorage.balanceCheacking(updateBalance.Amount, updateBalance.FromAccountId)==false)
+        {
+
+        }
+        await _AccountStorage.updateBalance(updateBalance.Amount, updateBalance.FromAccountId, updateBalance.ToAccountId);
 
 
     }
