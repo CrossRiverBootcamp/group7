@@ -1,16 +1,26 @@
-﻿using NSB.Command;
+﻿using AutoMapper;
+using NSB.Command;
 using NSB.Event;
 using NServiceBus;
 using NServiceBus.Logging;
+using Transaction.Service.Interfaces;
+using Transaction.Service.Models;
 
 namespace Transactions.NSB;
 
 
 
 public class TransactionPolicy : Saga<TransactionPolicyData>,
- IAmStartedByMessages<Payload>
+ IAmStartedByMessages<Payload> , IAmStartedByMessages<AccountUpdated>
 {
     static ILog log = LogManager.GetLogger<TransactionPolicy>();
+    ITransactionService _transactionService;
+    IMapper _mapper;
+    public TransactionPolicy(ITransactionService transactionService , IMapper mapper)
+    {
+        _transactionService = transactionService;
+        _mapper = mapper;
+    }
 
     public async Task Handle(Payload message, IMessageHandlerContext context)
     {
@@ -23,6 +33,13 @@ public class TransactionPolicy : Saga<TransactionPolicyData>,
             ToAccountId = message.ToAccountId,
             Amount = message.Amount
         });
+    }
+    public async Task Handle(AccountUpdated message, IMessageHandlerContext context)
+    {
+        log.Info($"Received AccountUpdated,  TransactionID = {message.TransactionID}");
+        TransactionModel transactionModel = _mapper.Map<AccountUpdated, TransactionModel>(message);
+        bool result = await _transactionService.updateTransaction(transactionModel);
+        MarkAsComplete();
     }
 
     //public Task Handle(TrackingAdded message, IMessageHandlerContext context)
@@ -44,10 +61,8 @@ public class TransactionPolicy : Saga<TransactionPolicyData>,
 
     protected override void ConfigureHowToFindSaga(SagaPropertyMapper<TransactionPolicyData> mapper)
     {
-
         mapper.MapSaga(sagaData => sagaData.TransactionID)
             .ToMessage<Payload>(message => message.TransactionID);
-
     }
 
 

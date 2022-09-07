@@ -45,4 +45,11 @@ public class TransactionService : ITransactionService
          return false;
 
     }
+
+    public async Task<bool> updateTransaction(TransactionModel transaction)
+    {
+        Storage.Entites.Transaction newTransaction = _IMapper.Map<TransactionModel, Storage.Entites.Transaction>(transaction);
+        return await _transactionStorage.updateTransaction(newTransaction);
+
+    }
 }

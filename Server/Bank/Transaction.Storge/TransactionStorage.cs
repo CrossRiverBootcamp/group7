@@ -1,4 +1,5 @@
 ﻿
+using Exceptions;
 using Microsoft.EntityFrameworkCore;
 using Transaction.Storage.Entites;
 using Transaction.Storage.Interfaces;
@@ -18,7 +19,7 @@ public class TransactionStorage : ITransactionStorage
         {
             try
             {
-                var newTransaction=(await _TransactionDbContext.Transactions.AddAsync(transaction)).Entity;
+                var newTransaction = (await _TransactionDbContext.Transactions.AddAsync(transaction)).Entity;
                 await _TransactionDbContext.SaveChangesAsync();
                 return newTransaction;
             }
@@ -28,9 +29,26 @@ public class TransactionStorage : ITransactionStorage
             }
         }
     }
+
+    public async Task<bool> updateTransaction(Entites.Transaction transaction)
+    {
+        using var _BankDbContext = _factory.CreateDbContext();
+        {
+            try
+            {
+                Entites.Transaction newTransaction = await _BankDbContext.Transactions.FirstOrDefaultAsync(account => account.ID == transaction.ID);
+                newTransaction.Status = transaction.Status;
+                if(transaction.Status == 2)
+                {
+                    newTransaction.FailureReason = transaction.FailureReason;
+                }
+                await _BankDbContext.SaveChangesAsync();
+                return true;
+            }
+            catch
+            {
+                throw new DbContextException();
+            }
+        }
+    }
 }
-
-
-
-   
-

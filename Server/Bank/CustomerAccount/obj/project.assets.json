@@ -965,7 +965,8 @@
           "AutoMapper": "11.0.1",
           "AutoMapper.Collection": "8.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
-          "CustomerAccount.Storage": "1.0.0"
+          "CustomerAccount.Storage": "1.0.0",
+          "NSB": "1.0.0"
         },
         "compile": {
           "bin/placeholder/CustomerAccount.Service.dll": {}
@@ -1000,6 +1001,19 @@
         },
         "runtime": {
           "bin/placeholder/Exceptions.dll": {}
+        }
+      },
+      "NSB/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "NServiceBus": "7.7.4"
+        },
+        "compile": {
+          "bin/placeholder/NSB.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NSB.dll": {}
         }
       }
     }
@@ -2942,6 +2956,11 @@
       "type": "project",
       "path": "../Exception/Exceptions.csproj",
       "msbuildProject": "../Exception/Exceptions.csproj"
+    },
+    "NSB/1.0.0": {
+      "type": "project",
+      "path": "../NSB/NSB.csproj",
+      "msbuildProject": "../NSB/NSB.csproj"
     }
   },
   "projectFileDependencyGroups": {

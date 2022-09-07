@@ -30,3 +30,7 @@ C:\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.p
 C:\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\ref\Transaction.Service.dll
 C:\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\NSB.dll
 C:\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\NSB.pdb
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Service\bin\Debug\net6.0\Exceptions.dll
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Service\bin\Debug\net6.0\NSB.dll
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Service\bin\Debug\net6.0\NSB.pdb
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Service\bin\Debug\net6.0\Exceptions.pdb

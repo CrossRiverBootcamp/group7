@@ -13,26 +13,20 @@ public class UpdateAccountHandler : IHandleMessages<UpdateAccount>
 {
     static ILog log = LogManager.GetLogger<UpdateAccountHandler>();
     IAccountService _AccountService;
+    IMessageSession _messageSession;
     IMapper _mapper;
-    public UpdateAccountHandler(IAccountService accountService, IMapper mapper)
+    public UpdateAccountHandler(IAccountService accountService, IMapper mapper, IMessageSession messageSession)
     {
         _AccountService = accountService;
-        _mapper= mapper;
+        _mapper = mapper;
+        _messageSession = messageSession;
     }
 
     public async Task Handle(UpdateAccount message, IMessageHandlerContext context)
     {
         log.Info($"Received UpdateAccount, TransactionID = {message.TransactionID}");
         UpdateBalanceModel updateBalance = _mapper.Map<UpdateAccount, UpdateBalanceModel>(message);
-        bool success = await _AccountService.updateBalance(updateBalance);
-        TrackingDone trackingDone = new TrackingDone()
-        {
-            MeasureID = message.MeasureID
-        };
-        if (success)
-            trackingDone.Success = true;
-        else
-            trackingDone.Success = false;
-        await context.Publish(trackingDone);
+        await _AccountService.updateBalance(updateBalance , _messageSession);
+        
     }
 }

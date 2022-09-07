@@ -929,6 +929,16 @@
           }
         }
       },
+      "Exceptions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Exceptions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Exceptions.dll": {}
+        }
+      },
       "NSB/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -946,6 +956,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Exceptions": "1.0.0",
           "Microsoft.AspNetCore.Hosting": "2.2.7",
           "Microsoft.EntityFrameworkCore": "6.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
@@ -2653,6 +2664,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Exceptions/1.0.0": {
+      "type": "project",
+      "path": "../Exception/Exceptions.csproj",
+      "msbuildProject": "../Exception/Exceptions.csproj"
     },
     "NSB/1.0.0": {
       "type": "project",

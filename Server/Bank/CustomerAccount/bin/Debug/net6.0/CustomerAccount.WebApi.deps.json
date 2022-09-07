@@ -682,7 +682,8 @@
           "AutoMapper": "11.0.1",
           "AutoMapper.Collection": "8.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
-          "CustomerAccount.Storage": "1.0.0"
+          "CustomerAccount.Storage": "1.0.0",
+          "NSB": "1.0.0"
         },
         "runtime": {
           "CustomerAccount.Service.dll": {}
@@ -704,6 +705,14 @@
       "Exceptions/1.0.0": {
         "runtime": {
           "Exceptions.dll": {}
+        }
+      },
+      "NSB/1.0.0": {
+        "dependencies": {
+          "NServiceBus": "7.7.4"
+        },
+        "runtime": {
+          "NSB.dll": {}
         }
       }
     }
@@ -1215,6 +1224,11 @@
       "sha512": ""
     },
     "Exceptions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NSB/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

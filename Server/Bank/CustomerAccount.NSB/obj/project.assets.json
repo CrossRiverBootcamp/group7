@@ -856,7 +856,8 @@
           "AutoMapper": "11.0.1",
           "AutoMapper.Collection": "8.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
-          "CustomerAccount.Storage": "1.0.0"
+          "CustomerAccount.Storage": "1.0.0",
+          "NSB": "1.0.0"
         },
         "compile": {
           "bin/placeholder/CustomerAccount.Service.dll": {}
