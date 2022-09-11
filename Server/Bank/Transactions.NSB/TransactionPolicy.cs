@@ -14,11 +14,11 @@ public class TransactionPolicy : Saga<TransactionPolicyData>,
  IAmStartedByMessages<Payload>, IAmStartedByMessages<AccountUpdated>
 {
     static ILog log = LogManager.GetLogger<TransactionPolicy>();
-    ITransactionService _transactionService;
+    //ITransactionService _transactionService;
     IMapper _mapper;
-    public TransactionPolicy(ITransactionService transactionService, IMapper mapper)
+    public TransactionPolicy(/*ITransactionService transactionService,*/ IMapper mapper)
     {
-        _transactionService = transactionService;
+        //_transactionService = transactionService;
         _mapper = mapper;
     }
 
@@ -37,8 +37,8 @@ public class TransactionPolicy : Saga<TransactionPolicyData>,
     public async Task Handle(AccountUpdated message, IMessageHandlerContext context)
     {
         log.Info($"Received AccountUpdated,  TransactionID = {message.TransactionID}");
-        UpdateTransactionModel transactionModel = _mapper.Map<AccountUpdated, UpdateTransactionModel>(message);
-        bool result = await _transactionService.updateTransaction(transactionModel);
+        //UpdateTransactionModel transactionModel = _mapper.Map<AccountUpdated, UpdateTransactionModel>(message);
+        //bool result = await _transactionService.updateTransaction(transactionModel);
         MarkAsComplete();
     }
 

@@ -2,6 +2,7 @@
 using CustomerAccount.Service.Models;
 using CustomerAccount.Storage.Entites;
 using CustomerAccount.WebApi.DTO;
+using NSB.Command;
 
 namespace CustomerAccount.WebAp;
 
@@ -21,6 +22,7 @@ public class AutoMapper : Profile
                .ForMember(des => des.Email, opts => opts
                         .MapFrom(src => src.Customer.Email));
         CreateMap<AccountCustomerInfoModel, AccountCustomerInfoDTO>();
+        CreateMap<UpdateAccount, UpdateBalanceModel>();
 
     }
 }

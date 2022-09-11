@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj": {}
+    "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj": {
+    "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj",
+        "projectUniqueName": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj",
         "projectName": "CustomerAccount.Service",
-        "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj",
-        "packagesPath": "C:\\Users\\01\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Service\\obj\\",
+        "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj",
+        "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
+        "outputPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Service\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\01\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
-                "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj"
+              "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
+                "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj"
               },
-              "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\NSB.csproj": {
-                "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\NSB.csproj"
+              "C:\\פרויקט גמר\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
+                "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\NSB\\NSB.csproj"
               }
             }
           }
@@ -70,8 +66,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -80,25 +75,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
+    "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj",
+        "projectUniqueName": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj",
         "projectName": "CustomerAccount.Storage",
-        "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj",
-        "packagesPath": "C:\\Users\\01\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\obj\\",
+        "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj",
+        "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
+        "outputPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Storage\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\01\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -112,8 +103,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\Exceptions.csproj": {
-                "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\Exceptions.csproj"
+              "C:\\פרויקט גמר\\group7\\Server\\Bank\\Exception\\Exceptions.csproj": {
+                "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\Exception\\Exceptions.csproj"
               }
             }
           }
@@ -167,8 +158,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -177,25 +167,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj": {
+    "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj",
+        "projectUniqueName": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj",
         "projectName": "CustomerAccount.WebApi",
-        "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj",
-        "packagesPath": "C:\\Users\\01\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount\\obj\\",
+        "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj",
+        "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
+        "outputPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\01\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -209,11 +195,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj": {
-                "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj"
+              "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj": {
+                "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj"
               },
-              "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
-                "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj"
+              "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
+                "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj"
               }
             }
           }
@@ -240,6 +226,10 @@
               "target": "Package",
               "version": "[11.0.0, )"
             },
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
             "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
               "version": "[6.0.8, )"
@@ -250,6 +240,10 @@
               "target": "Package",
               "version": "[6.0.8, )"
             },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
             "NServiceBus": {
               "target": "Package",
               "version": "[7.7.4, )"
@@ -257,6 +251,10 @@
             "NServiceBus.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[1.0.1, )"
+            },
+            "NServiceBus.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.1.0, )"
             },
             "NServiceBus.Persistence.Sql": {
               "target": "Package",
@@ -281,8 +279,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -294,25 +291,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\Exceptions.csproj": {
+    "C:\\פרויקט גמר\\group7\\Server\\Bank\\Exception\\Exceptions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\Exceptions.csproj",
+        "projectUniqueName": "C:\\פרויקט גמר\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
         "projectName": "Exceptions",
-        "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\Exceptions.csproj",
-        "packagesPath": "C:\\Users\\01\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\obj\\",
+        "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
+        "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
+        "outputPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\Exception\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\01\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -343,8 +336,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -353,25 +345,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\NSB.csproj": {
+    "C:\\פרויקט גמר\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\NSB.csproj",
+        "projectUniqueName": "C:\\פרויקט גמר\\group7\\Server\\Bank\\NSB\\NSB.csproj",
         "projectName": "NSB",
-        "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\NSB.csproj",
-        "packagesPath": "C:\\Users\\01\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\obj\\",
+        "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\NSB\\NSB.csproj",
+        "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
+        "outputPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\NSB\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\01\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -416,8 +404,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -426,7 +413,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

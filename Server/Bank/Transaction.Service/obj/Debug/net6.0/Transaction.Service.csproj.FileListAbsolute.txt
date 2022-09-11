@@ -36,3 +36,22 @@ C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Service\obj\Debug\n
 C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Service\obj\Debug\net6.0\refint\Transaction.Service.dll
 C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.pdb
 C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Service\obj\Debug\net6.0\ref\Transaction.Service.dll
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\Transaction.Service.deps.json
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\Transaction.Service.dll
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\Transaction.Service.pdb
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\Exceptions.dll
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\NSB.dll
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\Transaction.Storage.dll
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\NSB.pdb
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\Transaction.Storage.pdb
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\Exceptions.pdb
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.csproj.AssemblyReference.cache
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.AssemblyInfoInputs.cache
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.AssemblyInfo.cs
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.csproj.CoreCompileInputs.cache
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.csproj.CopyComplete
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.dll
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\refint\Transaction.Service.dll
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.pdb
+C:\פרויקט גמר\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\ref\Transaction.Service.dll
