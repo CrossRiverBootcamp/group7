@@ -16,13 +16,13 @@ public class Program
         Console.Title = "Transaction";
 
         var endpointConfiguration = new EndpointConfiguration("Transaction");
-        //builder.Services.AddServiceExtension(builder.Configuration.GetConnectionString("Shira"));
 
-        var databaseConnection = "server=Shira; database=Bank.Transaction;Trusted_Connection=True";
+        var NSBConnection = "server=DESKTOP-QM3UF42; database=BankProject.NSB;Trusted_Connection=True";
         var rabbitMQConnection = "host=localhost";
 
+        //??????????????????
         var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());
-        containerSettings.ServiceCollection.AddServiceExtension(databaseConnection);
+        containerSettings.ServiceCollection.AddServiceExtension(NSBConnection);
         containerSettings.ServiceCollection.AddScoped<ITransactionService, TransactionService>();
         containerSettings.ServiceCollection.AddAutoMapper(typeof(Program));
 
@@ -30,29 +30,26 @@ public class Program
         endpointConfiguration.EnableInstallers();
         endpointConfiguration.EnableOutbox();
 
+
+        var persistence = endpointConfiguration.UsePersistence<SqlPersistence>();
+        persistence.ConnectionBuilder(
+            connectionBuilder: () =>
+            {
+                return new SqlConnection(NSBConnection);
+            });
+
+        var dialect = persistence.SqlDialect<SqlDialect.MsSqlServer>();
+      
+        var conventions = endpointConfiguration.Conventions();
+        conventions.DefiningCommandsAs(type => type.Namespace == "NSB.Command");
+        conventions.DefiningEventsAs(type => type.Namespace == "NSB.Event");
+
         var transport = endpointConfiguration.UseTransport<RabbitMQTransport>();
         transport.ConnectionString(rabbitMQConnection);
         transport.UseConventionalRoutingTopology(QueueType.Quorum);
 
         var routing = transport.Routing();
         routing.RouteToEndpoint(typeof(UpdateAccount), destination: "CustomerAccount");
-
-
-        var persistence = endpointConfiguration.UsePersistence<SqlPersistence>();
-        persistence.ConnectionBuilder(
-            connectionBuilder: () =>
-            {
-                return new SqlConnection(databaseConnection);
-            });
-
-        var dialect = persistence.SqlDialect<SqlDialect.MsSqlServer>();
-        var subscriptions = persistence.SubscriptionSettings();
-        subscriptions.CacheFor(TimeSpan.FromMinutes(1));
-        dialect.Schema("dbo");
-
-        var conventions = endpointConfiguration.Conventions();
-        conventions.DefiningCommandsAs(type => type.Namespace == "NSB.Command");
-        conventions.DefiningEventsAs(type => type.Namespace == "NSB.Event");
 
         var endpointInstance = await Endpoint.Start(endpointConfiguration).ConfigureAwait(false);
 

@@ -22,3 +22,15 @@ C:\Users\01\crossRiver\Final_project\Server\Bank\NSB\obj\Debug\net6.0\NSB.dll
 C:\Users\01\crossRiver\Final_project\Server\Bank\NSB\obj\Debug\net6.0\refint\NSB.dll
 C:\Users\01\crossRiver\Final_project\Server\Bank\NSB\obj\Debug\net6.0\NSB.pdb
 C:\Users\01\crossRiver\Final_project\Server\Bank\NSB\obj\Debug\net6.0\ref\NSB.dll
+C:\פרויקט גמר\group7\Server\Bank\NSB\bin\Debug\net6.0\NSB.deps.json
+C:\פרויקט גמר\group7\Server\Bank\NSB\bin\Debug\net6.0\NSB.dll
+C:\פרויקט גמר\group7\Server\Bank\NSB\bin\Debug\net6.0\NSB.pdb
+C:\פרויקט גמר\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.csproj.AssemblyReference.cache
+C:\פרויקט גמר\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.GeneratedMSBuildEditorConfig.editorconfig
+C:\פרויקט גמר\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.AssemblyInfoInputs.cache
+C:\פרויקט גמר\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.AssemblyInfo.cs
+C:\פרויקט גמר\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.csproj.CoreCompileInputs.cache
+C:\פרויקט גמר\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.dll
+C:\פרויקט גמר\group7\Server\Bank\NSB\obj\Debug\net6.0\refint\NSB.dll
+C:\פרויקט גמר\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.pdb
+C:\פרויקט גמר\group7\Server\Bank\NSB\obj\Debug\net6.0\ref\NSB.dll

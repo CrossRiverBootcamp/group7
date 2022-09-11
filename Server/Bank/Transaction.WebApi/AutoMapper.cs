@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using NSB.Event;
 using Transaction.Service.Models;
 using Transaction.Storage.Entites;
 using Transaction.WebApi.DTO;
@@ -12,5 +13,7 @@ public class AutoMapper : Profile
         CreateMap<TransactionDTO, TransactionModel>();
         CreateMap< TransactionModel , Storage.Entites.Transaction>();
         CreateMap<UpdateTransactionModel, UpdateTransactionStatus>();
+        CreateMap<AccountUpdated, UpdateTransactionModel>();
+
     }
 }

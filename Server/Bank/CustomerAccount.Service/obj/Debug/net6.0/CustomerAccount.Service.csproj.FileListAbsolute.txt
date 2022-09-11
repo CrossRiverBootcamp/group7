@@ -36,3 +36,22 @@ C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.Service\bin\Deb
 C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\NSB.pdb
 C:\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\NSB.dll
 C:\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\NSB.pdb
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Service.deps.json
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Service.dll
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Service.pdb
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Storage.dll
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\Exceptions.dll
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\NSB.dll
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Storage.pdb
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\NSB.pdb
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\Exceptions.pdb
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.csproj.AssemblyReference.cache
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.AssemblyInfoInputs.cache
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.AssemblyInfo.cs
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.csproj.CoreCompileInputs.cache
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.csproj.CopyComplete
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.dll
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\refint\CustomerAccount.Service.dll
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.pdb
+C:\פרויקט גמר\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\ref\CustomerAccount.Service.dll

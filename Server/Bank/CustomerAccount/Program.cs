@@ -2,16 +2,52 @@ using CustomerAccount.Api.Midllewares;
 using CustomerAccount.Service;
 using CustomerAccount.Service.Interfaces;
 using CustomerAccount.Services.Extensions;
+using Microsoft.Data.SqlClient;
+using NServiceBus;
 
 var builder = WebApplication.CreateBuilder(args);
+var databaseConnection = builder.Configuration.GetConnectionString("DatabaseConnection");
 
+
+#region NServiceBus configurations
+
+var rabbitMQConnection = builder.Configuration.GetConnectionString("RabbitMQ");
+var queueName = builder.Configuration.GetSection("Queues:AccountAPIQueue:Name").Value;
+var NSBConnection = builder.Configuration.GetConnectionString("NSBConnection");
+
+builder.Host.UseNServiceBus(hostBuilderContext =>
+{
+    var endpointConfiguration = new EndpointConfiguration(queueName);
+
+    endpointConfiguration.EnableInstallers();
+    endpointConfiguration.EnableOutbox();
+
+    var persistence = endpointConfiguration.UsePersistence<SqlPersistence>();
+    persistence.ConnectionBuilder(
+    connectionBuilder: () =>
+    {
+        return new SqlConnection(NSBConnection);
+    });
+    var dialect = persistence.SqlDialect<SqlDialect.MsSqlServer>();
+
+    var transport = endpointConfiguration.UseTransport<RabbitMQTransport>();
+    transport.ConnectionString(rabbitMQConnection);
+    transport.UseConventionalRoutingTopology(QueueType.Quorum);
+
+    var conventions = endpointConfiguration.Conventions();
+    conventions.DefiningEventsAs(type => type.Namespace == "NSB.Event");
+    conventions.DefiningEventsAs(type => type.Namespace == "NSB.Command");
+    return endpointConfiguration;
+});
+
+#endregion
 
 
 
 // Add services to the container.
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
-builder.Services.AddServiceExtension(builder.Configuration.GetConnectionString("Shira"));
+builder.Services.AddServiceExtension(databaseConnection);
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddControllers();
 
