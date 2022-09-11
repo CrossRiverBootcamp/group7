@@ -6733,3 +6733,150 @@ Exception details:
 2022-09-11 11:34:05.447 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
 2022-09-11 11:34:05.455 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
 2022-09-11 11:34:11.792 INFO  Executing 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 12:56:28.824 INFO  Logging to 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 12:56:29.121 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-23'.
+2022-09-11 12:56:29.127 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 12:56:34.515 INFO  Executing 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 12:57:33.817 INFO  Logging to 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 12:57:34.278 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-23'.
+2022-09-11 12:57:34.283 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 12:57:34.290 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 13:08:11.124 INFO  Logging to 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 13:08:11.491 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-23'.
+2022-09-11 13:08:11.502 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 13:08:11.509 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 13:08:17.680 INFO  Executing 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 13:08:43.910 ERROR Your license has expired
+2022-09-11 13:08:44.353 INFO  Received UpdateAccount, TransactionID = 11
+2022-09-11 13:19:14.557 INFO  Logging to 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 13:19:15.077 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-23'.
+2022-09-11 13:19:15.094 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 13:19:21.229 INFO  Executing 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 13:19:22.340 ERROR Your license has expired
+2022-09-11 13:19:23.222 INFO  Received UpdateAccount, TransactionID = 11
+2022-09-11 13:25:57.095 INFO  Logging to 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 13:25:57.387 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-23'.
+2022-09-11 13:25:57.395 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 13:25:57.400 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 13:26:03.148 INFO  Executing 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 13:26:51.616 ERROR Your license has expired
+2022-09-11 13:26:51.945 INFO  Received UpdateAccount, TransactionID = 12
+2022-09-11 13:27:01.301 INFO  Immediate Retry is going to retry message '182fc0c9-34e3-488e-882c-af0d00ac2b9c' because of an exception:
+System.InvalidOperationException: There is already an open DataReader associated with this Connection which must be closed first.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Rollback()
+   at Microsoft.Data.SqlClient.SqlTransaction.Dispose(Boolean disposing)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.Dispose()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.ResetState(Boolean disposeDbConnection)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.Dispose()
+   at Microsoft.EntityFrameworkCore.DbContext.Dispose()
+   at CustomerAccount.Storage.AccountStorage.updateBalance(Single ammount, Int32 fromAccountID, Int32 toAccountID) in C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.Storage\AccountStorage.cs:line 136
+   at CustomerAccount.Service.AccountService.updateBalance(UpdateBalanceModel updateBalance, IMessageHandlerContext context) in C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.Service\AccountService.cs:line 90
+   at CustomerAccount.NSB.UpdateAccountHandler.Handle(UpdateAccount message, IMessageHandlerContext context) in C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\UpdateAccountHandler.cs:line 29
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 22
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateInstanceMessage/MutateIncomingMessageBehavior.cs:line 60
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 40
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 62
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateTransportMessage/MutateIncomingTransportMessageBehavior.cs:line 59
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(EventingBasicConsumer consumer, BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 368
+Exception details:
+	Message type: NSB.Command.UpdateAccount
+	Handler type: CustomerAccount.NSB.UpdateAccountHandler
+	Handler start time: 2022-09-11 10:26:51:944762 Z
+	Handler failure time: 2022-09-11 10:27:01:283817 Z
+	Message ID: 182fc0c9-34e3-488e-882c-af0d00ac2b9c
+2022-09-11 13:27:01.356 ERROR Your license has expired
+2022-09-11 13:27:01.360 INFO  Received UpdateAccount, TransactionID = 12
+2022-09-11 13:29:28.737 WARN  'CustomerAccount Publish' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader, Byte[] frameHeaderBuffer, ArrayPool`1 pool, UInt32 maxMessageSize)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2022-09-11 13:29:28.871 WARN  'CustomerAccount MessagePump' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader, Byte[] frameHeaderBuffer, ArrayPool`1 pool, UInt32 maxMessageSize)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2022-09-11 13:29:28.873 INFO  'CustomerAccount Publish': Attempting to reconnect in 10 seconds.
+2022-09-11 13:29:28.939 WARN  The circuit breaker for 'CustomerAccount MessagePump' is now in the armed state
+2022-09-11 13:29:28.981 WARN  'CustomerAccount MessagePump' channel shutdown while reconnect already in progress: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader, Byte[] frameHeaderBuffer, ArrayPool`1 pool, UInt32 maxMessageSize)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2022-09-11 13:29:28.993 INFO  'CustomerAccount MessagePump': Attempting to reconnect in 10 seconds.
+2022-09-11 13:30:09.094 INFO  Logging to 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 13:30:09.614 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-23'.
+2022-09-11 13:30:09.629 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 13:30:15.855 INFO  Executing 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 13:33:22.337 INFO  Logging to 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 13:34:19.257 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-23'.
+2022-09-11 13:34:19.266 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 13:34:19.274 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 13:34:26.002 INFO  Executing 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 13:37:12.393 ERROR Your license has expired
+2022-09-11 13:37:12.793 INFO  Received UpdateAccount, TransactionID = 13
+2022-09-11 13:37:17.276 INFO  Immediate Retry is going to retry message '38ed2732-b3fd-4627-b2f5-af0d00af030d' because of an exception:
+System.InvalidOperationException: There is already an open DataReader associated with this Connection which must be closed first.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Rollback()
+   at Microsoft.Data.SqlClient.SqlTransaction.Dispose(Boolean disposing)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.Dispose()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.ResetState(Boolean disposeDbConnection)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.Dispose()
+   at Microsoft.EntityFrameworkCore.DbContext.Dispose()
+   at CustomerAccount.Storage.AccountStorage.updateBalance(Single ammount, Int32 fromAccountID, Int32 toAccountID) in C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.Storage\AccountStorage.cs:line 136
+   at CustomerAccount.Service.AccountService.updateBalance(UpdateBalanceModel updateBalance, IMessageHandlerContext context) in C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.Service\AccountService.cs:line 90
+   at CustomerAccount.NSB.UpdateAccountHandler.Handle(UpdateAccount message, IMessageHandlerContext context) in C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\UpdateAccountHandler.cs:line 29
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 22
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateInstanceMessage/MutateIncomingMessageBehavior.cs:line 60
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 40
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 62
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateTransportMessage/MutateIncomingTransportMessageBehavior.cs:line 59
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(EventingBasicConsumer consumer, BasicDeliverEventArgs message, Byte[] messageBody) in /_/src/NServiceBus.Transport.RabbitMQ/Receiving/MessagePump.cs:line 368
+Exception details:
+	Message type: NSB.Command.UpdateAccount
+	Handler type: CustomerAccount.NSB.UpdateAccountHandler
+	Handler start time: 2022-09-11 10:37:12:791885 Z
+	Handler failure time: 2022-09-11 10:37:17:233971 Z
+	Message ID: 38ed2732-b3fd-4627-b2f5-af0d00af030d
+2022-09-11 13:37:17.350 ERROR Your license has expired
+2022-09-11 13:37:17.356 INFO  Received UpdateAccount, TransactionID = 13

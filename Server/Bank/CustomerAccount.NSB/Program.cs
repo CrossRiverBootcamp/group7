@@ -17,7 +17,7 @@ public class Program
 
         var endpointConfiguration = new EndpointConfiguration("CustomerAccount");
 
-        var databaseConnection = "server=SHIRA; database=Bank.Transaction;Trusted_Connection=True";
+        var databaseConnection = "server=SHIRA; database=Bank;Trusted_Connection=True";
         var rabbitMQConnection = "host=localhost";
 
         var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());

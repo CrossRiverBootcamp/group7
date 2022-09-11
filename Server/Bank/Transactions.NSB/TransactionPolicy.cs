@@ -26,7 +26,7 @@ public class TransactionPolicy : Saga<TransactionPolicyData>,
     {
         log.Info($"Received TransactionMessage,  TransactionID = {message.TransactionID}");
         Data.TransactionID = message.TransactionID;
-        await context.Send(new global::NSB.Command.UpdateAccount()
+        await context.Send(new UpdateAccount()
         {
             TransactionID = Data.TransactionID,
             FromAccountId = message.FromAccountId,
@@ -39,7 +39,6 @@ public class TransactionPolicy : Saga<TransactionPolicyData>,
         log.Info($"Received AccountUpdated,  TransactionID = {message.TransactionID}");
         UpdateTransactionModel transactionModel = _mapper.Map<AccountUpdated, UpdateTransactionModel>(message);
         bool result = await _transactionService.updateTransaction(transactionModel);
-        log.Info($"MarkAsComplete!!!,  TransactionID = {message.TransactionID}");
         MarkAsComplete();
     }
 
@@ -50,9 +49,3 @@ public class TransactionPolicy : Saga<TransactionPolicyData>,
             .ToMessage<AccountUpdated>(msg => msg.TransactionID);
     }
 }
-
-
-
-
-
-/*ToMessage<AccountUpdated>(message => message.TransactionID);*/

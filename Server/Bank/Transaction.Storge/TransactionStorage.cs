@@ -1,5 +1,4 @@
-﻿
-using Exceptions;
+﻿using Exceptions;
 using Microsoft.EntityFrameworkCore;
 using Transaction.Storage.Entites;
 using Transaction.Storage.Interfaces;

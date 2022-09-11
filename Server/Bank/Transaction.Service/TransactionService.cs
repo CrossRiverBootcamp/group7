@@ -49,7 +49,7 @@ public class TransactionService : ITransactionService
 
     public async Task<bool> updateTransaction(UpdateTransactionModel transaction)
     {
-        //UpdateTransactionStatus newTransaction = _IMapper.Map<UpdateTransactionModel, UpdateTransactionStatus>(transaction);
+        UpdateTransactionStatus newTransaction = _IMapper.Map<UpdateTransactionModel, UpdateTransactionStatus>(transaction);
         return await _transactionStorage.updateTransaction(transaction.TransactionID ,transaction.Status , transaction.FailureReason);
 
     }

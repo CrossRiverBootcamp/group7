@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v6.0": {
       "Transactions.NSB/1.0.0": {
         "dependencies": {
-          "AutoMapper": "11.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Microsoft.EntityFrameworkCore.Analyzers": "6.0.8",
           "NSB": "1.0.0",
