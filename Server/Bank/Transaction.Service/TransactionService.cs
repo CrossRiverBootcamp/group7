@@ -5,6 +5,7 @@ using NServiceBus;
 using NServiceBus.Logging;
 using Transaction.Service.Interfaces;
 using Transaction.Service.Models;
+using Transaction.Storage.Entites;
 using Transaction.Storage.Interfaces;
 using Transaction.Storage.Models;
 
@@ -46,10 +47,10 @@ public class TransactionService : ITransactionService
 
     }
 
-    public async Task<bool> updateTransaction(TransactionModel transaction)
+    public async Task<bool> updateTransaction(UpdateTransactionModel transaction)
     {
-        Storage.Entites.Transaction newTransaction = _IMapper.Map<TransactionModel, Storage.Entites.Transaction>(transaction);
-        return await _transactionStorage.updateTransaction(newTransaction);
+        //UpdateTransactionStatus newTransaction = _IMapper.Map<UpdateTransactionModel, UpdateTransactionStatus>(transaction);
+        return await _transactionStorage.updateTransaction(transaction.TransactionID ,transaction.Status , transaction.FailureReason);
 
     }
 }

@@ -923,7 +923,9 @@
       },
       "NSB/1.0.0": {
         "dependencies": {
-          "NServiceBus": "7.7.4"
+          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.8",
+          "NServiceBus": "7.7.4",
+          "NServiceBus.Extensions.DependencyInjection": "1.0.1"
         },
         "runtime": {
           "NSB.dll": {}
@@ -932,8 +934,11 @@
       "Transaction.Service/1.0.0": {
         "dependencies": {
           "AutoMapper": "11.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
+          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.8",
           "NSB": "1.0.0",
           "NServiceBus": "7.7.4",
+          "NServiceBus.Extensions.DependencyInjection": "1.0.1",
           "Transaction.Storage": "1.0.0"
         },
         "runtime": {
@@ -945,7 +950,9 @@
           "Exceptions": "1.0.0",
           "Microsoft.AspNetCore.Hosting": "2.2.7",
           "Microsoft.EntityFrameworkCore": "6.0.8",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
+          "NServiceBus.Extensions.DependencyInjection": "1.0.1"
         },
         "runtime": {
           "Transaction.Storage.dll": {}

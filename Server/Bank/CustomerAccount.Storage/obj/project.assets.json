@@ -1965,19 +1965,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user1\\.nuget\\packages\\": {}
+    "C:\\Users\\01\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj",
+      "projectUniqueName": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj",
       "projectName": "CustomerAccount.Storage",
-      "projectPath": "C:\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj",
-      "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-      "outputPath": "C:\\group7\\Server\\Bank\\CustomerAccount.Storage\\obj\\",
+      "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj",
+      "packagesPath": "C:\\Users\\01\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1991,8 +1996,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj": {
-              "projectPath": "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj"
+            "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\Exceptions.csproj": {
+              "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\Exceptions.csproj"
             }
           }
         }
@@ -2046,7 +2051,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -2055,7 +2061,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

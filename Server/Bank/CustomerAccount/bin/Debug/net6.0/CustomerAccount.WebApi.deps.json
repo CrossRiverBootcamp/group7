@@ -710,7 +710,9 @@
       },
       "NSB/1.0.0": {
         "dependencies": {
-          "NServiceBus": "7.7.4"
+          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.8",
+          "NServiceBus": "7.7.4",
+          "NServiceBus.Extensions.DependencyInjection": "1.0.1"
         },
         "runtime": {
           "NSB.dll": {}

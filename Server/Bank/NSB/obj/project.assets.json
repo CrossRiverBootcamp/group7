@@ -2,6 +2,36 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Microsoft.EntityFrameworkCore.Analyzers/6.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/3.1.0": {
         "type": "package",
         "compile": {
@@ -42,6 +72,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/NServiceBus.Core.dll": {}
+        }
+      },
+      "NServiceBus.Extensions.DependencyInjection/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.1.0",
+          "NServiceBus": "[7.2.3, 8.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/NServiceBus.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NServiceBus.Extensions.DependencyInjection.dll": {}
         }
       },
       "System.Drawing.Common/4.7.0": {
@@ -212,6 +255,50 @@
     }
   },
   "libraries": {
+    "Microsoft.EntityFrameworkCore.Analyzers/6.0.8": {
+      "sha512": "gUdJEXpS60IGOlGELDsToGQj4cDr1uqlmlet0drUHUoHGE6O+z9oJlOekZQH7gVnaFDmaoO5HIdCT2KgRdXwPw==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.analyzers/6.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
+        "lib/netstandard2.0/_._",
+        "microsoft.entityframeworkcore.analyzers.6.0.8.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection/2.1.0": {
+      "sha512": "gqQviLfuA31PheEGi+XJoZc1bc9H9RsPa9Gq9XuDct7XGWSR9eVXjK5Sg7CSUPhTFHSuxUFY12wcTYLZ4zM1hg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.2.1.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
+      "sha512": "8/CtASu80UIoyG+r8FstrmZW5GLtXxzoYpjj3jV0FKZCL5CiFgSH3pAmqut/dC68mu7N1bU6v0UtKKL3gCUQGQ==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
+      ]
+    },
     "Microsoft.NETCore.Platforms/3.1.0": {
       "sha512": "z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
       "type": "package",
@@ -278,6 +365,25 @@
         "tools/init.ps1",
         "tools/install.ps1",
         "tools/uninstall.ps1"
+      ]
+    },
+    "NServiceBus.Extensions.DependencyInjection/1.0.1": {
+      "sha512": "kR3MxL5znYP71KZhbvRXYAu9uGqt0anxrbrtxM/ZfhO7viB09T+dtJOGHjISUUVfaRw55ORbzkATvcTlzZ/qBQ==",
+      "type": "package",
+      "path": "nservicebus.extensions.dependencyinjection/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "NServiceBus.png",
+        "lib/net461/NServiceBus.Extensions.DependencyInjection.dll",
+        "lib/net461/NServiceBus.Extensions.DependencyInjection.pdb",
+        "lib/net461/NServiceBus.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/NServiceBus.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/NServiceBus.Extensions.DependencyInjection.pdb",
+        "lib/netstandard2.0/NServiceBus.Extensions.DependencyInjection.xml",
+        "nservicebus.extensions.dependencyinjection.1.0.1.nupkg.sha512",
+        "nservicebus.extensions.dependencyinjection.nuspec"
       ]
     },
     "System.Drawing.Common/4.7.0": {
@@ -758,23 +864,30 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "NServiceBus >= 7.7.4"
+      "Microsoft.EntityFrameworkCore.Analyzers >= 6.0.8",
+      "NServiceBus >= 7.7.4",
+      "NServiceBus.Extensions.DependencyInjection >= 1.0.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user1\\.nuget\\packages\\": {}
+    "C:\\Users\\01\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj",
+      "projectUniqueName": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\NSB.csproj",
       "projectName": "NSB",
-      "projectPath": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj",
-      "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-      "outputPath": "C:\\group7\\Server\\Bank\\NSB\\obj\\",
+      "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\NSB.csproj",
+      "packagesPath": "C:\\Users\\01\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -800,9 +913,17 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Analyzers": {
+            "target": "Package",
+            "version": "[6.0.8, )"
+          },
           "NServiceBus": {
             "target": "Package",
             "version": "[7.7.4, )"
+          },
+          "NServiceBus.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[1.0.1, )"
           }
         },
         "imports": [
@@ -811,7 +932,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -820,7 +942,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

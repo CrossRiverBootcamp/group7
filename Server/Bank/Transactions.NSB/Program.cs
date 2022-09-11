@@ -1,7 +1,11 @@
-﻿using NSB.Command;
+﻿using Microsoft.Extensions.DependencyInjection;
+using NSB.Command;
 using NServiceBus;
 using NServiceBus.Logging;
 using System.Data.SqlClient;
+using Transaction.Service;
+using Transaction.Service.Interfaces;
+using Transaction.Services.Extensions;
 
 public class Program
 {
@@ -17,7 +21,11 @@ public class Program
         var databaseConnection = "server=Shira; database=Bank.Transaction;Trusted_Connection=True";
         var rabbitMQConnection = "host=localhost";
 
-        //var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());
+        var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());
+        containerSettings.ServiceCollection.AddServiceExtension(databaseConnection);
+        containerSettings.ServiceCollection.AddScoped<ITransactionService, TransactionService>();
+        containerSettings.ServiceCollection.AddAutoMapper(typeof(Program));
+
 
         endpointConfiguration.EnableInstallers();
         endpointConfiguration.EnableOutbox();

@@ -368,6 +368,18 @@
           }
         }
       },
+      "NServiceBus.Extensions.DependencyInjection/1.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "6.0.0",
+          "NServiceBus": "7.7.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NServiceBus.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.1.0"
+          }
+        }
+      },
       "System.Collections.Immutable/6.0.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
@@ -562,7 +574,9 @@
       },
       "NSB/1.0.0": {
         "dependencies": {
-          "NServiceBus": "7.7.4"
+          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.8",
+          "NServiceBus": "7.7.4",
+          "NServiceBus.Extensions.DependencyInjection": "1.0.1"
         },
         "runtime": {
           "NSB.dll": {}
@@ -785,6 +799,13 @@
       "sha512": "sha512-y3MvUuGvVF8gY8cw1QrJEdgMnrFbgaAxWbwhYpwmnEhA5152xDu4CEOwbJXKETCjRpMB5ltaAPtCxaAQL2UmVQ==",
       "path": "nservicebus/7.7.4",
       "hashPath": "nservicebus.7.7.4.nupkg.sha512"
+    },
+    "NServiceBus.Extensions.DependencyInjection/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kR3MxL5znYP71KZhbvRXYAu9uGqt0anxrbrtxM/ZfhO7viB09T+dtJOGHjISUUVfaRw55ORbzkATvcTlzZ/qBQ==",
+      "path": "nservicebus.extensions.dependencyinjection/1.0.1",
+      "hashPath": "nservicebus.extensions.dependencyinjection.1.0.1.nupkg.sha512"
     },
     "System.Collections.Immutable/6.0.0": {
       "type": "package",

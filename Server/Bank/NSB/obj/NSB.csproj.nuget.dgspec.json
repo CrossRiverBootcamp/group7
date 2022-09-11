@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj": {}
+    "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\NSB.csproj": {}
   },
   "projects": {
-    "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
+    "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\NSB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj",
+        "projectUniqueName": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\NSB.csproj",
         "projectName": "NSB",
-        "projectPath": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj",
-        "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\group7\\Server\\Bank\\NSB\\obj\\",
+        "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\NSB.csproj",
+        "packagesPath": "C:\\Users\\01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,9 +44,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
             "NServiceBus": {
               "target": "Package",
               "version": "[7.7.4, )"
+            },
+            "NServiceBus.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             }
           },
           "imports": [
@@ -51,7 +63,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -60,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

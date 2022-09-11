@@ -30,17 +30,17 @@ public class TransactionStorage : ITransactionStorage
         }
     }
 
-    public async Task<bool> updateTransaction(Entites.Transaction transaction)
+    public async Task<bool> updateTransaction(int transactionID, int status, string failureReason)
     {
         using var _BankDbContext = _factory.CreateDbContext();
         {
             try
             {
-                Entites.Transaction newTransaction = await _BankDbContext.Transactions.FirstOrDefaultAsync(account => account.ID == transaction.ID);
-                newTransaction.Status = transaction.Status;
-                if(transaction.Status == 2)
+                Entites.Transaction newTransaction = await _BankDbContext.Transactions.FirstOrDefaultAsync(account => account.ID == transactionID);
+                newTransaction.Status =status;
+                if(status == 2)
                 {
-                    newTransaction.FailureReason = transaction.FailureReason;
+                    newTransaction.FailureReason = failureReason;
                 }
                 await _BankDbContext.SaveChangesAsync();
                 return true;

@@ -9,8 +9,11 @@
       "Transaction.Service/1.0.0": {
         "dependencies": {
           "AutoMapper": "11.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
+          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.8",
           "NSB": "1.0.0",
           "NServiceBus": "7.7.4",
+          "NServiceBus.Extensions.DependencyInjection": "1.0.1",
           "Transaction.Storage": "1.0.0"
         },
         "runtime": {
@@ -25,6 +28,18 @@
           "lib/netstandard2.1/AutoMapper.dll": {
             "assemblyVersion": "11.0.0.0",
             "fileVersion": "11.0.1.0"
+          }
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/11.0.0": {
+        "dependencies": {
+          "AutoMapper": "11.0.1",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.0.0"
           }
         }
       },
@@ -555,6 +570,18 @@
           }
         }
       },
+      "NServiceBus.Extensions.DependencyInjection/1.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "6.0.0",
+          "NServiceBus": "7.7.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NServiceBus.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.1.0"
+          }
+        }
+      },
       "System.Buffers/4.5.0": {},
       "System.Collections.Immutable/6.0.0": {
         "dependencies": {
@@ -738,7 +765,9 @@
       },
       "NSB/1.0.0": {
         "dependencies": {
-          "NServiceBus": "7.7.4"
+          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.8",
+          "NServiceBus": "7.7.4",
+          "NServiceBus.Extensions.DependencyInjection": "1.0.1"
         },
         "runtime": {
           "NSB.dll": {}
@@ -749,7 +778,9 @@
           "Exceptions": "1.0.0",
           "Microsoft.AspNetCore.Hosting": "2.2.7",
           "Microsoft.EntityFrameworkCore": "6.0.8",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
+          "NServiceBus.Extensions.DependencyInjection": "1.0.1"
         },
         "runtime": {
           "Transaction.Storage.dll": {}
@@ -769,6 +800,13 @@
       "sha512": "sha512-WIadGC1pIwbnyTubvI577p3F++Bsj9q2Q3OaAc1I0QS+JhupN1xkdrPBhI9bPIeg63zM81tZplUNYkqU1HE5jQ==",
       "path": "automapper/11.0.1",
       "hashPath": "automapper.11.0.1.nupkg.sha512"
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/11.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0asw5WxdCFh2OTi9Gv+oKyH9SzxwYQSnO8TV5Dd0GggovILzJW4UimP26JAcxc3yB5NnC5urooZ1BBs8ElpiBw==",
+      "path": "automapper.extensions.microsoft.dependencyinjection/11.0.0",
+      "hashPath": "automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Hosting/2.2.7": {
       "type": "package",
@@ -1077,6 +1115,13 @@
       "sha512": "sha512-y3MvUuGvVF8gY8cw1QrJEdgMnrFbgaAxWbwhYpwmnEhA5152xDu4CEOwbJXKETCjRpMB5ltaAPtCxaAQL2UmVQ==",
       "path": "nservicebus/7.7.4",
       "hashPath": "nservicebus.7.7.4.nupkg.sha512"
+    },
+    "NServiceBus.Extensions.DependencyInjection/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kR3MxL5znYP71KZhbvRXYAu9uGqt0anxrbrtxM/ZfhO7viB09T+dtJOGHjISUUVfaRw55ORbzkATvcTlzZ/qBQ==",
+      "path": "nservicebus.extensions.dependencyinjection/1.0.1",
+      "hashPath": "nservicebus.extensions.dependencyinjection.1.0.1.nupkg.sha512"
     },
     "System.Buffers/4.5.0": {
       "type": "package",

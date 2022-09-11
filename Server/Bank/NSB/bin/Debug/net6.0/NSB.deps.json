@@ -8,10 +8,32 @@
     ".NETCoreApp,Version=v6.0": {
       "NSB/1.0.0": {
         "dependencies": {
-          "NServiceBus": "7.7.4"
+          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.8",
+          "NServiceBus": "7.7.4",
+          "NServiceBus.Extensions.DependencyInjection": "1.0.1"
         },
         "runtime": {
           "NSB.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Analyzers/6.0.8": {},
+      "Microsoft.Extensions.DependencyInjection/2.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.18136"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.18136"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/3.1.0": {},
@@ -45,6 +67,18 @@
           "lib/netstandard2.0/NServiceBus.Core.dll": {
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.7.4.0"
+          }
+        }
+      },
+      "NServiceBus.Extensions.DependencyInjection/1.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.1.0",
+          "NServiceBus": "7.7.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NServiceBus.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.1.0"
           }
         }
       },
@@ -155,6 +189,27 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Microsoft.EntityFrameworkCore.Analyzers/6.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gUdJEXpS60IGOlGELDsToGQj4cDr1uqlmlet0drUHUoHGE6O+z9oJlOekZQH7gVnaFDmaoO5HIdCT2KgRdXwPw==",
+      "path": "microsoft.entityframeworkcore.analyzers/6.0.8",
+      "hashPath": "microsoft.entityframeworkcore.analyzers.6.0.8.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gqQviLfuA31PheEGi+XJoZc1bc9H9RsPa9Gq9XuDct7XGWSR9eVXjK5Sg7CSUPhTFHSuxUFY12wcTYLZ4zM1hg==",
+      "path": "microsoft.extensions.dependencyinjection/2.1.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.2.1.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8/CtASu80UIoyG+r8FstrmZW5GLtXxzoYpjj3jV0FKZCL5CiFgSH3pAmqut/dC68mu7N1bU6v0UtKKL3gCUQGQ==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+    },
     "Microsoft.NETCore.Platforms/3.1.0": {
       "type": "package",
       "serviceable": true,
@@ -175,6 +230,13 @@
       "sha512": "sha512-y3MvUuGvVF8gY8cw1QrJEdgMnrFbgaAxWbwhYpwmnEhA5152xDu4CEOwbJXKETCjRpMB5ltaAPtCxaAQL2UmVQ==",
       "path": "nservicebus/7.7.4",
       "hashPath": "nservicebus.7.7.4.nupkg.sha512"
+    },
+    "NServiceBus.Extensions.DependencyInjection/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kR3MxL5znYP71KZhbvRXYAu9uGqt0anxrbrtxM/ZfhO7viB09T+dtJOGHjISUUVfaRw55ORbzkATvcTlzZ/qBQ==",
+      "path": "nservicebus.extensions.dependencyinjection/1.0.1",
+      "hashPath": "nservicebus.extensions.dependencyinjection.1.0.1.nupkg.sha512"
     },
     "System.Drawing.Common/4.7.0": {
       "type": "package",

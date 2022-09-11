@@ -8,7 +8,7 @@ public class AutoMapper : Profile
 {
     public AutoMapper()
     {
-        CreateMap<AccountUpdated, TransactionModel>();
+        CreateMap<AccountUpdated, UpdateTransactionModel>();
    
 
     }

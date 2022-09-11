@@ -52,42 +52,42 @@ public class AccountService : IAccountService
 
     public async Task<bool> updateBalance(UpdateBalanceModel updateBalance, IMessageHandlerContext context)
     {
-        if (await _AccountStorage.accountExist(updateBalance.FromAccountId) == false)
-        {
-            AccountUpdated accountUpdated = new AccountUpdated()
-            {
-                TransactionID = updateBalance.TransactionId,
-                Status = 2,
-                FailureReason = "From Account is not exsist"
-            };
-            await context.Publish(accountUpdated);
-            return false;
-        }
-        if (await _AccountStorage.accountExist(updateBalance.ToAccountId) == false)
-        {
-            AccountUpdated accountUpdated = new AccountUpdated()
-            {
-                TransactionID = updateBalance.TransactionId,
-                Status = 2,
-                FailureReason = "To Account is not exsist"
-            };
-            await context.Publish(accountUpdated);
-            return false;
-        }
-        else if (await _AccountStorage.balanceCheacking(updateBalance.Amount, updateBalance.FromAccountId) == false)
-        {
-            AccountUpdated accountUpdated = new AccountUpdated()
-            {
-                TransactionID = updateBalance.TransactionId,
-                Status = 2,
-                FailureReason = "The balnce is not inahf"
-            };
-            await context.Publish(accountUpdated);
-            return false;
-        }
-        else
-        {
-            await _AccountStorage.updateBalance(updateBalance.Amount, updateBalance.FromAccountId, updateBalance.ToAccountId);
+        //if (await _AccountStorage.accountExist(updateBalance.FromAccountId) == false)
+        //{
+        //    AccountUpdated accountUpdated = new AccountUpdated()
+        //    {
+        //        TransactionID = updateBalance.TransactionId,
+        //        Status = 2,
+        //        FailureReason = "From Account is not exsist"
+        //    };
+        //    await context.Publish(accountUpdated);
+        //    return false;
+        //}
+        //if (await _AccountStorage.accountExist(updateBalance.ToAccountId) == false)
+        //{
+        //    AccountUpdated accountUpdated = new AccountUpdated()
+        //    {
+        //        TransactionID = updateBalance.TransactionId,
+        //        Status = 2,
+        //        FailureReason = "To Account is not exsist"
+        //    };
+        //    await context.Publish(accountUpdated);
+        //    return false;
+        //}
+        //if (await _AccountStorage.balanceCheacking(updateBalance.Amount, updateBalance.FromAccountId) == false)
+        //{
+        //    AccountUpdated accountUpdated = new AccountUpdated()
+        //    {
+        //        TransactionID = updateBalance.TransactionId,
+        //        Status = 2,
+        //        FailureReason = "The balnce is not inahf"
+        //    };
+        //    await context.Publish(accountUpdated);
+        //    return false;
+        //}
+        //else
+        //{
+            //await _AccountStorage.updateBalance(updateBalance.Amount, updateBalance.FromAccountId, updateBalance.ToAccountId);
             AccountUpdated accountUpdated = new AccountUpdated()
             {
                 TransactionID = updateBalance.TransactionId,
@@ -95,6 +95,6 @@ public class AccountService : IAccountService
             };
             await context.Publish(accountUpdated);
             return true;
-        }
+        //}
     }
 }

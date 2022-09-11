@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj": {}
+    "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj": {}
   },
   "projects": {
-    "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj": {
+    "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\Exceptions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
+        "projectUniqueName": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\Exceptions.csproj",
         "projectName": "Exceptions",
-        "projectPath": "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
-        "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\group7\\Server\\Bank\\Exception\\obj\\",
+        "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\Exceptions.csproj",
+        "packagesPath": "C:\\Users\\01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,7 +49,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -54,21 +59,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
+    "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\NSB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj",
+        "projectUniqueName": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\NSB.csproj",
         "projectName": "NSB",
-        "projectPath": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj",
-        "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\group7\\Server\\Bank\\NSB\\obj\\",
+        "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\NSB.csproj",
+        "packagesPath": "C:\\Users\\01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,9 +103,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
             "NServiceBus": {
               "target": "Package",
               "version": "[7.7.4, )"
+            },
+            "NServiceBus.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             }
           },
           "imports": [
@@ -105,7 +122,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -114,21 +132,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj": {
+    "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj",
+        "projectUniqueName": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj",
         "projectName": "Transaction.Service",
-        "projectPath": "C:\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj",
-        "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\group7\\Server\\Bank\\Transaction.Service\\obj\\",
+        "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj",
+        "packagesPath": "C:\\Users\\01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Transaction.Service\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -142,11 +164,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
-                "projectPath": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj"
+              "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\NSB.csproj": {
+                "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\NSB\\NSB.csproj"
               },
-              "C:\\group7\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj": {
-                "projectPath": "C:\\group7\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj"
+              "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj": {
+                "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj"
               }
             }
           }
@@ -165,9 +187,21 @@
               "target": "Package",
               "version": "[11.0.1, )"
             },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
             "NServiceBus": {
               "target": "Package",
               "version": "[7.7.4, )"
+            },
+            "NServiceBus.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             }
           },
           "imports": [
@@ -176,7 +210,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -185,21 +220,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\group7\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj": {
+    "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\group7\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj",
+        "projectUniqueName": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj",
         "projectName": "Transaction.Storage",
-        "projectPath": "C:\\group7\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj",
-        "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\group7\\Server\\Bank\\Transaction.Storge\\obj\\",
+        "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj",
+        "packagesPath": "C:\\Users\\01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Transaction.Storge\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -213,8 +252,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj": {
-                "projectPath": "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj"
+              "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\Exceptions.csproj": {
+                "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\Exceptions.csproj"
               }
             }
           }
@@ -237,6 +276,10 @@
               "target": "Package",
               "version": "[6.0.8, )"
             },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -252,6 +295,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.8, )"
+            },
+            "NServiceBus.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             }
           },
           "imports": [
@@ -260,7 +307,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -269,7 +317,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

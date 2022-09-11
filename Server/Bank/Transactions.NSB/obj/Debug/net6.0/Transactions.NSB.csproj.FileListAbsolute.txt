@@ -258,3 +258,4 @@ C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\Transaction.Storage.dll
 C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\Transaction.Service.pdb
 C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\Exceptions.pdb
 C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\Transaction.Storage.pdb
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transactions.NSB\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
