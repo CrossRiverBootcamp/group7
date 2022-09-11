@@ -1,7 +1,9 @@
 ﻿
+using NServiceBus;
+
 namespace NSB.Event
 {
-    public class AccountUpdated
+    public class AccountUpdated:IEvent
     {
         public int TransactionID { get; set; }
         public int Status { get; set; }

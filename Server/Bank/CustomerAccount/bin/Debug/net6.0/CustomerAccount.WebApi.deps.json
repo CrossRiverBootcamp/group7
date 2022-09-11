@@ -13,6 +13,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "CustomerAccount.Service": "1.0.0",
           "CustomerAccount.Storage": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.8",
           "Microsoft.EntityFrameworkCore.Design": "6.0.8",
           "NServiceBus": "7.7.4",
           "NServiceBus.Extensions.DependencyInjection": "1.0.1",

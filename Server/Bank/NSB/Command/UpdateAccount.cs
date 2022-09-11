@@ -1,8 +1,10 @@
 ﻿
 
+using NServiceBus;
+
 namespace NSB.Command;
 
-public class UpdateAccount
+public class UpdateAccount :ICommand
 {
     public int TransactionID { get; set; }
     public int FromAccountId { get; set; }

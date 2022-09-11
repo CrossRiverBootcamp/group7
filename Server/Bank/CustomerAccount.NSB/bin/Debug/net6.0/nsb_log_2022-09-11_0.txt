@@ -1,0 +1,31 @@
+﻿2022-09-11 02:10:18.135 INFO  Logging to 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 02:10:18.410 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-23'.
+2022-09-11 02:10:18.416 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 02:13:02.663 INFO  Logging to 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 02:13:02.924 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-23'.
+2022-09-11 02:13:02.929 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 02:16:08.468 INFO  Logging to 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 02:16:08.763 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-23'.
+2022-09-11 02:16:08.770 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 02:16:08.775 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 02:16:14.376 INFO  Executing 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 03:03:05.912 INFO  Logging to 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 03:03:06.154 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-23'.
+2022-09-11 03:03:06.159 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 03:03:11.562 INFO  Executing 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 03:03:42.786 INFO  Logging to 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 03:03:43.043 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-23'.
+2022-09-11 03:03:43.050 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 03:03:48.474 INFO  Executing 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 03:06:53.737 INFO  Logging to 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 03:06:54.053 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-23'.
+2022-09-11 03:06:54.061 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 03:06:54.069 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 03:07:33.949 INFO  Logging to 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 03:07:34.239 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-23'.
+2022-09-11 03:07:34.243 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 03:07:39.629 INFO  Executing 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 03:10:31.033 INFO  Logging to 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 03:10:31.300 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-23'.
+2022-09-11 03:10:31.305 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 03:10:36.644 INFO  Executing 'C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'

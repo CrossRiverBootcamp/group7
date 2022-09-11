@@ -61,8 +61,9 @@ public class TransactionPolicy : Saga<TransactionPolicyData>,
 
     protected override void ConfigureHowToFindSaga(SagaPropertyMapper<TransactionPolicyData> mapper)
     {
-        mapper.MapSaga(sagaData => sagaData.TransactionID)
-            .ToMessage<Payload>(message => message.TransactionID);
+        mapper.MapSaga(saga => saga.TransactionID)
+            .ToMessage<Payload>(message => message.TransactionID)
+            .ToMessage<AccountUpdated>(message => message.TransactionID);
     }
 
 

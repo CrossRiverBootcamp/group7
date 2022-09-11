@@ -14,13 +14,10 @@ public class Program
         var endpointConfiguration = new EndpointConfiguration("Transaction");
         //builder.Services.AddServiceExtension(builder.Configuration.GetConnectionString("Shira"));
 
-        var databaseConnection = "server=DESKTOP-QM3UF42; database=BankProject.Transaction;Trusted_Connection=True";
+        var databaseConnection = "server=Shira; database=Bank.Transaction;Trusted_Connection=True";
         var rabbitMQConnection = "host=localhost";
 
         //var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());
-      
-
-      
 
         endpointConfiguration.EnableInstallers();
         endpointConfiguration.EnableOutbox();
@@ -44,7 +41,6 @@ public class Program
         var subscriptions = persistence.SubscriptionSettings();
         subscriptions.CacheFor(TimeSpan.FromMinutes(1));
         dialect.Schema("dbo");
-    
 
         var conventions = endpointConfiguration.Conventions();
         conventions.DefiningCommandsAs(type => type.Namespace == "NSB.Command");

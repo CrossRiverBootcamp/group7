@@ -12,7 +12,7 @@ public class Program
 
         var endpointConfiguration = new EndpointConfiguration("CustomerAccount");
 
-        var databaseConnection = "server=DESKTOP-QM3UF42; database=BankProject.Transaction;Trusted_Connection=True";
+        var databaseConnection = "server=SHIRA; database=Bank.Transaction;Trusted_Connection=True";
         var rabbitMQConnection = "host=localhost";
 
         //var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());
