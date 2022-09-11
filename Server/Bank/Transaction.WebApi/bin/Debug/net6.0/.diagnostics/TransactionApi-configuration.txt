@@ -2289,7 +2289,7 @@
       "MajorRevision": -1,
       "MinorRevision": -1
     },
-    "WorkingSet": 72552448,
+    "WorkingSet": 72306688,
     "SystemPageSize": 4096,
     "HostName": "DESKTOP-QM3UF42",
     "UserName": "user1",
@@ -2313,8 +2313,9 @@
     "MessageConventions": [
       "NServiceBus Marker Interfaces"
     ],
-    "NumberOfMessagesFoundAtStartup": 1,
+    "NumberOfMessagesFoundAtStartup": 2,
     "Messages": [
+      "NSB.Command.UpdateAccount",
       "NSB.Event.Payload"
     ]
   },

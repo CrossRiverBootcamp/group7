@@ -1,0 +1,10 @@
+﻿2022-09-08 15:59:56.138 INFO  Logging to 'C:\group7\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\' with level Info
+2022-09-08 15:59:56.462 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-08 15:59:56.468 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-08 16:26:04.244 INFO  Logging to 'C:\group7\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\' with level Info
+2022-09-08 16:26:04.495 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-08 16:26:04.499 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-08 18:45:22.341 INFO  Logging to 'C:\group7\Server\Bank\CustomerAccount.NSB\bin\Debug\net6.0\' with level Info
+2022-09-08 18:45:22.688 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-08 18:45:22.695 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-08 18:45:22.701 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows

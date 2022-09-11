@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 public class Program
 {
     static ILog log = LogManager.GetLogger<Program>();
-
+    
     static async Task Main()
     {
         Console.Title = "Transaction";

@@ -1,0 +1,177 @@
+﻿2022-09-11 00:16:23.646 INFO  Logging to 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 00:16:23.940 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-11 00:16:23.944 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 00:16:29.499 INFO  Executing 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 00:16:29.639 INFO  Executing saga creation scripts:
+C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-11 00:16:37.963 ERROR Your license has expired
+2022-09-11 00:16:47.805 INFO  Received TransactionMessage,  TransactionID = 10
+2022-09-11 00:21:37.278 INFO  Logging to 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 00:21:37.538 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-11 00:21:37.543 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 00:21:37.546 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 00:21:43.109 INFO  Executing 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 00:21:43.220 INFO  Executing saga creation scripts:
+C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-11 00:21:52.231 ERROR Your license has expired
+2022-09-11 00:21:56.919 INFO  Received TransactionMessage,  TransactionID = 11
+2022-09-11 00:22:45.594 INFO  Logging to 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 00:22:45.821 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-11 00:22:45.828 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 00:22:51.301 INFO  Executing 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 00:22:51.419 INFO  Executing saga creation scripts:
+C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-11 00:22:51.747 ERROR Your license has expired
+2022-09-11 00:23:40.765 INFO  Received TransactionMessage,  TransactionID = 11
+2022-09-11 00:26:06.375 INFO  Logging to 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 00:26:06.595 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-11 00:26:06.601 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 00:26:06.605 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 00:26:12.206 INFO  Executing 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 00:26:12.320 INFO  Executing saga creation scripts:
+C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-11 00:27:25.180 INFO  Logging to 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 00:27:25.401 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-11 00:27:25.406 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 00:27:25.410 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 00:27:31.074 INFO  Executing 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 00:27:31.199 INFO  Executing saga creation scripts:
+C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-11 00:28:11.831 INFO  Logging to 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 00:28:12.062 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-11 00:28:12.068 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 00:28:17.633 INFO  Executing 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 00:28:17.798 INFO  Executing saga creation scripts:
+C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-11 00:30:09.600 ERROR Your license has expired
+2022-09-11 00:30:53.807 INFO  Received TransactionMessage,  TransactionID = 12
+2022-09-11 00:31:26.505 ERROR Your license has expired
+2022-09-11 00:31:29.625 INFO  Received TransactionMessage,  TransactionID = 13
+2022-09-11 00:34:07.144 INFO  Logging to 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 00:34:07.356 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-11 00:34:07.362 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 00:34:07.365 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 00:34:12.975 INFO  Executing 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 00:34:13.083 INFO  Executing saga creation scripts:
+C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-11 00:37:55.709 INFO  Logging to 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 00:37:55.945 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-11 00:37:55.949 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 00:37:55.953 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 00:38:01.638 INFO  Executing 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 00:38:01.774 INFO  Executing saga creation scripts:
+C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-11 00:50:12.773 WARN  'Transaction Publish' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader, Byte[] frameHeaderBuffer, ArrayPool`1 pool, UInt32 maxMessageSize)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2022-09-11 00:50:12.773 WARN  'Transaction MessagePump' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader, Byte[] frameHeaderBuffer, ArrayPool`1 pool, UInt32 maxMessageSize)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2022-09-11 00:50:12.787 INFO  'Transaction Publish': Attempting to reconnect in 10 seconds.
+2022-09-11 00:50:12.794 WARN  The circuit breaker for 'Transaction MessagePump' is now in the armed state
+2022-09-11 00:50:12.804 WARN  'Transaction MessagePump' channel shutdown while reconnect already in progress: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader, Byte[] frameHeaderBuffer, ArrayPool`1 pool, UInt32 maxMessageSize)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2022-09-11 00:50:12.806 INFO  'Transaction MessagePump': Attempting to reconnect in 10 seconds.
+2022-09-11 00:50:24.449 INFO  'Transaction Publish': Connection to the broker reestablished successfully.
+2022-09-11 00:50:24.458 INFO  The circuit breaker for 'Transaction MessagePump' is now disarmed
+2022-09-11 00:50:24.465 INFO  'Transaction MessagePump': Connection to the broker reestablished successfully.
+2022-09-11 00:57:29.198 WARN  'Transaction Publish' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader, Byte[] frameHeaderBuffer, ArrayPool`1 pool, UInt32 maxMessageSize)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2022-09-11 00:57:29.214 WARN  'Transaction MessagePump' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader, Byte[] frameHeaderBuffer, ArrayPool`1 pool, UInt32 maxMessageSize)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2022-09-11 00:57:29.218 INFO  'Transaction Publish': Attempting to reconnect in 10 seconds.
+2022-09-11 00:57:29.231 WARN  The circuit breaker for 'Transaction MessagePump' is now in the armed state
+2022-09-11 00:57:29.660 INFO  'Transaction MessagePump': Attempting to reconnect in 10 seconds.
+2022-09-11 00:57:29.660 WARN  'Transaction MessagePump' channel shutdown while reconnect already in progress: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader, Byte[] frameHeaderBuffer, ArrayPool`1 pool, UInt32 maxMessageSize)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2022-09-11 00:57:39.843 INFO  The circuit breaker for 'Transaction MessagePump' is now disarmed
+2022-09-11 00:57:39.844 INFO  'Transaction Publish': Connection to the broker reestablished successfully.
+2022-09-11 00:57:39.858 INFO  'Transaction MessagePump': Connection to the broker reestablished successfully.
+2022-09-11 00:58:38.667 INFO  Logging to 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 00:58:38.961 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-11 00:58:38.968 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 00:58:44.411 INFO  Executing 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 00:58:44.546 INFO  Executing saga creation scripts:
+C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-11 00:59:42.502 INFO  Logging to 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 00:59:42.790 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-11 00:59:42.795 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 00:59:42.798 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 00:59:48.587 INFO  Executing 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 00:59:48.732 INFO  Executing saga creation scripts:
+C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-11 01:00:27.379 INFO  Logging to 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 01:00:27.687 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-11 01:00:27.693 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 01:00:27.697 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 01:00:33.782 INFO  Executing 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 01:00:33.977 INFO  Executing saga creation scripts:
+C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-11 01:00:51.530 INFO  Logging to 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 01:00:51.996 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-11 01:00:52.001 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 01:00:52.005 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 01:00:57.926 INFO  Executing 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 01:00:58.169 INFO  Executing saga creation scripts:
+C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-11 01:01:32.733 INFO  Logging to 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-11 01:01:33.017 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-11 01:01:33.023 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 01:01:33.027 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-11 01:01:39.030 INFO  Executing 'C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-11 01:01:39.244 INFO  Executing saga creation scripts:
+C:\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-11 01:02:07.418 ERROR Your license has expired
+2022-09-11 01:02:16.553 INFO  Received TransactionMessage,  TransactionID = 14

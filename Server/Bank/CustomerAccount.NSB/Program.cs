@@ -1,6 +1,11 @@
-﻿using NServiceBus;
+﻿using CustomerAccount.Service;
+using CustomerAccount.Service.Interfaces;
+using CustomerAccount.Services.Extensions;
+using Microsoft.Extensions.DependencyInjection;
+using NServiceBus;
 using NServiceBus.Logging;
 using System.Data.SqlClient;
+using Transaction.Service;
 
 public class Program
 {
@@ -15,9 +20,15 @@ public class Program
         var databaseConnection = "server=DESKTOP-QM3UF42; database=BankProject.Transaction;Trusted_Connection=True";
         var rabbitMQConnection = "host=localhost";
 
-        //var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());
+        var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());
+        containerSettings.ServiceCollection.AddServiceExtension(databaseConnection);
+        containerSettings.ServiceCollection.AddScoped<IAccountService, AccountService>();
+        containerSettings.ServiceCollection.AddAutoMapper(typeof(Program));
 
-        //containerSettings.ServiceCollection.AddDbContextFactory<TrackingContext>(opt => opt.UseSqlServer(databaseConnection));
+        //var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());
+        //containerSettings.ServiceCollection.AddDBContextService(databaseConnection);
+        //containerSettings.ServiceCollection.AddDIServicesNSB();
+        //containerSettings.ServiceCollection.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
         endpointConfiguration.EnableInstallers();
         endpointConfiguration.EnableOutbox();
@@ -38,9 +49,9 @@ public class Program
         subscriptions.CacheFor(TimeSpan.FromMinutes(1));
         dialect.Schema("dbo");
 
-        var conventions = endpointConfiguration.Conventions();
-        conventions.DefiningCommandsAs(type => type.Namespace == "Messages.Commands");
-        conventions.DefiningEventsAs(type => type.Namespace == "Messages.Events");
+        //var conventions = endpointConfiguration.Conventions();
+        //conventions.DefiningCommandsAs(type => type.Namespace == "Messages.Commands");
+        //conventions.DefiningEventsAs(type => type.Namespace == "Messages.Events");
 
         var endpointInstance = await Endpoint.Start(endpointConfiguration);
 

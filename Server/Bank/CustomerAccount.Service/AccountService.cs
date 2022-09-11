@@ -50,7 +50,7 @@ public class AccountService : IAccountService
 
     }
 
-    public async Task<bool> updateBalance(UpdateBalanceModel updateBalance, IMessageSession messageSession)
+    public async Task<bool> updateBalance(UpdateBalanceModel updateBalance, IMessageHandlerContext context)
     {
         if (await _AccountStorage.accountExist(updateBalance.FromAccountId) == false)
         {
@@ -60,7 +60,7 @@ public class AccountService : IAccountService
                 Status = 2,
                 FailureReason = "From Account is not exsist"
             };
-            await messageSession.Publish(accountUpdated);
+            await context.Publish(accountUpdated);
             return false;
         }
         if (await _AccountStorage.accountExist(updateBalance.ToAccountId) == false)
@@ -71,7 +71,7 @@ public class AccountService : IAccountService
                 Status = 2,
                 FailureReason = "To Account is not exsist"
             };
-            await messageSession.Publish(accountUpdated);
+            await context.Publish(accountUpdated);
             return false;
         }
         else if (await _AccountStorage.balanceCheacking(updateBalance.Amount, updateBalance.FromAccountId) == false)
@@ -82,7 +82,7 @@ public class AccountService : IAccountService
                 Status = 2,
                 FailureReason = "The balnce is not inahf"
             };
-            await messageSession.Publish(accountUpdated);
+            await context.Publish(accountUpdated);
             return false;
         }
         else
@@ -93,7 +93,7 @@ public class AccountService : IAccountService
                 TransactionID = updateBalance.TransactionId,
                 Status = 1
             };
-            await messageSession.Publish(accountUpdated);
+            await context.Publish(accountUpdated);
             return true;
         }
     }

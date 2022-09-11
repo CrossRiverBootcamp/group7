@@ -29,3 +29,6 @@ C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\bin\Debug\ne
 C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Exceptions.pdb
 C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.csproj.CopyComplete
 C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.genruntimeconfig.cache
+C:\group7\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Exceptions.dll
+C:\group7\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Exceptions.pdb
+C:\group7\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.csproj.CopyComplete
