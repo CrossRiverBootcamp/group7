@@ -2970,7 +2970,6 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "CustomerAccount.Service >= 1.0.0",
       "CustomerAccount.Storage >= 1.0.0",
-      "Microsoft.EntityFrameworkCore.Analyzers >= 6.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.8",
       "NServiceBus >= 7.7.4",
       "NServiceBus.Extensions.DependencyInjection >= 1.0.1",
@@ -2981,24 +2980,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\01\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\user1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj",
+      "projectUniqueName": "C:\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj",
       "projectName": "CustomerAccount.WebApi",
-      "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj",
-      "packagesPath": "C:\\Users\\01\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount\\obj\\",
+      "projectPath": "C:\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj",
+      "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
+      "outputPath": "C:\\group7\\Server\\Bank\\CustomerAccount\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\01\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3012,11 +3006,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj": {
-              "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj"
+            "C:\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj": {
+              "projectPath": "C:\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj"
             },
-            "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
-              "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj"
+            "C:\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
+              "projectPath": "C:\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj"
             }
           }
         }
@@ -3042,10 +3036,6 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[11.0.0, )"
-          },
-          "Microsoft.EntityFrameworkCore.Analyzers": {
-            "target": "Package",
-            "version": "[6.0.8, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -3084,8 +3074,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -3097,7 +3086,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

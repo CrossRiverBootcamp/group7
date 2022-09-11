@@ -34,3 +34,5 @@ C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.Service\obj\Deb
 C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\ref\CustomerAccount.Service.dll
 C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\NSB.dll
 C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\NSB.pdb
+C:\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\NSB.dll
+C:\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\NSB.pdb
