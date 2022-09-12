@@ -14,9 +14,9 @@ namespace CustomerAccount.Services.Extensions
     {
         public static void AddServiceExtension(this IServiceCollection services, string connection)
         {
-            //builder.Services.AddScoped<ICustomerStorage, CustomerStorage>();
             services.AddScoped<ICustomerStorage, CustomerStorage>();
             services.AddScoped<IAccountStorage, AccountStorage>();
+            services.AddScoped<IOperationHistoryStorage, OperationHistoryStorage>();
             services.AddScoped<IAuthorizationFuncs , AuthorizationFuncs>();
             services.AddDbContextFactory<CustomerAccountDbContext>(opt => opt.UseSqlServer(connection));
         }

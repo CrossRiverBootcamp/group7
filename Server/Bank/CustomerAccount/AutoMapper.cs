@@ -23,6 +23,7 @@ public class AutoMapper : Profile
                         .MapFrom(src => src.Customer.Email));
         CreateMap<AccountCustomerInfoModel, AccountCustomerInfoDTO>();
         CreateMap<UpdateAccount, UpdateBalanceModel>();
-
+        CreateMap<OperationHistoryModel, OperationHistoryDTO>();
+        CreateMap<OperationHistory, OperationHistoryModel>();
     }
 }

@@ -8,11 +8,11 @@ using Microsoft.Data.SqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var databaseConnection = builder.Configuration.GetConnectionString("DatabaseConnectionShira");
+var databaseConnection = builder.Configuration.GetConnectionString("DatabaseConnectionZipi");
 
 #region NServiceBus configurations
 
-var NSBConnection = builder.Configuration.GetConnectionString("NSBConnectionShira");
+var NSBConnection = builder.Configuration.GetConnectionString("NSBConnectionZipi");
 var queueName = builder.Configuration.GetSection("Queues:AccountAPIQueue:Name").Value;
 var rabbitMQConnection = builder.Configuration.GetConnectionString("RabbitMQ");
 

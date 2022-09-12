@@ -125,6 +125,8 @@ public class AccountStorage : IAccountStorage
             {
                 var fromAccount = await _BankDbContext.Accounts.FirstOrDefaultAsync(account => account.ID == fromAccountID);
                 fromAccount.Balance-=ammount;
+                //???????
+                float balanceFrom = fromAccount.Balance;
                 var toAccount = await _BankDbContext.Accounts.FirstOrDefaultAsync(account => account.ID == toAccountID);
                 toAccount.Balance+= ammount;
                 await _BankDbContext.SaveChangesAsync();
