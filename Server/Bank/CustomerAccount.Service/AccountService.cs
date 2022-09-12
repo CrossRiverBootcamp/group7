@@ -65,30 +65,19 @@ public class AccountService : IAccountService
                 FailureReason = "From Account is not exsist"
             };
             await context.Publish(accountUpdated);
+            //publishEvent(updateBalance.TransactionId, 2, "From Account is not exsist", context);
             return false;
         }
 
         if (await _AccountStorage.accountExist(updateBalance.ToAccountId) == false)
         {
-            AccountUpdated accountUpdated = new AccountUpdated()
-            {
-                TransactionID = updateBalance.TransactionId,
-                Status = 2,
-                FailureReason = "To Account is not exsist"
-            };
-            await context.Publish(accountUpdated);
+            publishEvent(updateBalance.TransactionId, 2, "TO Account is not exsist", context);
             return false;
         }
 
         if (await _AccountStorage.balanceCheacking(updateBalance.Amount, updateBalance.FromAccountId) == false)
         {
-            AccountUpdated accountUpdated = new AccountUpdated()
-            {
-                TransactionID = updateBalance.TransactionId,
-                Status = 2,
-                FailureReason = "The balnce is not enough"
-            };
-            await context.Publish(accountUpdated);
+            publishEvent(updateBalance.TransactionId, 2, "The balnce is not enough", context);
             return false;
         }
         //????????????????????? לבדוק מצב שהוא לא הצליח לעדכן את החשבון
@@ -105,6 +94,17 @@ public class AccountService : IAccountService
             await context.Publish(accountUpdated);
             return true;
         }
+    }
+
+    public async void publishEvent(int transactionID, int status ,string failureReason, IMessageHandlerContext context)
+    {
+        AccountUpdated accountUpdated = new AccountUpdated()
+        {
+            TransactionID = transactionID,
+            Status = status,
+            FailureReason = failureReason
+        };
+        await context.Publish(accountUpdated);
     }
 
     public async Task<bool> addOperationHistory(UpdateBalanceModel updateBalance)
@@ -130,3 +130,55 @@ public class AccountService : IAccountService
         return await _OperationHistoryStorage.addOperationHistory(operationFrom, operationTo);
     }
 }
+
+
+
+//if (await _AccountStorage.accountExist(updateBalance.FromAccountId) == false)
+//        {
+//            AccountUpdated accountUpdated = new AccountUpdated()
+//            {
+//                TransactionID = updateBalance.TransactionId,
+//                Status = 2,
+//                FailureReason = "From Account is not exsist"
+//            };
+//await context.Publish(accountUpdated);
+//            return false;
+//        }
+
+//        if (await _AccountStorage.accountExist(updateBalance.ToAccountId) == false)
+//{
+//    AccountUpdated accountUpdated = new AccountUpdated()
+//    {
+//        TransactionID = updateBalance.TransactionId,
+//        Status = 2,
+//        FailureReason = "To Account is not exsist"
+//    };
+//    await context.Publish(accountUpdated);
+//    return false;
+//}
+
+//if (await _AccountStorage.balanceCheacking(updateBalance.Amount, updateBalance.FromAccountId) == false)
+//{
+//    AccountUpdated accountUpdated = new AccountUpdated()
+//    {
+//        TransactionID = updateBalance.TransactionId,
+//        Status = 2,
+//        FailureReason = "The balnce is not enough"
+//    };
+//    await context.Publish(accountUpdated);
+//    return false;
+//}
+//????????????????????? לבדוק מצב שהוא לא הצליח לעדכן את החשבון
+//else
+//{
+//    await _AccountStorage.updateBalance(updateBalance.Amount, updateBalance.FromAccountId, updateBalance.ToAccountId);
+//bool reslt = await addOperationHistory(updateBalance);
+//AccountUpdated accountUpdated = new AccountUpdated()
+//{
+//    TransactionID = updateBalance.TransactionId,
+//    Status = 1
+//};
+
+//await context.Publish(accountUpdated);
+//return true;
+//}

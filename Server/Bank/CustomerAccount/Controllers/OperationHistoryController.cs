@@ -20,7 +20,7 @@ public class OperationHistoryController : Controller
         _IMapper = IMapper;
     }
     // GET/
-    [HttpGet()]
+    [HttpGet("{accountID}")]
     public async Task<ActionResult<List<OperationHistoryDTO>>> getOperationHistory(int accountID)
     {
         List<OperationHistoryModel> OperationHistory = await _OperationHistoryService.getOperationHistory(accountID);
@@ -29,4 +29,19 @@ public class OperationHistoryController : Controller
         return operationsList;
     }
 
+    // GET/
+    [HttpGet("transactionDetailes/{accountID}")]
+    public async Task<ActionResult<CustomerInfoDTO>> getCustomerInfo(int accountID)
+    {
+        CustomerInfoModel customerInfo= await _OperationHistoryService.getCustomerInfo(accountID);
+        CustomerInfoDTO customer = _IMapper.Map<CustomerInfoModel, CustomerInfoDTO>(customerInfo);
+        return customer;
+    }
+
+
+
 }
+
+
+
+

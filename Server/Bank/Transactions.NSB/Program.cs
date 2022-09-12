@@ -21,12 +21,6 @@ public class Program
                 .AddJsonFile("appsettings.json", false)
                 .Build();
 
-        //???????????למה צריך?
-        var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());
-        containerSettings.ServiceCollection.AddServiceExtension(config.GetConnectionString("NSBConnectionZipi"));
-        containerSettings.ServiceCollection.AddScoped<ITransactionService, TransactionService>();
-        containerSettings.ServiceCollection.AddAutoMapper(typeof(Program));
-
         endpointConfiguration.EnableInstallers();
         endpointConfiguration.EnableOutbox();
 
@@ -36,9 +30,21 @@ public class Program
             {
                 return new SqlConnection(config.GetConnectionString("NSBConnectionZipi"));
             });
-
         var dialect = persistence.SqlDialect<SqlDialect.MsSqlServer>();
-      
+
+        //var recoverability = endpointConfiguration.Recoverability();
+        //recoverability.Immediate(
+        //    immediate =>
+        //    {
+        //        immediate.NumberOfRetries(0);
+        //    });
+        //recoverability.Delayed(
+        //    delayed =>
+        //    {
+        //        delayed.NumberOfRetries(0);
+
+        //    });
+
         var conventions = endpointConfiguration.Conventions();
         conventions.DefiningCommandsAs(type => type.Namespace == "NSB.Command");
         conventions.DefiningEventsAs(type => type.Namespace == "NSB.Event");

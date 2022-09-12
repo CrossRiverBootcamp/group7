@@ -10,10 +10,6 @@
         "FileVersion": "1.0.0"
       },
       {
-        "FullName": "NServiceBus.Extensions.DependencyInjection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c",
-        "FileVersion": "1.0.1"
-      },
-      {
         "FullName": "NServiceBus.Persistence.Sql, Version=6.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c",
         "FileVersion": "6.5.1"
       },
@@ -22,12 +18,16 @@
         "FileVersion": "7.0.0"
       },
       {
-        "FullName": "Transaction.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "FileVersion": "1.0.0"
+        "FullName": "NServiceBus.Extensions.DependencyInjection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c",
+        "FileVersion": "1.0.1"
       },
       {
         "FullName": "NServiceBus.Transport.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c",
         "FileVersion": "6.3.4"
+      },
+      {
+        "FullName": "Transaction.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "FileVersion": "1.0.0"
       }
     ],
     "ErrorsThrownDuringScanning": false,
@@ -1182,8 +1182,7 @@
     }
   },
   "Container": {
-    "Type": "NServiceBus.CommonObjectBuilder",
-    "Version": "7.7.4"
+    "Type": "internal"
   },
   "Endpoint": {
     "Name": "Transaction",
@@ -2087,7 +2086,7 @@
       "MajorRevision": -1,
       "MinorRevision": -1
     },
-    "WorkingSet": 58388480,
+    "WorkingSet": 71622656,
     "SystemPageSize": 4096,
     "HostName": "DESKTOP-QM3UF42",
     "UserName": "user1",
@@ -2113,8 +2112,8 @@
     ],
     "NumberOfMessagesFoundAtStartup": 2,
     "Messages": [
-      "NSB.Event.Payload",
-      "NSB.Event.AccountUpdated"
+      "NSB.Event.AccountUpdated",
+      "NSB.Event.Payload"
     ]
   },
   "NServiceBus.Persistence.Sql.Outbox": {
