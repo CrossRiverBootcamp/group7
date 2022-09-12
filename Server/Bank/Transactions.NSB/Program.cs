@@ -21,8 +21,9 @@ public class Program
                 .AddJsonFile("appsettings.json", false)
                 .Build();
 
+        //???????????למה צריך?
         var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());
-        containerSettings.ServiceCollection.AddServiceExtension(config.GetConnectionString("NSBConnectionShira"));
+        containerSettings.ServiceCollection.AddServiceExtension(config.GetConnectionString("NSBConnectionZipi"));
         containerSettings.ServiceCollection.AddScoped<ITransactionService, TransactionService>();
         containerSettings.ServiceCollection.AddAutoMapper(typeof(Program));
 
@@ -33,7 +34,7 @@ public class Program
         persistence.ConnectionBuilder(
             connectionBuilder: () =>
             {
-                return new SqlConnection(config.GetConnectionString("NSBConnectionShira"));
+                return new SqlConnection(config.GetConnectionString("NSBConnectionZipi"));
             });
 
         var dialect = persistence.SqlDialect<SqlDialect.MsSqlServer>();

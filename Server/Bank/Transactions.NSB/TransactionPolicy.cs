@@ -32,6 +32,7 @@ public class TransactionPolicy : Saga<TransactionPolicyData>,
     public Task Handle(AccountUpdated message, IMessageHandlerContext context)
     {
         log.Info($"Received AccountUpdated,  TransactionID = {message.TransactionID}");
+
         MarkAsComplete();
         return Task.CompletedTask;
     }

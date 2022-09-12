@@ -7,13 +7,13 @@ using NServiceBus;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var databaseConnection = builder.Configuration.GetConnectionString("DatabaseConnectionShira");
+var databaseConnection = builder.Configuration.GetConnectionString("DatabaseConnectionZipi");
 
 #region NServiceBus configurations
 
 var rabbitMQConnection = builder.Configuration.GetConnectionString("RabbitMQ");
 var queueName = builder.Configuration.GetSection("Queues:AccountAPIQueue:Name").Value;
-var NSBConnection = builder.Configuration.GetConnectionString("NSBConnectionShira");
+var NSBConnection = builder.Configuration.GetConnectionString("NSBConnectionZipi");
 
 builder.Host.UseNServiceBus(hostBuilderContext =>
 {
@@ -37,7 +37,7 @@ builder.Host.UseNServiceBus(hostBuilderContext =>
 
     var conventions = endpointConfiguration.Conventions();
     conventions.DefiningEventsAs(type => type.Namespace == "NSB.Event");
-    conventions.DefiningEventsAs(type => type.Namespace == "NSB.Command");
+    conventions.DefiningCommandsAs(type => type.Namespace == "NSB.Command");
     
     return endpointConfiguration;
 });
@@ -46,6 +46,7 @@ builder.Host.UseNServiceBus(hostBuilderContext =>
 
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
+builder.Services.AddScoped<IOperationHistoryService,OperationHistoryService>();
 builder.Services.AddServiceExtension(databaseConnection);
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddControllers();

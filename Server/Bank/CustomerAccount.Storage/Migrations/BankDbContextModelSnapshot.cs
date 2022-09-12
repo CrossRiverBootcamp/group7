@@ -78,6 +78,39 @@ namespace CustomerAccount.Storage.Migrations
                     b.ToTable("Customers");
                 });
 
+            modelBuilder.Entity("CustomerAccount.Storage.Entites.OperationHistory", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+
+                    b.Property<int>("AccountId")
+                        .HasColumnType("int");
+
+                    b.Property<float>("Balance")
+                        .HasColumnType("real");
+
+                    b.Property<bool>("IsDebit")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("OperationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<float>("TransactionAmount")
+                        .HasColumnType("real");
+
+                    b.Property<int>("TransactionID")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("AccountId");
+
+                    b.ToTable("OperationsHistory");
+                });
+
             modelBuilder.Entity("CustomerAccount.Storage.Entites.Account", b =>
                 {
                     b.HasOne("CustomerAccount.Storage.Entites.Customer", "Customer")
@@ -87,6 +120,17 @@ namespace CustomerAccount.Storage.Migrations
                         .IsRequired();
 
                     b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("CustomerAccount.Storage.Entites.OperationHistory", b =>
+                {
+                    b.HasOne("CustomerAccount.Storage.Entites.Account", "account")
+                        .WithMany()
+                        .HasForeignKey("AccountId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("account");
                 });
 #pragma warning restore 612, 618
         }

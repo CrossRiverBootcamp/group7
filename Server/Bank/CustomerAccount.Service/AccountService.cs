@@ -15,11 +15,14 @@ public class AccountService : IAccountService
 
     IMapper _IMapper;
     IAccountStorage _AccountStorage;
+    //???????
+    IOperationHistoryStorage _OperationHistoryStorage;
     IAuthorizationFuncs _AuthorizationFuncs;
 
-    public AccountService(IAccountStorage AccountStorage, IMapper Mapper, IAuthorizationFuncs authorizationFuncs)
+    public AccountService(IAccountStorage AccountStorage, IOperationHistoryStorage OperationHistoryStorage, IMapper Mapper, IAuthorizationFuncs authorizationFuncs)
     {
         _AccountStorage = AccountStorage;
+        _OperationHistoryStorage = OperationHistoryStorage;
         _IMapper = Mapper;
         _AuthorizationFuncs = authorizationFuncs;
     }
@@ -52,6 +55,7 @@ public class AccountService : IAccountService
 
     public async Task<bool> updateBalance(UpdateBalanceModel updateBalance, IMessageHandlerContext context)
     {
+
         if (await _AccountStorage.accountExist(updateBalance.FromAccountId) == false)
         {
             AccountUpdated accountUpdated = new AccountUpdated()
@@ -63,6 +67,7 @@ public class AccountService : IAccountService
             await context.Publish(accountUpdated);
             return false;
         }
+
         if (await _AccountStorage.accountExist(updateBalance.ToAccountId) == false)
         {
             AccountUpdated accountUpdated = new AccountUpdated()
@@ -74,28 +79,54 @@ public class AccountService : IAccountService
             await context.Publish(accountUpdated);
             return false;
         }
+
         if (await _AccountStorage.balanceCheacking(updateBalance.Amount, updateBalance.FromAccountId) == false)
         {
             AccountUpdated accountUpdated = new AccountUpdated()
             {
                 TransactionID = updateBalance.TransactionId,
                 Status = 2,
-                FailureReason = "The balnce is not inahf"
+                FailureReason = "The balnce is not enough"
             };
             await context.Publish(accountUpdated);
             return false;
         }
+        //????????????????????? לבדוק מצב שהוא לא הצליח לעדכן את החשבון
         else
         {
             await _AccountStorage.updateBalance(updateBalance.Amount, updateBalance.FromAccountId, updateBalance.ToAccountId);
-            var x = 1;
+            bool reslt = await addOperationHistory(updateBalance);
             AccountUpdated accountUpdated = new AccountUpdated()
             {
                 TransactionID = updateBalance.TransactionId,
                 Status = 1
             };
+        
             await context.Publish(accountUpdated);
             return true;
         }
+    }
+
+    public async Task<bool> addOperationHistory(UpdateBalanceModel updateBalance)
+    {
+        OperationHistory operationFrom = new OperationHistory();
+        operationFrom.AccountId = updateBalance.FromAccountId;
+        operationFrom.TransactionID = updateBalance.TransactionId;
+        operationFrom.IsDebit = true;
+        operationFrom.TransactionAmount = updateBalance.Amount;
+        operationFrom.OperationTime = DateTime.Now;
+        //לשנותתת
+        operationFrom.Balance = 1;
+
+        OperationHistory operationTo = new OperationHistory();
+        operationTo.AccountId = updateBalance.ToAccountId;
+        operationTo.TransactionID = updateBalance.TransactionId;
+        operationTo.IsDebit = false;
+        operationTo.TransactionAmount = updateBalance.Amount;
+        operationTo.OperationTime = DateTime.Now;
+        //לשנות!
+        operationTo.Balance = 1;
+
+        return await _OperationHistoryStorage.addOperationHistory(operationFrom, operationTo);
     }
 }

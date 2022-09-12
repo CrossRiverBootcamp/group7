@@ -274,3 +274,17 @@ C:\Users\01\crossRiver\Final_project\Server\Bank\Transactions.NSB\bin\Debug\net6
 C:\Users\01\crossRiver\Final_project\Server\Bank\Transactions.NSB\bin\Debug\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\01\crossRiver\Final_project\Server\Bank\Transactions.NSB\bin\Debug\net6.0\System.Diagnostics.EventLog.dll
 C:\Users\01\crossRiver\Final_project\Server\Bank\Transactions.NSB\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.EventLog.dll
+C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\Microsoft.Extensions.Hosting.dll
+C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\Microsoft.Extensions.Logging.Configuration.dll
+C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\Microsoft.Extensions.Logging.Console.dll
+C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\Microsoft.Extensions.Logging.Debug.dll
+C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\Microsoft.Extensions.Logging.EventLog.dll
+C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\Microsoft.Extensions.Logging.EventSource.dll
+C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\System.Diagnostics.EventLog.dll
+C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.EventLog.dll
+C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\appsettings.json
