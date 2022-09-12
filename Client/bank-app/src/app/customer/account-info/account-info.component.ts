@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AccountModel } from 'src/app/models/account.model';
-import { AccountService } from 'src/app/service/account.service';
-import { CurrentUserService } from 'src/app/service/current-user.service';
+import { AccountService } from 'src/app/services/account.service';
+import { CurrentUserService } from 'src/app/services/current-user.service';
 
 @Component({
   selector: 'app-account-info',

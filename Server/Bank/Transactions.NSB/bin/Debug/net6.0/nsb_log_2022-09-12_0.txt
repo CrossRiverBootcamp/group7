@@ -145,3 +145,58 @@ C:\Users\01\crossRiver\Final_project\Server\Bank\Transactions.NSB\bin\Debug\net6
 2022-09-12 02:49:56.496 INFO  Received Payload,  TransactionID = 24
 2022-09-12 02:50:57.505 ERROR Your license has expired
 2022-09-12 02:50:57.511 INFO  Received Payload,  TransactionID = 25
+2022-09-12 09:17:16.608 INFO  Logging to 'C:\Users\01\crossRiver\Final_project\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-12 09:17:16.891 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-23'.
+2022-09-12 09:17:16.898 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-12 09:17:23.217 INFO  Executing 'C:\Users\01\crossRiver\Final_project\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-12 09:17:23.385 INFO  Executing saga creation scripts:
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-12 09:20:42.377 WARN  'Transaction Publish' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader, Byte[] frameHeaderBuffer, ArrayPool`1 pool, UInt32 maxMessageSize)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2022-09-12 09:20:42.377 WARN  'Transaction MessagePump' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader, Byte[] frameHeaderBuffer, ArrayPool`1 pool, UInt32 maxMessageSize)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2022-09-12 09:20:42.404 WARN  The circuit breaker for 'Transaction MessagePump' is now in the armed state
+2022-09-12 09:20:42.405 INFO  'Transaction Publish': Attempting to reconnect in 10 seconds.
+2022-09-12 09:20:42.415 WARN  'Transaction MessagePump' channel shutdown while reconnect already in progress: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader, Byte[] frameHeaderBuffer, ArrayPool`1 pool, UInt32 maxMessageSize)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2022-09-12 09:20:42.423 INFO  'Transaction MessagePump': Attempting to reconnect in 10 seconds.
+2022-09-12 09:20:52.474 INFO  'Transaction Publish': Connection to the broker reestablished successfully.
+2022-09-12 09:20:52.480 INFO  The circuit breaker for 'Transaction MessagePump' is now disarmed
+2022-09-12 09:20:52.500 INFO  'Transaction MessagePump': Connection to the broker reestablished successfully.
+2022-09-12 10:05:35.353 ERROR Your license has expired
+2022-09-12 10:05:35.842 INFO  Received Payload,  TransactionID = 26
+2022-09-12 10:23:34.392 ERROR Your license has expired
+2022-09-12 10:23:34.414 INFO  Received Payload,  TransactionID = 27
+2022-09-12 10:45:26.128 ERROR Your license has expired
+2022-09-12 10:45:26.149 INFO  Received Payload,  TransactionID = 28
+2022-09-12 10:47:05.371 ERROR Your license has expired
+2022-09-12 10:47:05.394 INFO  Received Payload,  TransactionID = 29
+2022-09-12 10:52:35.696 ERROR Your license has expired
+2022-09-12 10:52:35.716 INFO  Received Payload,  TransactionID = 30

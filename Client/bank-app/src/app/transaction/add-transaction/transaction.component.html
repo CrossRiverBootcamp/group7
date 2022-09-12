@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <div class="container">
+        <img src="./././assets/logo.jpg" class="logo">
+        <mat-card class="box">
+          <mat-card-header>
+            <mat-card-title>Transaction</mat-card-title>
+          </mat-card-header>
+          <form class="example-form" [formGroup]="TransactionForm">
+            <mat-card-content>
+              <mat-form-field class="example-full-width">
+                <input matInput  placeholder="From account" formControlName="fromAccount" required />
+              </mat-form-field>
+              <br>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="To account" formControlName="toAccount" required />
+              </mat-form-field>
+              <br>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Amount" formControlName="amount" required />
+              </mat-form-field>
+              <br>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Date" formControlName="date" required />
+              </mat-form-field>
+              <br>
+            </mat-card-content>
+            <button mat-stroked-button color="primary" class="btn-block" (click)="sendTransaction()">Send transaction</button>
+          </form>
+        </mat-card>
+      </div>
+</body>
+</html>

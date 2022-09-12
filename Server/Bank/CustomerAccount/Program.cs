@@ -41,6 +41,7 @@ builder.Host.UseNServiceBus(hostBuilderContext =>
     
     return endpointConfiguration;
 });
+//retry...
 
 #endregion
 

@@ -1,6 +1,4 @@
 ﻿
-
-using NServiceBus;
 namespace NSB.Command;
 
 public class UpdateAccount
