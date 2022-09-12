@@ -14,7 +14,7 @@ export class TransactionComponent implements OnInit {
     toAccount: new FormControl(0, Validators.required),
     amount: new FormControl("", [Validators.required,Validators.min(1), Validators.max(1000000)]),
     date: new FormControl(Date.now, Validators.required),
-    status: new FormControl(Status.processing, Validators.required),
+    status: new FormControl("", Validators.required),
     failureReason: new FormControl("", Validators.required)
   });
   faild:boolean=false;

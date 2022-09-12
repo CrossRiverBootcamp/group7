@@ -10,18 +10,6 @@ C:\group7\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.dll
 C:\group7\Server\Bank\Exception\obj\Debug\net6.0\refint\Exceptions.dll
 C:\group7\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.pdb
 C:\group7\Server\Bank\Exception\obj\Debug\net6.0\ref\Exceptions.dll
-C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\bin\Debug\net6.0\Exceptions.deps.json
-C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\bin\Debug\net6.0\Exceptions.dll
-C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\bin\Debug\net6.0\Exceptions.pdb
-C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.csproj.AssemblyReference.cache
-C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.AssemblyInfoInputs.cache
-C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.AssemblyInfo.cs
-C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.csproj.CoreCompileInputs.cache
-C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.dll
-C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\refint\Exceptions.dll
-C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.pdb
-C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\ref\Exceptions.dll
 C:\פרויקט גמר\group7\Server\Bank\Exception\bin\Debug\net6.0\Exceptions.deps.json
 C:\פרויקט גמר\group7\Server\Bank\Exception\bin\Debug\net6.0\Exceptions.dll
 C:\פרויקט גמר\group7\Server\Bank\Exception\bin\Debug\net6.0\Exceptions.pdb
@@ -34,3 +22,15 @@ C:\פרויקט גמר\group7\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.
 C:\פרויקט גמר\group7\Server\Bank\Exception\obj\Debug\net6.0\refint\Exceptions.dll
 C:\פרויקט גמר\group7\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.pdb
 C:\פרויקט גמר\group7\Server\Bank\Exception\obj\Debug\net6.0\ref\Exceptions.dll
+C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\bin\Debug\net6.0\Exceptions.deps.json
+C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\bin\Debug\net6.0\Exceptions.dll
+C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\bin\Debug\net6.0\Exceptions.pdb
+C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.csproj.AssemblyReference.cache
+C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.AssemblyInfoInputs.cache
+C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.AssemblyInfo.cs
+C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.dll
+C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\refint\Exceptions.dll
+C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.pdb
+C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\ref\Exceptions.dll

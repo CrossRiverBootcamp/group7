@@ -15,23 +15,6 @@ C:\group7\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.ge
 C:\group7\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Exceptions.dll
 C:\group7\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Exceptions.pdb
 C:\group7\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.csproj.CopyComplete
-C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Transaction.Storage.deps.json
-C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Transaction.Storage.runtimeconfig.json
-C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Transaction.Storage.dll
-C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Transaction.Storage.pdb
-C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Exceptions.dll
-C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Exceptions.pdb
-C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.csproj.AssemblyReference.cache
-C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.AssemblyInfoInputs.cache
-C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.AssemblyInfo.cs
-C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.csproj.CoreCompileInputs.cache
-C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.csproj.CopyComplete
-C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.dll
-C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\refint\Transaction.Storage.dll
-C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.pdb
-C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.genruntimeconfig.cache
-C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\ref\Transaction.Storage.dll
 C:\פרויקט גמר\group7\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Transaction.Storage.deps.json
 C:\פרויקט גמר\group7\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Transaction.Storage.runtimeconfig.json
 C:\פרויקט גמר\group7\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Transaction.Storage.dll
@@ -49,3 +32,20 @@ C:\פרויקט גמר\group7\Server\Bank\Transaction.Storge\obj\Debug\net6.0\re
 C:\פרויקט גמר\group7\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.pdb
 C:\פרויקט גמר\group7\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.genruntimeconfig.cache
 C:\פרויקט גמר\group7\Server\Bank\Transaction.Storge\obj\Debug\net6.0\ref\Transaction.Storage.dll
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Transaction.Storage.deps.json
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Transaction.Storage.runtimeconfig.json
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Transaction.Storage.dll
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Transaction.Storage.pdb
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Exceptions.dll
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\bin\Debug\net6.0\Exceptions.pdb
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.csproj.AssemblyReference.cache
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.AssemblyInfoInputs.cache
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.AssemblyInfo.cs
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.csproj.CoreCompileInputs.cache
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.csproj.CopyComplete
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.dll
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\refint\Transaction.Storage.dll
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.pdb
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\Transaction.Storage.genruntimeconfig.cache
+C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Storge\obj\Debug\net6.0\ref\Transaction.Storage.dll

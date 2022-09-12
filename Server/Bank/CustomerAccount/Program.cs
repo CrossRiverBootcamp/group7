@@ -6,14 +6,14 @@ using Microsoft.Data.SqlClient;
 using NServiceBus;
 
 var builder = WebApplication.CreateBuilder(args);
-var databaseConnection = builder.Configuration.GetConnectionString("DatabaseConnection");
 
+var databaseConnection = builder.Configuration.GetConnectionString("DatabaseConnectionShira");
 
 #region NServiceBus configurations
 
 var rabbitMQConnection = builder.Configuration.GetConnectionString("RabbitMQ");
 var queueName = builder.Configuration.GetSection("Queues:AccountAPIQueue:Name").Value;
-var NSBConnection = builder.Configuration.GetConnectionString("NSBConnection");
+var NSBConnection = builder.Configuration.GetConnectionString("NSBConnectionShira");
 
 builder.Host.UseNServiceBus(hostBuilderContext =>
 {
@@ -28,6 +28,7 @@ builder.Host.UseNServiceBus(hostBuilderContext =>
     {
         return new SqlConnection(NSBConnection);
     });
+
     var dialect = persistence.SqlDialect<SqlDialect.MsSqlServer>();
 
     var transport = endpointConfiguration.UseTransport<RabbitMQTransport>();
@@ -37,28 +38,22 @@ builder.Host.UseNServiceBus(hostBuilderContext =>
     var conventions = endpointConfiguration.Conventions();
     conventions.DefiningEventsAs(type => type.Namespace == "NSB.Event");
     conventions.DefiningEventsAs(type => type.Namespace == "NSB.Command");
+    
     return endpointConfiguration;
 });
 
 #endregion
 
-
-
-// Add services to the container.
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddServiceExtension(databaseConnection);
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddControllers();
-
-
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline
 app.UseHandlerErrorsMiddleware();
 if (app.Environment.IsDevelopment())
 {

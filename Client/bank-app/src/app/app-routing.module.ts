@@ -3,13 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { AccountInfoComponent } from './customer/account-info/account-info.component';
 import { LogInComponent } from './customer/log-in/log-in.component';
 import { RegisterComponent } from './customer/register/register.component';
+import { TransactionComponent } from './transaction/transaction.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'logIn' },
   { path: 'logIn', component: LogInComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'account-info', component: AccountInfoComponent },
-  { path: 'Transaction', component: AccountInfoComponent },
+  { path: 'Transaction', component: TransactionComponent },
   // { path: '**', component: AccountInfoComponent }
 ];
 

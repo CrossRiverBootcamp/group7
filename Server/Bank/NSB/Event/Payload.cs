@@ -1,8 +1,7 @@
-﻿using NServiceBus;
-
+﻿
 namespace NSB.Event;
 
-public class Payload : IEvent
+public class Payload
 {
     public int TransactionID { get; set; }
     public int FromAccountId { get; set; }

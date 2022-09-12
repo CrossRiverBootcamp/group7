@@ -24,7 +24,7 @@ public class UpdateTransactionHandler : IHandleMessages<AccountUpdated>
     {
         log.Info($"Received UpdateTransacion, TransactionID = {message.TransactionID}");
         UpdateTransactionModel updateBalance = _mapper.Map<AccountUpdated, UpdateTransactionModel>(message);
-        await _transactionService.updateTransaction(updateBalance /*, context*/);
+        await _transactionService.updateTransaction(updateBalance);
         
     }
 

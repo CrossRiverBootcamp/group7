@@ -7,12 +7,12 @@ using Transaction.Services.Extensions;
 using Microsoft.Data.SqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
-var databaseConnection = builder.Configuration.GetConnectionString("DatabaseConnection");
 
+var databaseConnection = builder.Configuration.GetConnectionString("DatabaseConnectionShira");
 
 #region NServiceBus configurations
 
-var NSBConnection = builder.Configuration.GetConnectionString("NSBConnection");
+var NSBConnection = builder.Configuration.GetConnectionString("NSBConnectionShira");
 var queueName = builder.Configuration.GetSection("Queues:AccountAPIQueue:Name").Value;
 var rabbitMQConnection = builder.Configuration.GetConnectionString("RabbitMQ");
 
@@ -29,6 +29,7 @@ builder.Host.UseNServiceBus(hostBuilderContext =>
     {
         return new SqlConnection(NSBConnection);
     });
+
     var dialect = persistence.SqlDialect<SqlDialect.MsSqlServer>();
     
     var transport = endpointConfiguration.UseTransport<RabbitMQTransport>();
@@ -42,19 +43,15 @@ builder.Host.UseNServiceBus(hostBuilderContext =>
 });
 #endregion
 
-
-// Add services to the container.
 builder.Services.AddScoped<ITransactionService, TransactionService>();
 builder.Services.AddServiceExtension(databaseConnection);
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 app.UseHandlerErrorsMiddleware();
 if (app.Environment.IsDevelopment())
 {

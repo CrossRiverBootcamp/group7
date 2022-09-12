@@ -79,8 +79,8 @@ public class AccountStorage : IAccountStorage
         {
             try
             {
-                var a = await _BankDbContext.Accounts.Where(account => account.ID == accountID).ToListAsync();
-                if (a[0] == null)
+                
+                if (await _BankDbContext.Accounts.FirstOrDefaultAsync(account => account.ID == accountID) == null)
                 {
                     return false;
                 }

@@ -22,29 +22,36 @@ public class TransactionStorage : ITransactionStorage
                 await _TransactionDbContext.SaveChangesAsync();
                 return newTransaction;
             }
-            catch
+            catch (Exception)
             {
-                throw new Exception();
+                throw new DbContextException();
             }
         }
     }
 
-    public async Task<bool> updateTransaction(int transactionID, int status, string failureReason)
+    public async Task<bool> updateTransaction(UpdateTransactionStatus transaction)
     {
         using var _BankDbContext = _factory.CreateDbContext();
         {
             try
             {
-                Entites.Transaction newTransaction = await _BankDbContext.Transactions.FirstOrDefaultAsync(account => account.ID == transactionID);
-                newTransaction.Status =status;
-                if(status == 2)
+                Entites.Transaction newTransaction = await _BankDbContext.Transactions.FirstOrDefaultAsync(account => account.ID == transaction.TransactionID);
+                if (newTransaction != null)
                 {
-                    newTransaction.FailureReason = failureReason;
+                    newTransaction.Status = transaction.Status;
+                    if (transaction.Status == 2)
+                    {
+                        newTransaction.FailureReason = transaction.FailureReason;
+                    }
+                    await _BankDbContext.SaveChangesAsync();
+                    return true;
                 }
-                await _BankDbContext.SaveChangesAsync();
-                return true;
+                else
+                {
+                    throw new AccountNotFoundException();
+                }
             }
-            catch
+            catch(Exception)
             {
                 throw new DbContextException();
             }

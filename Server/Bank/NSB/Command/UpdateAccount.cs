@@ -3,7 +3,7 @@
 using NServiceBus;
 namespace NSB.Command;
 
-public class UpdateAccount : ICommand
+public class UpdateAccount
 {
     public int TransactionID { get; set; }
     public int FromAccountId { get; set; }
