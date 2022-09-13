@@ -31,7 +31,7 @@ public class AccountService : IAccountService
     {
         if (await _AccountStorage.emailExist(customer.Email) == false)
         {
-            return await sendEmail(customer);
+            return await sendEmail(customer.Email);
             /*Customer newCustomer = _IMapper.Map<CustomerModel, Customer>(customer);
             *//*var salt = _AuthorizationFuncs.GenerateSalt(8);
             newCustomer.Password = _AuthorizationFuncs.HashPassword(newCustomer.Password, salt, 1000, 8);*//*
