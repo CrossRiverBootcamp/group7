@@ -29,4 +29,19 @@ public class OperationHistoryController : Controller
         return operationsList;
     }
 
+    // GET/
+    [HttpGet("transactionDetailes/{accountID}")]
+    public async Task<ActionResult<CustomerInfoDTO>> getCustomerInfo(int accountID)
+    {
+        CustomerInfoModel customerInfo= await _OperationHistoryService.getCustomerInfo(accountID);
+        CustomerInfoDTO customer = _IMapper.Map<CustomerInfoModel, CustomerInfoDTO>(customerInfo);
+        return customer;
+    }
+
+
+
 }
+
+
+
+

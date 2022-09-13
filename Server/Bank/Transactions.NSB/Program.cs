@@ -23,7 +23,7 @@ public class Program
 
         //???????????למה צריך?
         var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());
-        containerSettings.ServiceCollection.AddServiceExtension(config.GetConnectionString("NSBConnectionShira"));
+        containerSettings.ServiceCollection.AddServiceExtension(config.GetConnectionString("NSBConnectionZipi"));
         containerSettings.ServiceCollection.AddScoped<ITransactionService, TransactionService>();
         containerSettings.ServiceCollection.AddAutoMapper(typeof(Program));
 
@@ -36,9 +36,21 @@ public class Program
             {
                 return new SqlConnection(config.GetConnectionString("NSBConnectionShira"));
             });
-
         var dialect = persistence.SqlDialect<SqlDialect.MsSqlServer>();
-      
+
+        //var recoverability = endpointConfiguration.Recoverability();
+        //recoverability.Immediate(
+        //    immediate =>
+        //    {
+        //        immediate.NumberOfRetries(0);
+        //    });
+        //recoverability.Delayed(
+        //    delayed =>
+        //    {
+        //        delayed.NumberOfRetries(0);
+
+        //    });
+
         var conventions = endpointConfiguration.Conventions();
         conventions.DefiningCommandsAs(type => type.Namespace == "NSB.Command");
         conventions.DefiningEventsAs(type => type.Namespace == "NSB.Event");

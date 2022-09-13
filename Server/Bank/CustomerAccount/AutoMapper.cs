@@ -23,7 +23,20 @@ public class AutoMapper : Profile
                         .MapFrom(src => src.Customer.Email));
         CreateMap<AccountCustomerInfoModel, AccountCustomerInfoDTO>();
         CreateMap<UpdateAccount, UpdateBalanceModel>();
+        CreateMap<OperationHistory, OperationHistoryModel>().
+            ForMember(des => des.Amount, opts => opts
+                    .MapFrom(src => src.TransactionAmount))
+            .ForMember(des => des.Date, opts => opts
+                    .MapFrom(src => src.OperationTime));
         CreateMap<OperationHistoryModel, OperationHistoryDTO>();
-        CreateMap<OperationHistory, OperationHistoryModel>();
+        CreateMap<Account, CustomerInfoModel>().
+        ForMember(des => des.FirstName, opts => opts
+                    .MapFrom(src => src.Customer.FirstName))
+           .ForMember(des => des.LastName, opts => opts
+                    .MapFrom(src => src.Customer.LastName))
+           .ForMember(des => des.Email, opts => opts
+                    .MapFrom(src => src.Customer.Email));
+        CreateMap<CustomerInfoModel, CustomerInfoDTO>();
+
     }
 }
