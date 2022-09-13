@@ -13,7 +13,9 @@ public class CustomerAccountDbContext : DbContext
     
     public DbSet<Customer> Customers { get; set; }
     public DbSet<Account> Accounts { get; set; }
-
     public DbSet<OperationHistory> OperationsHistory { get; set; }
+    public DbSet<EmailVerification> EmailsVerification { get; set; }
+
+
 
 }

@@ -23,10 +23,12 @@ public class CustomerStorage : ICustomerStorage
                 Customer customer = await context.Customers.FirstOrDefaultAsync(customer => customer.Email == email && customer.Password == password);
                 if (customer != null)
                 {
+                   //return true;
                     return await findAccountByCustomerID(customer.ID);
                 }
                 else
                 {
+                    //return false
                     throw new UserNotFoundException();
                 }
             }

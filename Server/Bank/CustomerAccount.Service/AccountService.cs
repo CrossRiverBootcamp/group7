@@ -30,6 +30,7 @@ public class AccountService : IAccountService
     {
         if (await _AccountStorage.emailExist(customer.Email) == false)
         {
+            //send code וזהו!!
             Customer newCustomer = _IMapper.Map<CustomerModel, Customer>(customer);
             /*var salt = _AuthorizationFuncs.GenerateSalt(8);
             newCustomer.Password = _AuthorizationFuncs.HashPassword(newCustomer.Password, salt, 1000, 8);*/

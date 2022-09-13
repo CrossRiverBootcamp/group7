@@ -47,6 +47,8 @@ builder.Host.UseNServiceBus(hostBuilderContext =>
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IOperationHistoryService,OperationHistoryService>();
+builder.Services.AddScoped<IEmailVerificationService, EmailVerificationService>();
+
 builder.Services.AddServiceExtension(databaseConnection);
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddControllers();

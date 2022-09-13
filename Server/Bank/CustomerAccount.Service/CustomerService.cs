@@ -23,7 +23,13 @@ public class CustomerService : ICustomerService
     {
        /* var salt = _AuthorizationFuncs.GenerateSalt(8);
         login.Password = _AuthorizationFuncs.HashPassword(login.Password, salt, 1000, 8);*/
+
+       // var result = await _CustomerStorage.login(login.Email, login.Password);
+       //if true - SendCode()
+       //else
+       //exeption /false.
         return await _CustomerStorage.login(login.Email, login.Password);
+
        
     }
 }
