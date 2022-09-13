@@ -39,6 +39,7 @@ public class AutoMapper : Profile
         CreateMap<CustomerInfoModel, CustomerInfoDTO>();
         CreateMap<EmailVerificationDTO, EmailVerificationModel>();
         CreateMap<EmailVerificationModel, EmailVerification>();
+        CreateMap<EmailVerificationModel, Customer>();
 
     }
 }
