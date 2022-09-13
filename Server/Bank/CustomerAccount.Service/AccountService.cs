@@ -16,14 +16,15 @@ public class AccountService : IAccountService
 
     IMapper _IMapper;
     IAccountStorage _AccountStorage;
-    //???????
+    IEmailVerificationStorage _EmailVerificationStorage;
     IOperationHistoryStorage _OperationHistoryStorage;
     IAuthorizationFuncs _AuthorizationFuncs;
 
-    public AccountService(IAccountStorage AccountStorage, IOperationHistoryStorage OperationHistoryStorage, IMapper Mapper, IAuthorizationFuncs authorizationFuncs)
+    public AccountService(IAccountStorage AccountStorage, IOperationHistoryStorage OperationHistoryStorage, IMapper Mapper, IAuthorizationFuncs authorizationFuncs, IEmailVerificationStorage emailVerificationStorage)
     {
         _AccountStorage = AccountStorage;
         _OperationHistoryStorage = OperationHistoryStorage;
+        _EmailVerificationStorage = emailVerificationStorage;
         _IMapper = Mapper;
         _AuthorizationFuncs = authorizationFuncs;
     }
@@ -31,16 +32,17 @@ public class AccountService : IAccountService
     {
         if (await _AccountStorage.emailExist(customer.Email) == false)
         {
-            return await sendEmail(customer.Email);
-            /*Customer newCustomer = _IMapper.Map<CustomerModel, Customer>(customer);
-            *//*var salt = _AuthorizationFuncs.GenerateSalt(8);
-            newCustomer.Password = _AuthorizationFuncs.HashPassword(newCustomer.Password, salt, 1000, 8);*//*
-            AccountModel accunt = new AccountModel() { Balance = 1000, OpenDate = DateTime.Now };
-            Account newAccont = _IMapper.Map<AccountModel, Account>(accunt);
-            return await _AccountStorage.createNewAccount(newAccont, newCustomer);*/
-
+            EmailVerificationModel emailVerificationModel = sendEmail(customer.Email);
+            if (emailVerificationModel != null)
+            {
+                EmailVerification emailVerification = _IMapper.Map<EmailVerificationModel, EmailVerification>(emailVerificationModel);
+                return await _EmailVerificationStorage.addEmailVarifiction(emailVerification);
+            }
+            else
+            {
+                return false;
+            }
         }
-
         else
         {
             return false;
@@ -130,7 +132,7 @@ public class AccountService : IAccountService
 
         return await _OperationHistoryStorage.addOperationHistory(operationFrom, operationTo);
     }
-    public async Task<bool> sendEmail(string email)
+    public EmailVerificationModel sendEmail(string email)
     {
         //generate a code
         var code = new Random(Guid.NewGuid().GetHashCode()).Next(0, 9999).ToString("D4");
@@ -148,12 +150,18 @@ public class AccountService : IAccountService
         try
         {
             SmtpServer.Send(message);
-            return true;
+            EmailVerificationModel emailVerificationModel = new EmailVerificationModel()
+            {
+                Email = email,
+                VerificationCode = code,
+                ExpirationTime = DateTime.Now
+            };
+            return emailVerificationModel;
         }
         catch (SmtpException ex)
         {
             Console.WriteLine(ex);
-            return false;
+            return null;
         }
     }
 }

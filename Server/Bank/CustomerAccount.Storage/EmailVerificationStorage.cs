@@ -1,6 +1,7 @@
 ﻿
 using CustomerAccount.Storage.Entites;
 using CustomerAccount.Storage.Interfaces;
+using Exceptions;
 using Microsoft.EntityFrameworkCore;
 
 namespace CustomerAccount.Storage;
@@ -11,10 +12,27 @@ public class EmailVerificationStorage : IEmailVerificationStorage
 
     public EmailVerificationStorage(IDbContextFactory<CustomerAccountDbContext> factory)
     {
-
         _factory = factory;
     }
-    public async Task<int> verifyUser(EmailVerification emailVerification)
+
+    public async Task<bool> addEmailVarifiction(EmailVerification emailVerification)
+    {
+        using var _BankDbContext = _factory.CreateDbContext();
+        {
+            try
+            {
+                await _BankDbContext.EmailsVerification.AddAsync(emailVerification);
+                await _BankDbContext.SaveChangesAsync();
+                return true;
+            }
+            catch
+            {
+                throw new DbContextException();
+            }
+        }
+    }
+
+    public async Task<bool> verifyUser(EmailVerification emailVerification)
     {
         using var _BankDbContext = _factory.CreateDbContext();
         {
@@ -23,17 +41,18 @@ public class EmailVerificationStorage : IEmailVerificationStorage
                 if (await _BankDbContext.EmailsVerification.FirstOrDefaultAsync(verification =>
                 verification.Email == emailVerification.Email &&
                 verification.ExpirationTime.AddMinutes(2) <= emailVerification.ExpirationTime &&
-                verification.VerificationCode == emailVerification.VerificationCode) == null)
+                verification.VerificationCode == emailVerification.VerificationCode) != null)
                 {
-                    return 21;
+                    return true;
                 }
-                return 0;
-
+                else
+                {
+                    return false;
+                }
             }
             catch
-            {
-                return 1;
-                //throw new DbContextException();//
+            { 
+                throw new DbContextException();
             }
         }
     }
