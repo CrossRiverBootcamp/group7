@@ -160,3 +160,36 @@ Exception details:
 2022-09-13 11:52:02.308 INFO  Executing 'C:\Users\01\crossRiver\Final_project\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
 2022-09-13 11:52:02.468 INFO  Executing saga creation scripts:
 C:\Users\01\crossRiver\Final_project\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-13 12:20:50.292 INFO  Logging to 'C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-13 12:20:50.607 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-13 12:20:50.612 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-13 12:20:50.616 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-13 12:21:11.879 ERROR Could not complete the installation. 
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (53): The network path was not found.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at NServiceBus.Persistence.Sql.ScriptRunner.ExecuteInSeparateConnection[T](Func`6 installAction, String scriptDirectory, String tablePrefix, SqlDialect sqlDialect, Func`2 connectionBuilder) in /_/src/SqlPersistence/ScriptRunner.cs:line 69
+   at NServiceBus.Persistence.Sql.ScriptRunner.Install(SqlDialect sqlDialect, String tablePrefix, Func`2 connectionBuilder, String scriptDirectory, Boolean shouldInstallOutbox, Boolean shouldInstallSagas, Boolean shouldInstallSubscriptions, Boolean shouldInstallTimeouts) in /_/src/SqlPersistence/ScriptRunner.cs:line 45
+   at SqlPersistenceInstaller.Install(String identity) in /_/src/SqlPersistence/NeedToInstallSomething.cs:line 30
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 53
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2022-09-13 12:24:15.672 INFO  Logging to 'C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-13 12:24:16.045 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-13 12:24:16.049 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-13 12:24:16.053 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-13 12:24:21.930 INFO  Executing 'C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-13 12:24:22.098 INFO  Executing saga creation scripts:
+C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql

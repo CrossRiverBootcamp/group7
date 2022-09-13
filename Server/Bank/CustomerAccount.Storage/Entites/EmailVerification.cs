@@ -6,7 +6,7 @@ namespace CustomerAccount.Storage.Entites;
 
 public class EmailVerification
 {
-    [Required]
+    [Key]
     public string Email { get; set; }
 
     [Required]

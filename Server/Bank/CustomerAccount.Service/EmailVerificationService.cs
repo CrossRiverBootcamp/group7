@@ -17,10 +17,10 @@ public class EmailVerificationService : IEmailVerificationService
         _EmailVerificationStorage= EmailVerificationStorage;
         _Mapper=Mapper;
     }
-    public Task<int> verifyUser(EmailVerificationModel emailVerification)
+    public async Task<int> verifyUser(EmailVerificationModel emailVerification)
     {
         EmailVerification verification = _Mapper.Map<EmailVerificationModel, EmailVerification>(emailVerification);
-        return await _EmailVerificationStorage.verifyUser(emailVerification);
+        return await _EmailVerificationStorage.verifyUser(verification);
 
 
     }

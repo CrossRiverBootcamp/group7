@@ -2297,7 +2297,7 @@
       "MajorRevision": -1,
       "MinorRevision": -1
     },
-    "WorkingSet": 74903552,
+    "WorkingSet": 75214848,
     "SystemPageSize": 4096,
     "HostName": "DESKTOP-QM3UF42",
     "UserName": "user1",

@@ -20,9 +20,9 @@ public class EmailVerificationStorage : IEmailVerificationStorage
         {
             try
             {
-                if (await _BankDbContext.EmailsVerification.FirstOrDefaultAsync(verification => 
+                if (await _BankDbContext.EmailsVerification.FirstOrDefaultAsync(verification =>
                 verification.Email == emailVerification.Email &&
-                verification.ExpirationTime.AddMinutes(2)<= emailVerification.ExpirationTime &&
+                verification.ExpirationTime.AddMinutes(2) <= emailVerification.ExpirationTime &&
                 verification.VerificationCode == emailVerification.VerificationCode) == null)
                 {
                     return 21;
@@ -36,4 +36,5 @@ public class EmailVerificationStorage : IEmailVerificationStorage
                 //throw new DbContextException();//
             }
         }
+    }
 }

@@ -34,7 +34,7 @@ public class Program
         persistence.ConnectionBuilder(
             connectionBuilder: () =>
             {
-                return new SqlConnection(config.GetConnectionString("NSBConnectionShira"));
+                return new SqlConnection(config.GetConnectionString("NSBConnectionZipi"));
             });
         var dialect = persistence.SqlDialect<SqlDialect.MsSqlServer>();
 
