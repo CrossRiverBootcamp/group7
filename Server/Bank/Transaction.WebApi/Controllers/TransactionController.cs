@@ -2,6 +2,7 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using NServiceBus;
+using System.Net.Http;
 using Transaction.Service.Interfaces;
 using Transaction.Service.Models;
 using Transaction.WebApi.DTO;

@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LogInModel } from 'src/app/models/logIn.model';
-import { CurrentUserService } from 'src/app/service/current-user.service';
-import { CustomerService } from 'src/app/service/customer.service';
+import { CurrentUserService } from 'src/app/services/current-user.service';
+import { CustomerService } from 'src/app/services/customer.service';
 import Swal from 'sweetalert2';
 
 @Component({

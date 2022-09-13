@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 const sharedModule = [
@@ -16,7 +17,9 @@ const sharedModule = [
   RouterModule
 ]
 @NgModule({
-  declarations: [],
+  declarations: [
+    PageNotFoundComponent
+  ],
   imports: [
     CommonModule,
     ...sharedModule

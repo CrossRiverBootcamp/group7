@@ -16,32 +16,25 @@
           <form class="example-form" [formGroup]="TransactionForm">
             <mat-card-content>
               <mat-form-field class="example-full-width">
-                <input matInput placeholder="From account" formControlName="fromAccount" required>
+                <input matInput  placeholder="From account" formControlName="fromAccount" required />
               </mat-form-field>
               <br>
               <mat-form-field class="example-full-width">
-                <input matInput placeholder="To account" formControlName="toAccount" required>
+                <input matInput placeholder="To account" formControlName="toAccount" required />
               </mat-form-field>
               <br>
               <mat-form-field class="example-full-width">
-                <input matInput placeholder="Amount" formControlName="amount" required>
+                <input matInput placeholder="Amount" formControlName="amount" required />
               </mat-form-field>
               <br>
               <mat-form-field class="example-full-width">
-                <input matInput placeholder="Date" formControlName="date" required>
-              </mat-form-field>
-              <br>
-              <mat-form-field class="example-full-width">
-                <p  formControlName="status">Status</p> 
-              </mat-form-field>
-              <br>
-              <mat-form-field class="example-full-width" *ngIf="faild">
-                <p  formControlName="failureReason">Failure reason</p> 
+                <input matInput placeholder="Date" formControlName="date" required />
               </mat-form-field>
               <br>
             </mat-card-content>
             <button mat-stroked-button color="primary" class="btn-block" (click)="sendTransaction()">Send transaction</button>
           </form>
+          <button mat-button> <a routerLink="/operation-history">View Operations History</a></button>
         </mat-card>
       </div>
 </body>

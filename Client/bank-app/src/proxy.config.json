@@ -1,6 +1,19 @@
 {
-    "/api/*": {
+    "/api/Customer": {
         "target": "https://localhost:7011",
         "secure": false
-    }
+    },
+    "/api/Account": {
+        "target": "https://localhost:7011",
+        "secure": false
+    },
+    "/api/OperationHistory": {
+        "target": "https://localhost:7011",
+        "secure": false
+    },
+    "/api/Transaction": {
+        "target": "https://localhost:7157",
+        "secure": false
+    } 
+    
 }
