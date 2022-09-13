@@ -23,7 +23,7 @@ public class Program
 
         //???????????למה צריך?
         var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());
-        containerSettings.ServiceCollection.AddServiceExtension(config.GetConnectionString("NSBConnectionZipi"));
+        containerSettings.ServiceCollection.AddServiceExtension(config.GetConnectionString("NSBConnectionShira"));
         containerSettings.ServiceCollection.AddScoped<ITransactionService, TransactionService>();
         containerSettings.ServiceCollection.AddAutoMapper(typeof(Program));
 
@@ -34,7 +34,7 @@ public class Program
         persistence.ConnectionBuilder(
             connectionBuilder: () =>
             {
-                return new SqlConnection(config.GetConnectionString("NSBConnectionZipi"));
+                return new SqlConnection(config.GetConnectionString("NSBConnectionShira"));
             });
 
         var dialect = persistence.SqlDialect<SqlDialect.MsSqlServer>();

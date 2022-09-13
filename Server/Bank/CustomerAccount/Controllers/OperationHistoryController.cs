@@ -20,7 +20,7 @@ public class OperationHistoryController : Controller
         _IMapper = IMapper;
     }
     // GET/
-    [HttpGet()]
+    [HttpGet("{accountID}")]
     public async Task<ActionResult<List<OperationHistoryDTO>>> getOperationHistory(int accountID)
     {
         List<OperationHistoryModel> OperationHistory = await _OperationHistoryService.getOperationHistory(accountID);

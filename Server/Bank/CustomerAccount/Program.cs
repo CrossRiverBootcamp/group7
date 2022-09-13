@@ -7,13 +7,13 @@ using NServiceBus;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var databaseConnection = builder.Configuration.GetConnectionString("DatabaseConnectionZipi");
+var databaseConnection = builder.Configuration.GetConnectionString("DatabaseConnectionShira");
 
 #region NServiceBus configurations
 
 var rabbitMQConnection = builder.Configuration.GetConnectionString("RabbitMQ");
 var queueName = builder.Configuration.GetSection("Queues:AccountAPIQueue:Name").Value;
-var NSBConnection = builder.Configuration.GetConnectionString("NSBConnectionZipi");
+var NSBConnection = builder.Configuration.GetConnectionString("NSBConnectionShira");
 
 builder.Host.UseNServiceBus(hostBuilderContext =>
 {

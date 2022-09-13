@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { TransactionModel } from 'src/app/models/transaction.model';
+import { CurrentUserService } from 'src/app/services/current-user.service';
+import { TransactionService } from 'src/app/services/transaction.service';
 import Swal from 'sweetalert2';
-import { TransactionModel } from '../models/transaction.model copy';
-import { CurrentUserService } from '../services/current-user.service';
-import { TransactionService } from '../services/transaction.service';
 
 @Component({
   selector: 'app-transaction',
@@ -16,7 +16,7 @@ export class TransactionComponent implements OnInit {
     fromAccount: new FormControl(0, Validators.required),
     toAccount: new FormControl(0, Validators.required),
     amount: new FormControl("", [Validators.required, Validators.min(1), Validators.max(1000000)]),
-    date: new FormControl(Date.now().toFixed(), Validators.required),
+    date: new FormControl(new Date(), Validators.required),
     status: new FormControl("", Validators.required),
     failureReason: new FormControl("", Validators.required)
   });
@@ -28,7 +28,6 @@ export class TransactionComponent implements OnInit {
   }
   sendTransaction() {
     let accountId = this._currentUserService.getAccountId();
-    this.TransactionForm.controls["fromAccount"].setValue(accountId);
     let transaction: TransactionModel = {
       fromAccountId: accountId,
       toAccountId: this.TransactionForm.controls["toAccount"].value,

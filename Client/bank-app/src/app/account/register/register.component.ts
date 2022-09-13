@@ -1,14 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Subscriber } from 'rxjs';
 import { CustomerModel } from 'src/app/models/customer.model';
 import { LogInModel } from 'src/app/models/logIn.model';
 import { AccountService } from 'src/app/services/account.service';
 import { CurrentUserService } from 'src/app/services/current-user.service';
-import { CustomerService } from 'src/app/services/customer.service';
 import Swal from 'sweetalert2';
-import { CustomerModule } from '../customer.module';
 
 @Component({
   selector: 'app-register',
