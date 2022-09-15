@@ -205,31 +205,42 @@ C:\Users\01\crossRiver\Final_project\Server\Bank\Transactions.NSB\bin\Debug\net6
 2022-09-13 13:44:36.448 INFO  The circuit breaker for 'Transaction MessagePump' is now disarmed
 2022-09-13 13:44:36.502 INFO  'Transaction Publish': Connection to the broker reestablished successfully.
 2022-09-13 13:44:36.557 INFO  'Transaction MessagePump': Connection to the broker reestablished successfully.
-2022-09-13 17:44:04.126 INFO  Logging to 'C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
-2022-09-13 17:44:04.353 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
-2022-09-13 17:44:04.357 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
-2022-09-13 17:44:04.361 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
-2022-09-13 17:44:10.058 INFO  Executing 'C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
-2022-09-13 17:44:10.181 INFO  Executing saga creation scripts:
-C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
-2022-09-13 17:45:56.330 INFO  Logging to 'C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
-2022-09-13 17:45:56.577 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
-2022-09-13 17:45:56.582 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
-2022-09-13 17:45:56.586 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
-2022-09-13 17:46:02.240 INFO  Executing 'C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
-2022-09-13 17:46:02.363 INFO  Executing saga creation scripts:
-C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
-2022-09-13 17:49:10.438 INFO  Logging to 'C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
-2022-09-13 17:49:10.729 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
-2022-09-13 17:49:10.750 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
-2022-09-13 17:49:10.755 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
-2022-09-13 17:49:21.443 INFO  Executing 'C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
-2022-09-13 17:49:21.578 INFO  Executing saga creation scripts:
-C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
-2022-09-13 17:50:10.932 INFO  Logging to 'C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
-2022-09-13 17:50:11.232 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
-2022-09-13 17:50:11.239 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
-2022-09-13 17:50:11.246 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
-2022-09-13 17:50:19.714 INFO  Executing 'C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
-2022-09-13 17:50:19.821 INFO  Executing saga creation scripts:
-C:\פרויקט גמר\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-13 14:20:35.539 WARN  'Transaction MessagePump' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader, Byte[] frameHeaderBuffer, ArrayPool`1 pool, UInt32 maxMessageSize)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2022-09-13 14:20:35.567 WARN  'Transaction Publish' connection shutdown: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader, Byte[] frameHeaderBuffer, ArrayPool`1 pool, UInt32 maxMessageSize)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2022-09-13 14:20:36.181 WARN  The circuit breaker for 'Transaction MessagePump' is now in the armed state
+2022-09-13 14:20:36.305 INFO  'Transaction Publish': Attempting to reconnect in 10 seconds.
+2022-09-13 14:20:36.339 WARN  'Transaction MessagePump' channel shutdown while reconnect already in progress: AMQP close-reason, initiated by Library, code=541, text='Unexpected Exception', classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.ReadByteSlow()
+   at System.IO.BufferedStream.ReadByte()
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFrom(Stream reader, Byte[] frameHeaderBuffer, ArrayPool`1 pool, UInt32 maxMessageSize)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+2022-09-13 14:20:36.339 INFO  'Transaction MessagePump': Attempting to reconnect in 10 seconds.
+2022-09-13 14:20:45.549 INFO  The circuit breaker for 'Transaction MessagePump' is now disarmed
+2022-09-13 14:20:46.377 INFO  'Transaction Publish': Connection to the broker reestablished successfully.
+2022-09-13 14:20:46.427 INFO  'Transaction MessagePump': Connection to the broker reestablished successfully.

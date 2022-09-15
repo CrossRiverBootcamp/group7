@@ -31,6 +31,7 @@ import { OperationHistoryModel } from 'src/app/models/operation-history.model';
 import { TransactionDetailsModel } from 'src/app/models/transaction-details.model';
 import { CurrentUserService } from 'src/app/services/current-user.service';
 import { OperationsHistoryService } from 'src/app/services/operations-history.service';
+import Swal from 'sweetalert2';
 
 /**
  * @title Table with pagination
@@ -64,6 +65,10 @@ export class OperationsHistoryComponent implements AfterViewInit {
   getAccountInformation(accountId: number) {
     this._operationsHistoryService.getTransactionDetails(accountId).subscribe(data => {
       this.transactionDetails = data;
+      Swal.fire({
+        title:"Transaction Details:",
+        text:`${data.firstName}  ${this.transactionDetails.lastName}\n ${this.transactionDetails.email}`
+      })
     });
   }
 }

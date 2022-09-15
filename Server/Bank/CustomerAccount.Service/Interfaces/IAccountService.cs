@@ -7,7 +7,7 @@ namespace CustomerAccount.Service.Interfaces;
 
 public interface IAccountService
 {
-    public Task<bool> createNewAccount(CustomerModel customer);
+    public Task<bool> createNewAccount(string email);
 
     public Task<AccountCustomerInfoModel> getAccountCustomerInfo(int accountID);
 

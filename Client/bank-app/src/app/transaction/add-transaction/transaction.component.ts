@@ -13,7 +13,6 @@ import Swal from 'sweetalert2';
 export class TransactionComponent implements OnInit {
 
   TransactionForm: FormGroup = new FormGroup({
-    fromAccount: new FormControl(0, Validators.required),
     toAccount: new FormControl(0, Validators.required),
     amount: new FormControl("", [Validators.required, Validators.min(1), Validators.max(1000000)]),
     date: new FormControl(new Date(), Validators.required),
