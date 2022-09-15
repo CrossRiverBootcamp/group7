@@ -35,7 +35,8 @@ export class LogInComponent implements OnInit {
     this.newUser.password = this.LogInForm.controls["password"].value;
     this._customService.logIn(this.newUser).subscribe(data=>{
       if(data != 0){
-        this._currentUserService.accuontId=data
+        this._currentUserService.accuontId=data;
+        this._currentUserService.isLogIn();
         Swal.fire({
           title:"Hi!!",
           text:"wellcame :)",

@@ -66,8 +66,8 @@ export class OperationsHistoryComponent implements AfterViewInit {
     this._operationsHistoryService.getTransactionDetails(accountId).subscribe(data => {
       this.transactionDetails = data;
       Swal.fire({
-        title:"Transaction Details",
-        text:`from ${this.transactionDetails.firstName}  ${this.transactionDetails.firstName}\n ${this.transactionDetails.email}`
+        title:"Transaction Details:",
+        text:`${data.firstName}  ${this.transactionDetails.lastName}\n ${this.transactionDetails.email}`
       })
     });
   }

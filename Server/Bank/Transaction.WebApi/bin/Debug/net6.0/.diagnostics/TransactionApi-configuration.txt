@@ -2297,7 +2297,7 @@
       "MajorRevision": -1,
       "MinorRevision": -1
     },
-    "WorkingSet": 89710592,
+    "WorkingSet": 89563136,
     "SystemPageSize": 4096,
     "HostName": "SHIRA",
     "UserName": "01",

@@ -17,6 +17,6 @@ export class OperationsHistoryService {
   }
 
   getTransactionDetails(accountId: number):Observable<TransactionDetailsModel> {
-    return this._http.get<TransactionDetailsModel>(this.baseUrl+accountId)
+    return this._http.get<TransactionDetailsModel>(this.baseUrl+"transactionDetailes/"+accountId)
   }
 }

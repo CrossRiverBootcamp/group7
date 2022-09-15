@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DebitOrCreditPipe } from './debit-or-credit.pipe';
 
 
 const sharedModule = [
@@ -18,14 +19,16 @@ const sharedModule = [
 ]
 @NgModule({
   declarations: [
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    DebitOrCreditPipe
   ],
   imports: [
     CommonModule,
     ...sharedModule
   ],
   exports: [
-    ...sharedModule
+    ...sharedModule,
+    DebitOrCreditPipe
   ]
 })
 export class SharedModule { }

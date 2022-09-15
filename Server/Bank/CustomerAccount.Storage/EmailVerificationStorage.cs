@@ -25,7 +25,7 @@ public class EmailVerificationStorage : IEmailVerificationStorage
                 await _BankDbContext.SaveChangesAsync();
                 return true;
             }
-            catch
+            catch(Exception ex)
             {
                 throw new DbContextException();
             }
@@ -41,7 +41,7 @@ public class EmailVerificationStorage : IEmailVerificationStorage
                 if (await _BankDbContext.EmailsVerification.FirstOrDefaultAsync(verification =>
                 verification.Email == emailVerification.Email &&
                 verification.ExpirationTime.AddMinutes(2) <= emailVerification.ExpirationTime &&
-                verification.VerificationCode == emailVerification.VerificationCode) != null)
+                verification.VerificationCode == emailVerification.VerificationCode) == null)
                 {
                     return true;
                 }

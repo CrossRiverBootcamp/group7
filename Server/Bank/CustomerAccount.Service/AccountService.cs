@@ -28,11 +28,11 @@ public class AccountService : IAccountService
         _IMapper = Mapper;
         _AuthorizationFuncs = authorizationFuncs;
     }
-    public async Task<bool> createNewAccount(CustomerModel customer)
+    public async Task<bool> createNewAccount(string email)
     {
-        if (await _AccountStorage.emailExist(customer.Email) == false)
+        if (await _AccountStorage.emailExist(email) == false)
         {
-            EmailVerificationModel emailVerificationModel = sendEmail(customer.Email);
+            EmailVerificationModel emailVerificationModel = sendEmail(email);
             if (emailVerificationModel != null)
             {
                 EmailVerification emailVerification = _IMapper.Map<EmailVerificationModel, EmailVerification>(emailVerificationModel);
