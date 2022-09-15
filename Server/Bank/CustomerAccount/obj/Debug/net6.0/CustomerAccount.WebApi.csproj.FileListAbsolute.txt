@@ -325,3 +325,6 @@ C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount\obj\Debug\net6.
 C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.pdb
 C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.genruntimeconfig.cache
 C:\Users\01\crossRiver\Final_project\Server\Bank\CustomerAccount\obj\Debug\net6.0\ref\CustomerAccount.WebApi.dll
+C:\group7\Server\Bank\CustomerAccount\bin\Debug\net6.0\NServiceBus.Extensions.Hosting.dll
+C:\group7\Server\Bank\CustomerAccount\bin\Debug\net6.0\NSB.dll
+C:\group7\Server\Bank\CustomerAccount\bin\Debug\net6.0\NSB.pdb

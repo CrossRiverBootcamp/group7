@@ -117,20 +117,24 @@ public class AccountStorage : IAccountStorage
 
   
 
-    public async Task<bool> updateBalance(float ammount, int fromAccountID, int toAccountID)
+    public async Task<BalanceObject> updateBalance(float ammount, int fromAccountID, int toAccountID)   
     {
         using var _BankDbContext = _factory.CreateDbContext();
         {
             try
             {
                 var fromAccount = await _BankDbContext.Accounts.FirstOrDefaultAsync(account => account.ID == fromAccountID);
-                fromAccount.Balance-=ammount;
-                //???????
-                float balanceFrom = fromAccount.Balance;
+                fromAccount.Balance -= ammount;
                 var toAccount = await _BankDbContext.Accounts.FirstOrDefaultAsync(account => account.ID == toAccountID);
-                toAccount.Balance+= ammount;
+                toAccount.Balance += ammount;
+                BalanceObject balance = new BalanceObject()
+                {
+                    fromBalance = fromAccount.Balance,
+                    toBalance = toAccount.Balance,
+
+                };
                 await _BankDbContext.SaveChangesAsync();
-                return true;
+                return balance;
 
             }
             catch

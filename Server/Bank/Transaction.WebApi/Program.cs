@@ -12,7 +12,7 @@ var databaseConnection = builder.Configuration.GetConnectionString("DatabaseConn
 
 #region NServiceBus configurations
 
-var NSBConnection = builder.Configuration.GetConnectionString("NSBConnectionZipi");
+
 var queueName = builder.Configuration.GetSection("Queues:AccountAPIQueue:Name").Value;
 var rabbitMQConnection = builder.Configuration.GetConnectionString("RabbitMQ");
 
@@ -27,11 +27,12 @@ builder.Host.UseNServiceBus(hostBuilderContext =>
     persistence.ConnectionBuilder(
     connectionBuilder: () =>
     {
-        return new SqlConnection(NSBConnection);
+        return new SqlConnection(databaseConnection);
     });
 
     var dialect = persistence.SqlDialect<SqlDialect.MsSqlServer>();
-    
+    dialect.Schema("NSB");
+
     var transport = endpointConfiguration.UseTransport<RabbitMQTransport>();
     transport.ConnectionString(rabbitMQConnection);
     transport.UseConventionalRoutingTopology(QueueType.Quorum);

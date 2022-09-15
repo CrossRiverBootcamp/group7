@@ -3950,11 +3950,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\פרויקט גמר\\group7\\Server\\Bank\\Transaction.WebApi\\Transaction.WebApi.csproj",
+      "projectUniqueName": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\Transaction.WebApi.csproj",
       "projectName": "Transaction.WebApi",
-      "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\Transaction.WebApi\\Transaction.WebApi.csproj",
+      "projectPath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\Transaction.WebApi.csproj",
       "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-      "outputPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\Transaction.WebApi\\obj\\",
+      "outputPath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3971,11 +3971,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\פרויקט גמר\\group7\\Server\\Bank\\Exception\\Exceptions.csproj": {
-              "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\Exception\\Exceptions.csproj"
+            "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj": {
+              "projectPath": "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj"
             },
-            "C:\\פרויקט גמר\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj": {
-              "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj"
+            "C:\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj": {
+              "projectPath": "C:\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj"
             }
           }
         }

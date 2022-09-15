@@ -3627,11 +3627,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\פרויקט גמר\\group7\\Server\\Bank\\Transactions.NSB\\Transactions.NSB.csproj",
+      "projectUniqueName": "C:\\group7\\Server\\Bank\\Transactions.NSB\\Transactions.NSB.csproj",
       "projectName": "Transactions.NSB",
-      "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\Transactions.NSB\\Transactions.NSB.csproj",
+      "projectPath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\Transactions.NSB.csproj",
       "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-      "outputPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\Transactions.NSB\\obj\\",
+      "outputPath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3648,11 +3648,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\פרויקט גמר\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
-              "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\NSB\\NSB.csproj"
+            "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
+              "projectPath": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj"
             },
-            "C:\\פרויקט גמר\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj": {
-              "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj"
+            "C:\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj": {
+              "projectPath": "C:\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj"
             }
           }
         }

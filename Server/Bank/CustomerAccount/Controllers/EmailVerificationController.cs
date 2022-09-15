@@ -18,13 +18,12 @@ public class EmailVerificationController : ControllerBase
         _EmailVerificationService= EmailVerificationService;
         _Mapper= Mapper;
     }
+
     // POST/
     [HttpPost]
-    public async Task<bool> verifyUser([FromBody] EmailVerificationDTO verification)
+    public async Task<bool> verifyUser([FromBody] string email)
     {
-        EmailVerificationModel emailVerification = _Mapper.Map<EmailVerificationDTO, EmailVerificationModel>(verification);
-        return  await _EmailVerificationService.verifyUser(emailVerification);
-        
-
+        return await _EmailVerificationService.verifyUser(email);
     }
+
 }

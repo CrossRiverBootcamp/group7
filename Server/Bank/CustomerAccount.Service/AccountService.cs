@@ -3,6 +3,7 @@
 using AutoMapper;
 using CustomerAccount.Service.Interfaces;
 using CustomerAccount.Service.Models;
+using CustomerAccount.Storage;
 using CustomerAccount.Storage.Entites;
 using CustomerAccount.Storage.Interfaces;
 using NSB.Event;
@@ -30,18 +31,15 @@ public class AccountService : IAccountService
     }
     public async Task<bool> createNewAccount(CustomerModel customer)
     {
-        if (await _AccountStorage.emailExist(customer.Email) == false)
+        bool userIsVerify = await _EmailVerificationStorage.verifyUser(customer.VerificationCode,customer.Email);
+        if (userIsVerify)
         {
-            EmailVerificationModel emailVerificationModel = sendEmail(customer.Email);
-            if (emailVerificationModel != null)
-            {
-                EmailVerification emailVerification = _IMapper.Map<EmailVerificationModel, EmailVerification>(emailVerificationModel);
-                return await _EmailVerificationStorage.addEmailVarifiction(emailVerification);
-            }
-            else
-            {
-                return false;
-            }
+            Customer newCustomer = _IMapper.Map<CustomerModel, Customer>(customer);
+            /* var salt = _AuthorizationFuncs.GenerateSalt(8);
+             newCustomer.Password = _AuthorizationFuncs.HashPassword(newCustomer.Password, salt, 1000, 8);*/
+            AccountModel accunt = new AccountModel() { Balance = 1000, OpenDate = DateTime.Now };
+            Account newAccont = _IMapper.Map<AccountModel, Account>(accunt);
+            return await _AccountStorage.createNewAccount(newAccont, newCustomer);
         }
         else
         {
@@ -61,14 +59,7 @@ public class AccountService : IAccountService
 
         if (await _AccountStorage.accountExist(updateBalance.FromAccountId) == false)
         {
-            AccountUpdated accountUpdated = new AccountUpdated()
-            {
-                TransactionID = updateBalance.TransactionId,
-                Status = 2,
-                FailureReason = "From Account is not exsist"
-            };
-            await context.Publish(accountUpdated);
-            //publishEvent(updateBalance.TransactionId, 2, "From Account is not exsist", context);
+            publishEvent(updateBalance.TransactionId, 2, "From Account is not exsist", context);
             return false;
         }
 
@@ -86,20 +77,19 @@ public class AccountService : IAccountService
         //????????????????????? לבדוק מצב שהוא לא הצליח לעדכן את החשבון
         else
         {
-            await _AccountStorage.updateBalance(updateBalance.Amount, updateBalance.FromAccountId, updateBalance.ToAccountId);
-            bool reslt = await addOperationHistory(updateBalance);
+            BalanceObject balance = await _AccountStorage.updateBalance(updateBalance.Amount, updateBalance.FromAccountId, updateBalance.ToAccountId);
+            await addOperationHistory(updateBalance, balance);
             AccountUpdated accountUpdated = new AccountUpdated()
             {
                 TransactionID = updateBalance.TransactionId,
                 Status = 1
             };
-
             await context.Publish(accountUpdated);
             return true;
         }
     }
 
-    public async void publishEvent(int transactionID, int status, string failureReason, IMessageHandlerContext context)
+    public async Task<bool> publishEvent(int transactionID, int status, string failureReason, IMessageHandlerContext context)
     {
         AccountUpdated accountUpdated = new AccountUpdated()
         {
@@ -108,9 +98,10 @@ public class AccountService : IAccountService
             FailureReason = failureReason
         };
         await context.Publish(accountUpdated);
+        return false;
     }
 
-    public async Task<bool> addOperationHistory(UpdateBalanceModel updateBalance)
+    public async Task<bool> addOperationHistory(UpdateBalanceModel updateBalance, BalanceObject balance)
     {
         OperationHistory operationFrom = new OperationHistory();
         operationFrom.AccountId = updateBalance.FromAccountId;
@@ -118,8 +109,7 @@ public class AccountService : IAccountService
         operationFrom.IsDebit = true;
         operationFrom.TransactionAmount = updateBalance.Amount;
         operationFrom.OperationTime = DateTime.Now;
-        //לשנותתת
-        operationFrom.Balance = 1;
+        operationFrom.Balance = balance.fromBalance;
 
         OperationHistory operationTo = new OperationHistory();
         operationTo.AccountId = updateBalance.ToAccountId;
@@ -127,45 +117,12 @@ public class AccountService : IAccountService
         operationTo.IsDebit = false;
         operationTo.TransactionAmount = updateBalance.Amount;
         operationTo.OperationTime = DateTime.Now;
-        //לשנות!
-        operationTo.Balance = 1;
+        operationTo.Balance = balance.toBalance;
 
         return await _OperationHistoryStorage.addOperationHistory(operationFrom, operationTo);
     }
-    public EmailVerificationModel sendEmail(string email)
-    {
-        //generate a code
-        var code = new Random(Guid.NewGuid().GetHashCode()).Next(0, 9999).ToString("D4");
-        //send a mail
-        MailAddress from = new MailAddress("crossriver@outlook.co.il");
-        MailAddress to = new MailAddress(email);
-        MailMessage message = new MailMessage(from, to);
-        message.Subject = "Confirm your email address";
-        message.Body = $"Your confirmation code is below — enter it in your open browser window and sign in :) \n {code}";
-        SmtpClient SmtpServer = new SmtpClient("smtp.office365.com");
-        SmtpServer.Port = 587;
-        SmtpServer.UseDefaultCredentials = false;
-        SmtpServer.Credentials = new System.Net.NetworkCredential("crossriver@outlook.co.il", "Zipi&Shira");
-        SmtpServer.EnableSsl = true;
-        try
-        {
-            SmtpServer.Send(message);
-            EmailVerificationModel emailVerificationModel = new EmailVerificationModel()
-            {
-                Email = email,
-                VerificationCode = code,
-                ExpirationTime = DateTime.Now
-            };
-            return emailVerificationModel;
-        }
-        catch (SmtpException ex)
-        {
-            Console.WriteLine(ex);
-            return null;
-        }
-    }
-}
 
+}
 
 //if (await _AccountStorage.accountExist(updateBalance.FromAccountId) == false)
 //        {

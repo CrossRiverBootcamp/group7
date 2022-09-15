@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj": {}
+    "C:\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj": {
+    "C:\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj",
+        "projectUniqueName": "C:\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj",
         "projectName": "CustomerAccount.Service",
-        "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj",
+        "projectPath": "C:\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Service\\obj\\",
+        "outputPath": "C:\\group7\\Server\\Bank\\CustomerAccount.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
-                "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj"
+              "C:\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
+                "projectPath": "C:\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj"
               },
-              "C:\\פרויקט גמר\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
-                "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\NSB\\NSB.csproj"
+              "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
+                "projectPath": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
+    "C:\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj",
+        "projectUniqueName": "C:\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj",
         "projectName": "CustomerAccount.Storage",
-        "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj",
+        "projectPath": "C:\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Storage\\obj\\",
+        "outputPath": "C:\\group7\\Server\\Bank\\CustomerAccount.Storage\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -103,8 +103,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\פרויקט גמר\\group7\\Server\\Bank\\Exception\\Exceptions.csproj": {
-                "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\Exception\\Exceptions.csproj"
+              "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj": {
+                "projectPath": "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj"
               }
             }
           }
@@ -171,14 +171,14 @@
         }
       }
     },
-    "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj": {
+    "C:\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj",
+        "projectUniqueName": "C:\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj",
         "projectName": "CustomerAccount.WebApi",
-        "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj",
+        "projectPath": "C:\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount\\obj\\",
+        "outputPath": "C:\\group7\\Server\\Bank\\CustomerAccount\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -195,11 +195,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj": {
-                "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj"
+              "C:\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj": {
+                "projectPath": "C:\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj"
               },
-              "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
-                "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj"
+              "C:\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
+                "projectPath": "C:\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj"
               }
             }
           }
@@ -291,14 +291,14 @@
         }
       }
     },
-    "C:\\פרויקט גמר\\group7\\Server\\Bank\\Exception\\Exceptions.csproj": {
+    "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\פרויקט גמר\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
+        "projectUniqueName": "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
         "projectName": "Exceptions",
-        "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
+        "projectPath": "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\Exception\\obj\\",
+        "outputPath": "C:\\group7\\Server\\Bank\\Exception\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -345,14 +345,14 @@
         }
       }
     },
-    "C:\\פרויקט גמר\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
+    "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\פרויקט גמר\\group7\\Server\\Bank\\NSB\\NSB.csproj",
+        "projectUniqueName": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj",
         "projectName": "NSB",
-        "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\NSB\\NSB.csproj",
+        "projectPath": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\NSB\\obj\\",
+        "outputPath": "C:\\group7\\Server\\Bank\\NSB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",

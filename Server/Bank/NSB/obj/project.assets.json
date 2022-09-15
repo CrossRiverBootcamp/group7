@@ -875,11 +875,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\פרויקט גמר\\group7\\Server\\Bank\\NSB\\NSB.csproj",
+      "projectUniqueName": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj",
       "projectName": "NSB",
-      "projectPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\NSB\\NSB.csproj",
+      "projectPath": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj",
       "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-      "outputPath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\NSB\\obj\\",
+      "outputPath": "C:\\group7\\Server\\Bank\\NSB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lnLexeJYxqwUZ71RWSJBCh/uUsK5MIjfKRKWov2FAmDDbEk0ya4LskVoMxnFdCEbTa8QM9/rVWPS31bxSyvsog==",
+  "dgSpecHash": "pNOZVZq0SkMHxgrYzHWPs0rosK3/XJYFpbNksKGT72TxIJHn3dKtpqe3WTDk0TJ2iWLjhTjnN7OL7ctR9yGqnA==",
   "success": true,
-  "projectFilePath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj",
+  "projectFilePath": "C:\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user1\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\automapper.collection\\8.0.0\\automapper.collection.8.0.0.nupkg.sha512",

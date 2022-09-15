@@ -32,16 +32,16 @@ public class EmailVerificationStorage : IEmailVerificationStorage
         }
     }
 
-    public async Task<bool> verifyUser(EmailVerification emailVerification)
+    public async Task<bool> verifyUser(string emailVerification , string email)
     {
         using var _BankDbContext = _factory.CreateDbContext();
         {
             try
             {
                 if (await _BankDbContext.EmailsVerification.FirstOrDefaultAsync(verification =>
-                verification.Email == emailVerification.Email &&
-                verification.ExpirationTime.AddMinutes(2) <= emailVerification.ExpirationTime &&
-                verification.VerificationCode == emailVerification.VerificationCode) != null)
+                verification.Email == email &&
+                verification.ExpirationTime.AddMinutes(5) <= DateTime.Now &&
+                verification.VerificationCode == emailVerification) == null)
                 {
                     return true;
                 }

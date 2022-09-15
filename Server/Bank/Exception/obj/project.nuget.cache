@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V6sjSMThQCJ5wSToJuzNybzm/4iIS1mwBoDqBz55GeSmM+GYpxVP6mqmgCzws+odqD3/9YEagbWBT6RHZPPQCg==",
+  "dgSpecHash": "6keDHTmXI8DR2D76CLhWHfkdttW4gsUPye9+7nxGcfBOtJMlo3zXKrwi32fqvl7i5mRbNQsj2K8AigOcbH/7qw==",
   "success": true,
-  "projectFilePath": "C:\\פרויקט גמר\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
+  "projectFilePath": "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
