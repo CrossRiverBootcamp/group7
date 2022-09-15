@@ -22,19 +22,27 @@ public class EmailVerificationService : IEmailVerificationService
     }
     public async Task<bool> verifyUser(string email)
     {
-
+        
         if (await _AccountStorage.emailExist(email) == false)
         {
-            EmailVerificationModel emailVerificationModel = sendEmail(email);
-            if (emailVerificationModel != null)
+            if (await _EmailVerificationStorage.numOfTrialsIsOver(email) == false)
             {
-                EmailVerification emailVerification = _Mapper.Map<EmailVerificationModel, EmailVerification>(emailVerificationModel);
-                return await _EmailVerificationStorage.addEmailVarifiction(emailVerification);
+                EmailVerificationModel emailVerificationModel = sendEmail(email);
+                if (emailVerificationModel != null)
+                {
+                    EmailVerification emailVerification = _Mapper.Map<EmailVerificationModel, EmailVerification>(emailVerificationModel);
+                    return await _EmailVerificationStorage.addEmailVarifiction(emailVerification);
+                }
+                else
+                {
+                    return false;
+                }
             }
             else
             {
                 return false;
             }
+        
 
         }
         else

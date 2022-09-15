@@ -9,4 +9,6 @@ public class EmailVerificationModel
     public string VerificationCode { get; set; }
 
     public DateTime ExpirationTime { get; set; }
+
+
 }
