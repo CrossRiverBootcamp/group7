@@ -1,6 +1,7 @@
 ﻿
 using CustomerAccount.Storage.Entites;
 using CustomerAccount.Storage.Interfaces;
+using Exceptions;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
@@ -23,7 +24,7 @@ public class OperationHistoryStorage : IOperationHistoryStorage
                 var innerJoinQuery = from toOperationsHistory in _BankDbContext.OperationsHistory
                                      join fromoperationsHistory in _BankDbContext.OperationsHistory
                                      on toOperationsHistory.TransactionID equals fromoperationsHistory.TransactionID
-                                     where fromoperationsHistory.AccountId == accountID && toOperationsHistory.AccountId!= fromoperationsHistory.AccountId
+                                     where fromoperationsHistory.AccountId == accountID && toOperationsHistory.AccountId != fromoperationsHistory.AccountId
                                      select new OperationHistory
                                      {
                                          AccountId = toOperationsHistory.AccountId,
@@ -38,7 +39,7 @@ public class OperationHistoryStorage : IOperationHistoryStorage
             }
             catch
             {
-                throw new Exception();//לשנותתתתתתתתתתת
+                throw new DbContextException();
             }
         }
     }
@@ -55,9 +56,25 @@ public class OperationHistoryStorage : IOperationHistoryStorage
             }
             catch
             {
-                throw new Exception();//לשנותתתתתתתתתתת
+                throw new DbContextException();
             }
         }
     }
 
+    public async Task<int> getOperationHistoryRecoredsCount(int accountID)
+    {
+        using var _BankDbContext = _factory.CreateDbContext();
+        {
+            try
+            {
+                var operationHistories = await _BankDbContext.OperationsHistory.Where(operation => operation.AccountId == accountID
+                || operation.TransactionID == accountID).ToListAsync();
+                return operationHistories.Count();
+            }
+            catch
+            {
+                throw new DbContextException();
+            }
+        }
+    }
 }

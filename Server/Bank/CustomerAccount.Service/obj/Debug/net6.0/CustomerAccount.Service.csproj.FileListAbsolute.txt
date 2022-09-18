@@ -82,14 +82,22 @@ C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\Custo
 C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.dll
 C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\refint\CustomerAccount.Service.dll
 C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.pdb
-C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Service.deps.json
-C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Service.dll
-C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Service.pdb
-C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Storage.dll
-C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\Exceptions.dll
-C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\NSB.dll
-C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Storage.pdb
-C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\NSB.pdb
-C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\Exceptions.pdb
-C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.csproj.CopyComplete
-C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\ref\CustomerAccount.Service.dll
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Storage.dll
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\Exceptions.dll
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\NSB.dll
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Storage.pdb
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\NSB.pdb
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\Exceptions.pdb
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.csproj.AssemblyReference.cache
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.AssemblyInfoInputs.cache
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.AssemblyInfo.cs
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.csproj.CoreCompileInputs.cache
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.csproj.CopyComplete
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.dll
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\refint\CustomerAccount.Service.dll
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.pdb
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Service.deps.json
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Service.dll
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\bin\Debug\net6.0\CustomerAccount.Service.pdb
+C:\Users\01\crossRiver\The_Final_Project\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\ref\CustomerAccount.Service.dll

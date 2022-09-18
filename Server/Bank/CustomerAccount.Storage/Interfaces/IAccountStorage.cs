@@ -12,8 +12,4 @@ public interface IAccountStorage
     public Task<bool> balanceCheacking( float ammount , int accountID);
     public Task<BalanceObject> updateBalance( float ammount , int fromAccountID, int toAccountID);
 
-
-
-
-
 }

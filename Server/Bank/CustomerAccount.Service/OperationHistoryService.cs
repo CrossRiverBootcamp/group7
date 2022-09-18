@@ -15,14 +15,12 @@ public class OperationHistoryService : IOperationHistoryService
     public OperationHistoryService(IOperationHistoryStorage OperationHistoryStorage, IMapper Mapper, IAccountStorage AccountStorage)
     {
         _OperationHistoryStorage = OperationHistoryStorage;
-        _AccountStorage= AccountStorage;
+        _AccountStorage = AccountStorage;
         _Mapper = Mapper;
 
     }
 
-    
-
-    public async Task<List<OperationHistoryModel>> getOperationHistory(int accountID , int pageNumber, int numberOfRecords)
+    public async Task<List<OperationHistoryModel>> getOperationHistory(int accountID, int pageNumber, int numberOfRecords)
     {
         List<OperationHistory> operationHistory = await _OperationHistoryStorage.getOperationHistory(accountID, pageNumber, numberOfRecords);
         List<OperationHistoryModel> operationsList = operationHistory.ConvertAll(operation => _Mapper.Map<OperationHistoryModel>(operation));
@@ -34,5 +32,11 @@ public class OperationHistoryService : IOperationHistoryService
         Account account = await _AccountStorage.getAccountCustomerInfo(accountID);
         CustomerInfoModel customerInfo = _Mapper.Map<Account, CustomerInfoModel>(account);
         return customerInfo;
+    }
+
+    public Task<int> getOperationHistoryRecoredsCount(int accountID)
+    {
+        return _OperationHistoryStorage.getOperationHistoryRecoredsCount(accountID);
+
     }
 }
