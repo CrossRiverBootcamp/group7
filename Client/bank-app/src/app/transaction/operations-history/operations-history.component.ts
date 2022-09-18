@@ -1,31 +1,6 @@
-// import { AfterViewInit, Component } from '@angular/core';
-// import { MatTableDataSource } from '@angular/material/table';
-// import { OperationHistoryModel } from 'src/app/models/OperationHistory.model';
-// import { CurrentUserService } from 'src/app/services/current-user.service';
-// import { OperationsHistoryService } from 'src/app/services/operations-history.service';
-
-
-
-// export class OperationsHistoryComponent implements  AfterViewInit {
-
-//   operationsHistoryList: OperationHistoryModel[] = [];
-//   displayedColumns: string[] = ['accountId', 'isDebit', 'amount', 'balance', 'date'];
-//   dataSource!: MatTableDataSource<OperationHistoryModel>;
-//   @ViewChild
-
-//   constructor(private _operationsHistoryService: OperationsHistoryService, private _currentUserService: CurrentUserService) { }
-
-//   ngAfterViewInit() {
-//     let accountId = this._currentUserService.getAccountId();
-//     this._operationsHistoryService.getOperationsHistory(accountId).subscribe(data=>{
-//       this.operationsHistoryList=data;
-//       this.dataSource = new MatTableDataSource<OperationHistoryModel>(this.operationsHistoryList);
-//     })
-//     this.dataSource.paginator = this.paginator;
-//   }
-// }
+import { NumberInput } from '@angular/cdk/coercion';
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
+import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { OperationHistoryModel } from 'src/app/models/operation-history.model';
 import { TransactionDetailsModel } from 'src/app/models/transaction-details.model';
@@ -33,9 +8,7 @@ import { CurrentUserService } from 'src/app/services/current-user.service';
 import { OperationsHistoryService } from 'src/app/services/operations-history.service';
 import Swal from 'sweetalert2';
 
-/**
- * @title Table with pagination
- */
+
 @Component({
   selector: 'app-operations-history',
   templateUrl: './operations-history.component.html',
@@ -49,27 +22,50 @@ export class OperationsHistoryComponent implements AfterViewInit {
     email: ''
   }
   displayedColumns: string[] = ['accountId', 'isDebit', 'amount', 'balance', 'date'];
-  dataSource!: MatTableDataSource<OperationHistoryModel>;
+  numOfOperaitons!: number;
+  numberOfRecords!: NumberInput;
+  pageNumber: NumberInput = 0;
+  pageSizeOptions: number[] = [5, 10, 15];
+  dataSource= new MatTableDataSource<OperationHistoryModel>();
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
+  
   constructor(private _operationsHistoryService: OperationsHistoryService, private _currentUserService: CurrentUserService) { }
 
   ngAfterViewInit() {
-    let accountId = this._currentUserService.getAccountId();
-    this._operationsHistoryService.getOperationsHistory(accountId).subscribe(data => {
-      this.operationsHistoryList = data;
-      this.dataSource = new MatTableDataSource<OperationHistoryModel>(this.operationsHistoryList);
-      this.dataSource.paginator = this.paginator;
-    })
+    this.dataSource.paginator = this.paginator;
   }
+  ngOnInit(): void {
+    this.uploudData(); 
+  }
+  uploudData(pageNumber: number = 0, numberOfRecords: number = 5) {
+    let accountId = this._currentUserService.getAccountId();
+    //???
+    this.numOfOperaitons = 11;
+    this._operationsHistoryService.getOperationsHistory(accountId, pageNumber, numberOfRecords).subscribe(data => {
+      //if data
+      this.operationsHistoryList = data;
+      this.dataSource.data = data;
+      this.paginator.pageIndex = this.pageNumber;
+      setTimeout(() => {
+        this.paginator.pageIndex = this.pageNumber;
+        this.paginator.length =this.numOfOperaitons;
+      })})
+  }
+
+  getNextPage(event: PageEvent) {
+    this.pageNumber = event.pageIndex;
+    this.numberOfRecords = event.pageSize;
+    this.uploudData(this.pageNumber, this.numberOfRecords)
+  }
+ 
   getAccountInformation(accountId: number) {
     this._operationsHistoryService.getTransactionDetails(accountId).subscribe(data => {
       this.transactionDetails = data;
       Swal.fire({
-        title:"Transaction Details:",
-        text:`${data.firstName}  ${this.transactionDetails.lastName}\n ${this.transactionDetails.email}`
+        title: "Transaction Details:",
+        text: `${data.firstName}  ${this.transactionDetails.lastName}\n ${this.transactionDetails.email}`
       })
     });
   }
 }
-

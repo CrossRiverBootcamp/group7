@@ -14,7 +14,7 @@ public class OperationHistoryStorage : IOperationHistoryStorage
         _factory = factory;
     }
 
-    public async Task<List<OperationHistory>> getOperationHistory(int accountID)
+    public async Task<List<OperationHistory>> getOperationHistory(int accountID, int pageNumber, int numberOfRecords)
     {
         using var _BankDbContext = _factory.CreateDbContext();
         {
@@ -32,6 +32,7 @@ public class OperationHistoryStorage : IOperationHistoryStorage
                                          Balance = fromoperationsHistory.Balance,
                                          OperationTime = fromoperationsHistory.OperationTime
                                      };
+                innerJoinQuery = innerJoinQuery.Skip(pageNumber * numberOfRecords).Take(numberOfRecords);
 
                 return innerJoinQuery.ToList();
             }

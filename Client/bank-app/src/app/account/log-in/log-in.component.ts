@@ -41,7 +41,7 @@ export class LogInComponent implements OnInit {
           title:"Hi!!",
           text:"wellcame :)",
           icon: "success",
-        }).then( ()=> this._router.navigate(['account-info']))
+        }).then( ()=> this._router.navigate(['account/account-info']))
       }
       else{
         Swal.fire({
@@ -49,7 +49,7 @@ export class LogInComponent implements OnInit {
           text:"we dont Know you :( ",
           icon: "error",
           cancelButtonText:"Click her to register"    
-        }).then( ()=> this._router.navigate(['register']))
+        }).then( ()=> this._router.navigate(['account/register']))
       }
     }),(error: { message: string }) =>{
       Swal.fire({

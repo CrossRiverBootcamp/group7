@@ -9,9 +9,6 @@ import { AccountModel } from '../models/account.model';
 export class AccountService {
 
   baseUrl: string = "/api/Account/";
-  // headers= new HttpHeaders()
-  // .set( 'Authorization', 'Bearer ' + 'userToken')
-
   constructor(private _http: HttpClient) { }
 
   getAccountInfoById(accountId: number):Observable<AccountModel> {

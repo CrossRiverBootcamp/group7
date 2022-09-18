@@ -21,9 +21,9 @@ public class OperationHistoryController : Controller
     }
     // GET/
     [HttpGet("{accountID}")]
-    public async Task<ActionResult<List<OperationHistoryDTO>>> getOperationHistory(int accountID)
+    public async Task<ActionResult<List<OperationHistoryDTO>>> getOperationHistory(int accountID,int page, int records)
     {
-        List<OperationHistoryModel> OperationHistory = await _OperationHistoryService.getOperationHistory(accountID);
+        List<OperationHistoryModel> OperationHistory = await _OperationHistoryService.getOperationHistory(accountID , page , records);
         //לבדוק
         List<OperationHistoryDTO> operationsList = OperationHistory.ConvertAll(operation => _IMapper.Map<OperationHistoryDTO>(operation));
         return operationsList;

@@ -143,7 +143,7 @@ public class AccountService : IAccountService
         message.Subject = "Confirm your email address";
         message.Body = $"Your confirmation code is below — enter it in your open browser window and sign in :) \n {code}";
         SmtpClient SmtpServer = new SmtpClient("smtp.office365.com");
-        SmtpServer.Port = 587;
+        SmtpServer.Port = 25;
         SmtpServer.UseDefaultCredentials = false;
         SmtpServer.Credentials = new System.Net.NetworkCredential("crossriver@outlook.co.il", "Zipi&Shira");
         SmtpServer.EnableSsl = true;

@@ -22,9 +22,9 @@ public class OperationHistoryService : IOperationHistoryService
 
     
 
-    public async Task<List<OperationHistoryModel>> getOperationHistory(int accountID)
+    public async Task<List<OperationHistoryModel>> getOperationHistory(int accountID , int pageNumber, int numberOfRecords)
     {
-        List<OperationHistory> operationHistory = await _OperationHistoryStorage.getOperationHistory(accountID);
+        List<OperationHistory> operationHistory = await _OperationHistoryStorage.getOperationHistory(accountID, pageNumber, numberOfRecords);
         List<OperationHistoryModel> operationsList = operationHistory.ConvertAll(operation => _Mapper.Map<OperationHistoryModel>(operation));
         return operationsList;
     }
