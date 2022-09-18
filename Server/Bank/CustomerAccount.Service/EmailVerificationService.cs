@@ -1,11 +1,10 @@
 ﻿
-
 using AutoMapper;
 using CustomerAccount.Service.Interfaces;
 using CustomerAccount.Service.Models;
 using CustomerAccount.Storage.Entites;
 using CustomerAccount.Storage.Interfaces;
-using System.Net.Mail;
+
 
 namespace CustomerAccount.Service;
 

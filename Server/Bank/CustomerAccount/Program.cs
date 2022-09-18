@@ -42,8 +42,6 @@ builder.Host.UseNServiceBus(hostBuilderContext =>
     
     return endpointConfiguration;
 });
-//retry...
-
 #endregion
 
 builder.Services.AddScoped<IAccountService, AccountService>();
@@ -52,6 +50,7 @@ builder.Services.AddScoped<IOperationHistoryService,OperationHistoryService>();
 builder.Services.AddScoped<IEmailVerificationService, EmailVerificationService>();
 
 builder.Services.AddServiceExtension(databaseConnection);
+
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

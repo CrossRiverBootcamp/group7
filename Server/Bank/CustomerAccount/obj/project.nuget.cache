@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iSB/hGA1kpiZyJL92XD23S+wP6WVEBzsVd829uxidrbDXj/0miuTVEbQrGs2YsHMtewwN7pgKYH6yjleQpDK8A==",
+  "dgSpecHash": "Aj20gT9jTZnfs4Uj8644abZj1tWw4ReRsz5VyGZnMRMiRJ5Jd/TCdMVWNwuGulqQYbjfXCqTDLD0p0gccJVDLw==",
   "success": true,
   "projectFilePath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj",
   "expectedPackageFiles": [
@@ -95,12 +95,5 @@
     "C:\\Users\\user1\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

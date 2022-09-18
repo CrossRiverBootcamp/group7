@@ -197,9 +197,6 @@
             "projectReferences": {
               "C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj": {
                 "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj"
-              },
-              "C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
-                "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj"
               }
             }
           }

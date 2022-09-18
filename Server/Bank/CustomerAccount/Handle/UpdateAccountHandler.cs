@@ -22,12 +22,10 @@ public class UpdateAccountHandler : IHandleMessages<UpdateAccount>
 
     public async Task Handle(UpdateAccount message, IMessageHandlerContext context)
     {
-        log.Info($"Received UpdateAccount, TransactionID = {message.TransactionID}");
+        log.Info($"Received the massage to update account balance, TransactionID = {message.TransactionID}");
         UpdateBalanceModel updateBalance = _mapper.Map<UpdateAccount, UpdateBalanceModel>(message);
-        AccountUpdated accountUpdated= await _AccountService.updateBalance(updateBalance );
+        AccountUpdated accountUpdated= await _AccountService.updateBalance(updateBalance);
+        log.Info($"Finish to update account balance, TransactionID = {message.TransactionID}");
         await context.Publish(accountUpdated);
-
-
-
     }
 }

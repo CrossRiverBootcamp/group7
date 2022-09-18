@@ -88,8 +88,8 @@ public class AccountService : IAccountService
         {
             BalanceObject balance = await _AccountStorage.updateBalance(updateBalance.Amount, updateBalance.FromAccountId, updateBalance.ToAccountId);
             await addOperationHistory(updateBalance, balance);
-            string subject = $"Transaction to {updateBalance.ToAccountId} ";
-            string body = $"{updateBalance.Amount} were transferred to {updateBalance.ToAccountId} successfully :)";
+            string subject = $"Transaction to num account  {updateBalance.ToAccountId} ";
+            string body = $"{updateBalance.Amount} $ were transferred to num account: {updateBalance.ToAccountId} successfully :)";
             _sendEmail.sendEmail(email, subject, body);
             return await CreateEvent(updateBalance.TransactionId, 1, null);
            

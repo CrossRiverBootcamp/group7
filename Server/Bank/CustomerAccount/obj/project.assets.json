@@ -3578,7 +3578,6 @@
       "AutoMapper.Collection >= 8.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "CustomerAccount.Service >= 1.0.0",
-      "CustomerAccount.Storage >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Analyzers >= 6.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.8",
@@ -3620,9 +3619,6 @@
           "projectReferences": {
             "C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj": {
               "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj"
-            },
-            "C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
-              "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj"
             }
           }
         }
@@ -3713,13 +3709,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

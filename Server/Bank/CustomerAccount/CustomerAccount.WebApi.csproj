@@ -27,7 +27,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CustomerAccount.Service\CustomerAccount.Service.csproj" />
-    <ProjectReference Include="..\CustomerAccount.Storage\CustomerAccount.Storage.csproj" />
   </ItemGroup>
 
 </Project>

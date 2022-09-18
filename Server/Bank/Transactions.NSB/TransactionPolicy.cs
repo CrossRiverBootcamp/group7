@@ -18,7 +18,7 @@ public class TransactionPolicy : Saga<TransactionPolicyData>,
         Data.TransactionID = message.TransactionID;
         await context.Send(new UpdateAccount()
         {
-            TransactionID = Data.TransactionID,
+            TransactionID = message.TransactionID,
             FromAccountId = message.FromAccountId,
             ToAccountId = message.ToAccountId,
             Amount = message.Amount
