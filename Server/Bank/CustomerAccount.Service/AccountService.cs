@@ -130,6 +130,7 @@ public class AccountService : IAccountService
         return await _OperationHistoryStorage.addOperationHistory(operationFrom, operationTo);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     public EmailVerificationModel sendEmail(string email)
     {
         //generate a code
@@ -162,6 +163,9 @@ public class AccountService : IAccountService
             return null;
         }
     }
+=======
+
+>>>>>>> 9abc94a96feaab852333e5f4d36efb30db015341
 =======
 
 >>>>>>> 9abc94a96feaab852333e5f4d36efb30db015341
