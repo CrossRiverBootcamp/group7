@@ -8,7 +8,7 @@ using NServiceBus.Logging;
 namespace Transactions.NSB;
 
 public class TransactionPolicy : Saga<TransactionPolicyData>,
- IAmStartedByMessages<Payload>, IAmStartedByMessages<AccountUpdated>
+ IAmStartedByMessages<Payload>, IHandleMessages<AccountUpdated>
 {
     static ILog log = LogManager.GetLogger<TransactionPolicy>();
     
@@ -27,7 +27,7 @@ public class TransactionPolicy : Saga<TransactionPolicyData>,
 
     public Task Handle(AccountUpdated message, IMessageHandlerContext context)
     {
-        log.Info($"Received AccountUpdated,  TransactionID = {message.TransactionID}");
+        log.Info($"Received update account balance,  TransactionID = {message.TransactionID}");
         MarkAsComplete();
         return Task.CompletedTask;
     }

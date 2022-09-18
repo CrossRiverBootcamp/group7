@@ -7,7 +7,10 @@ using NServiceBus;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var databaseConnection = builder.Configuration.GetConnectionString("DatabaseConnectionShira");
+var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+var databaseConnection = builder.Configuration.GetConnectionString("DatabaseConnectionZipi");
+var emailAddress = builder.Configuration.GetSection("Email:Address");
+var emailPassword = builder.Configuration.GetSection("Email:Password"); ;
 
 #region NServiceBus configurations
 
@@ -47,6 +50,7 @@ builder.Host.UseNServiceBus(hostBuilderContext =>
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IOperationHistoryService,OperationHistoryService>();
+builder.Services.AddScoped<ISendEmail, SendEmail>();
 builder.Services.AddScoped<IEmailVerificationService, EmailVerificationService>();
 
 builder.Services.AddServiceExtension(databaseConnection);

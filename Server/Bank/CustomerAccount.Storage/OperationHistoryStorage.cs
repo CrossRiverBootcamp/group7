@@ -33,9 +33,9 @@ public class OperationHistoryStorage : IOperationHistoryStorage
                                          Balance = fromoperationsHistory.Balance,
                                          OperationTime = fromoperationsHistory.OperationTime
                                      };
+                innerJoinQuery = innerJoinQuery.OrderByDescending(record => record.OperationTime);
                 innerJoinQuery = innerJoinQuery.Skip(pageNumber * numberOfRecords).Take(numberOfRecords);
-
-                return innerJoinQuery.ToList();
+                return await innerJoinQuery.ToListAsync();
             }
             catch
             {

@@ -34,30 +34,28 @@ public class HandlerErrorsMiddleware
             {
                 case ArgumentNullException e:
                     // custom application error
-                   await response.WriteAsJsonAsync($"Oppps... \n the argument {e.Message} is null!");
                     response.StatusCode = (int)HttpStatusCode.BadRequest;
+                   await response.WriteAsJsonAsync($"Oppps... \n the argument {e.Message} is null!");
                     break;
                 case KeyNotFoundException e:
                     // not found error
-                    await response.WriteAsync("Oppps... \n Page Not Found!");
                     response.StatusCode = (int)HttpStatusCode.NotFound;
-
+                    await response.WriteAsync("Oppps... \n Page Not Found!");
                     break;
                 case UserNotFoundException e:
                     // user didn't found error
-                    await response.WriteAsJsonAsync("Oppps... \n user didn't found!");
-                   var a = response.BodyWriter;
                     response.StatusCode = (int)HttpStatusCode.Unauthorized;
+                    await response.WriteAsJsonAsync("Oppps... \n user didn't found!");
                     break;
                 case DbContextException e:
                     // DbContext error
-                    await response.WriteAsync("Oppps... \n DbContext error!");
                     response.StatusCode = (int)HttpStatusCode.NotExtended;
+                    await response.WriteAsync("Oppps... \n DbContext error!");
                     break;
                 default:
                     // unhandled error
-                    await response.WriteAsync("Oppps... \n we are trying to fix the problem!");
                     response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                    await response.WriteAsync("Oppps... \n we are trying to fix the problem!");
                     break;
             }
         }

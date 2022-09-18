@@ -2,7 +2,6 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using NServiceBus;
-using System.Net.Http;
 using Transaction.Service.Interfaces;
 using Transaction.Service.Models;
 using Transaction.WebApi.DTO;
@@ -32,7 +31,14 @@ public class TransactionController : ControllerBase
     {
         TransactionModel newTansaction = _IMapper.Map<TransactionDTO, TransactionModel>(transaction);
         var result = await _TransactionService.createTransaction(newTansaction, _messageSession);
-        return Ok(result);
+        if (result ==  true)
+        {
+            return StatusCode(202, "request in progress");
+        }
+        else
+        {
+            return StatusCode(500, "request faild");
+        }
 
     }
  }

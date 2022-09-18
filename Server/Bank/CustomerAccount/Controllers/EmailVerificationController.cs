@@ -1,7 +1,5 @@
-﻿using AutoMapper;
+﻿
 using CustomerAccount.Service.Interfaces;
-using CustomerAccount.Service.Models;
-using CustomerAccount.WebApi.DTO;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CustomerAccount.WebApi.Controllers;
@@ -12,11 +10,10 @@ namespace CustomerAccount.WebApi.Controllers;
 public class EmailVerificationController : ControllerBase
 {
     IEmailVerificationService _EmailVerificationService;
-    IMapper _Mapper;
-    public EmailVerificationController(IEmailVerificationService EmailVerificationService , IMapper Mapper)
+
+    public EmailVerificationController(IEmailVerificationService EmailVerificationService)
     {
-        _EmailVerificationService= EmailVerificationService;
-        _Mapper= Mapper;
+        _EmailVerificationService = EmailVerificationService;
     }
 
     // POST/

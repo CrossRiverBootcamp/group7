@@ -7,7 +7,6 @@ using System.Data.SqlClient;
 
 public class Program
 {
-    static ILog log = LogManager.GetLogger<Program>();
     static async Task Main()
     {
         Console.Title = "Transaction";
@@ -25,23 +24,10 @@ public class Program
         persistence.ConnectionBuilder(
             connectionBuilder: () =>
             {
-                return new SqlConnection(config.GetConnectionString("NSBConnectionShira"));
+                return new SqlConnection(config.GetConnectionString("NSBConnectionZipi"));
             });
 
         var dialect = persistence.SqlDialect<SqlDialect.MsSqlServer>();
-
-        //var recoverability = endpointConfiguration.Recoverability();
-        //recoverability.Immediate(
-        //    immediate =>
-        //    {
-        //        immediate.NumberOfRetries(0);
-        //    });
-        //recoverability.Delayed(
-        //    delayed =>
-        //    {
-        //        delayed.NumberOfRetries(0);
-
-        //    });
 
         var conventions = endpointConfiguration.Conventions();
         conventions.DefiningCommandsAs(type => type.Namespace == "NSB.Command");

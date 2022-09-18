@@ -10,13 +10,12 @@ namespace CustomerAccount.Service;
 public class CustomerService : ICustomerService
 {
 
-    IMapper _Mapper;
+  
     ICustomerStorage _CustomerStorage;
     IAuthorizationFuncs _AuthorizationFuncs;
-    public CustomerService(ICustomerStorage CustomerStorage, IMapper Mapper, IAuthorizationFuncs authorizationFuncs)
+    public CustomerService(ICustomerStorage CustomerStorage, IAuthorizationFuncs authorizationFuncs)
     {
         _CustomerStorage = CustomerStorage;
-        _Mapper = Mapper;
         _AuthorizationFuncs = authorizationFuncs;
     }
     public async Task<int> login(LoginModel login)

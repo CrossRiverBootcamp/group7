@@ -3578,7 +3578,6 @@
       "AutoMapper.Collection >= 8.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "CustomerAccount.Service >= 1.0.0",
-      "CustomerAccount.Storage >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Analyzers >= 6.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.8",
@@ -3592,24 +3591,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\01\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\user1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\01\\crossRiver\\The_Final_Project\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj",
+      "projectUniqueName": "C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj",
       "projectName": "CustomerAccount.WebApi",
-      "projectPath": "C:\\Users\\01\\crossRiver\\The_Final_Project\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj",
-      "packagesPath": "C:\\Users\\01\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\01\\crossRiver\\The_Final_Project\\group7\\Server\\Bank\\CustomerAccount\\obj\\",
+      "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj",
+      "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
+      "outputPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\01\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3623,11 +3617,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\01\\crossRiver\\The_Final_Project\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj": {
-              "projectPath": "C:\\Users\\01\\crossRiver\\The_Final_Project\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj"
-            },
-            "C:\\Users\\01\\crossRiver\\The_Final_Project\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
-              "projectPath": "C:\\Users\\01\\crossRiver\\The_Final_Project\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj"
+            "C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj": {
+              "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj"
             }
           }
         }
@@ -3703,8 +3694,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -3716,7 +3706,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
