@@ -74,3 +74,11 @@ C:\פרויקט\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\Cust
 C:\פרויקט\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\refint\CustomerAccount.Service.dll
 C:\פרויקט\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.pdb
 C:\פרויקט\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\ref\CustomerAccount.Service.dll
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.csproj.AssemblyReference.cache
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.AssemblyInfoInputs.cache
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.AssemblyInfo.cs
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.csproj.CoreCompileInputs.cache
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.dll
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\refint\CustomerAccount.Service.dll
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Service\obj\Debug\net6.0\CustomerAccount.Service.pdb

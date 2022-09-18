@@ -438,3 +438,13 @@ C:\פרויקט\group7\Server\Bank\CustomerAccount\obj\Debug\net6.0\refint\Custo
 C:\פרויקט\group7\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.pdb
 C:\פרויקט\group7\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.genruntimeconfig.cache
 C:\פרויקט\group7\Server\Bank\CustomerAccount\obj\Debug\net6.0\ref\CustomerAccount.WebApi.dll
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.csproj.AssemblyReference.cache
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.AssemblyInfoInputs.cache
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.AssemblyInfo.cs
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.csproj.CoreCompileInputs.cache
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.dll
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount\obj\Debug\net6.0\refint\CustomerAccount.WebApi.dll
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount\obj\Debug\net6.0\CustomerAccount.WebApi.pdb

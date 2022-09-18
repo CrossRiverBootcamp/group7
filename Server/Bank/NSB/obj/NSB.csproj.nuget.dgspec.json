@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj": {}
+    "C:\\pruhey xyoh\\group7\\Server\\Bank\\NSB\\NSB.csproj": {}
   },
   "projects": {
-    "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
+    "C:\\pruhey xyoh\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj",
+        "projectUniqueName": "C:\\pruhey xyoh\\group7\\Server\\Bank\\NSB\\NSB.csproj",
         "projectName": "NSB",
-        "projectPath": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj",
+        "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\NSB\\NSB.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\group7\\Server\\Bank\\NSB\\obj\\",
+        "outputPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\NSB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -68,11 +68,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
-=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
->>>>>>> 9abc94a96feaab852333e5f4d36efb30db015341
         }
       }
     }
