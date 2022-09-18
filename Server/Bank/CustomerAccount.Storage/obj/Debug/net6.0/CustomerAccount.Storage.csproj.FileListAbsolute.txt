@@ -66,3 +66,20 @@ C:\פרויקט\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\refi
 C:\פרויקט\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.pdb
 C:\פרויקט\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.genruntimeconfig.cache
 C:\פרויקט\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\ref\CustomerAccount.Storage.dll
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Storage\bin\Debug\net6.0\CustomerAccount.Storage.deps.json
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Storage\bin\Debug\net6.0\CustomerAccount.Storage.runtimeconfig.json
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Storage\bin\Debug\net6.0\CustomerAccount.Storage.dll
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Storage\bin\Debug\net6.0\CustomerAccount.Storage.pdb
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Storage\bin\Debug\net6.0\Exceptions.dll
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Storage\bin\Debug\net6.0\Exceptions.pdb
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.csproj.AssemblyReference.cache
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.GeneratedMSBuildEditorConfig.editorconfig
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.AssemblyInfoInputs.cache
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.AssemblyInfo.cs
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.csproj.CoreCompileInputs.cache
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.csproj.CopyComplete
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.dll
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\refint\CustomerAccount.Storage.dll
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.pdb
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\CustomerAccount.Storage.genruntimeconfig.cache
+C:\pruhey xyoh\group7\Server\Bank\CustomerAccount.Storage\obj\Debug\net6.0\ref\CustomerAccount.Storage.dll

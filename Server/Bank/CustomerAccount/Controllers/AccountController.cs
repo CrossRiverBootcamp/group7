@@ -23,10 +23,10 @@ public class AccountController : ControllerBase
 
     // POST/
     [HttpPost]
-    public async Task<ActionResult<bool>> createNewAccount([FromBody] string email)
+    public async Task<ActionResult<bool>> createNewAccount([FromBody] CustomerDTO customer)
     {
-        //CustomerModel newAcustomer = _IMapper.Map<CustomerDTO, CustomerModel>(email);
-        var result = await _AccountService.createNewAccount(email);
+        CustomerModel newAcustomer = _IMapper.Map<CustomerDTO, CustomerModel>(customer);
+        var result = await _AccountService.createNewAccount(newAcustomer);
         return Ok(result);
 
     }

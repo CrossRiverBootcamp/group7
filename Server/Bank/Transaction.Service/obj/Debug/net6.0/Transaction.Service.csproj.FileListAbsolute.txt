@@ -55,3 +55,22 @@ C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Service\obj\Debug\n
 C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Service\obj\Debug\net6.0\refint\Transaction.Service.dll
 C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.pdb
 C:\Users\01\crossRiver\Final_project\Server\Bank\Transaction.Service\obj\Debug\net6.0\ref\Transaction.Service.dll
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\Transaction.Service.deps.json
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\Transaction.Service.dll
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\Transaction.Service.pdb
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\Exceptions.dll
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\NSB.dll
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\Transaction.Storage.dll
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\NSB.pdb
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\Transaction.Storage.pdb
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\bin\Debug\net6.0\Exceptions.pdb
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.csproj.AssemblyReference.cache
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.AssemblyInfoInputs.cache
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.AssemblyInfo.cs
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.csproj.CoreCompileInputs.cache
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.csproj.CopyComplete
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.dll
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\refint\Transaction.Service.dll
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\Transaction.Service.pdb
+C:\pruhey xyoh\group7\Server\Bank\Transaction.Service\obj\Debug\net6.0\ref\Transaction.Service.dll

@@ -34,3 +34,15 @@ C:\Users\01\crossRiver\Final_project\Server\Bank\NSB\obj\Debug\net6.0\NSB.dll
 C:\Users\01\crossRiver\Final_project\Server\Bank\NSB\obj\Debug\net6.0\refint\NSB.dll
 C:\Users\01\crossRiver\Final_project\Server\Bank\NSB\obj\Debug\net6.0\NSB.pdb
 C:\Users\01\crossRiver\Final_project\Server\Bank\NSB\obj\Debug\net6.0\ref\NSB.dll
+C:\pruhey xyoh\group7\Server\Bank\NSB\bin\Debug\net6.0\NSB.deps.json
+C:\pruhey xyoh\group7\Server\Bank\NSB\bin\Debug\net6.0\NSB.dll
+C:\pruhey xyoh\group7\Server\Bank\NSB\bin\Debug\net6.0\NSB.pdb
+C:\pruhey xyoh\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.csproj.AssemblyReference.cache
+C:\pruhey xyoh\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.GeneratedMSBuildEditorConfig.editorconfig
+C:\pruhey xyoh\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.AssemblyInfoInputs.cache
+C:\pruhey xyoh\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.AssemblyInfo.cs
+C:\pruhey xyoh\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.csproj.CoreCompileInputs.cache
+C:\pruhey xyoh\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.dll
+C:\pruhey xyoh\group7\Server\Bank\NSB\obj\Debug\net6.0\refint\NSB.dll
+C:\pruhey xyoh\group7\Server\Bank\NSB\obj\Debug\net6.0\NSB.pdb
+C:\pruhey xyoh\group7\Server\Bank\NSB\obj\Debug\net6.0\ref\NSB.dll

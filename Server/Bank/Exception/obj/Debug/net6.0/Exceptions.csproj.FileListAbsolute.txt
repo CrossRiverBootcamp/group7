@@ -34,3 +34,15 @@ C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\Exce
 C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\refint\Exceptions.dll
 C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.pdb
 C:\Users\01\crossRiver\Final_project\Server\Bank\Exception\obj\Debug\net6.0\ref\Exceptions.dll
+C:\pruhey xyoh\group7\Server\Bank\Exception\bin\Debug\net6.0\Exceptions.deps.json
+C:\pruhey xyoh\group7\Server\Bank\Exception\bin\Debug\net6.0\Exceptions.dll
+C:\pruhey xyoh\group7\Server\Bank\Exception\bin\Debug\net6.0\Exceptions.pdb
+C:\pruhey xyoh\group7\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.csproj.AssemblyReference.cache
+C:\pruhey xyoh\group7\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.GeneratedMSBuildEditorConfig.editorconfig
+C:\pruhey xyoh\group7\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.AssemblyInfoInputs.cache
+C:\pruhey xyoh\group7\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.AssemblyInfo.cs
+C:\pruhey xyoh\group7\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.csproj.CoreCompileInputs.cache
+C:\pruhey xyoh\group7\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.dll
+C:\pruhey xyoh\group7\Server\Bank\Exception\obj\Debug\net6.0\refint\Exceptions.dll
+C:\pruhey xyoh\group7\Server\Bank\Exception\obj\Debug\net6.0\Exceptions.pdb
+C:\pruhey xyoh\group7\Server\Bank\Exception\obj\Debug\net6.0\ref\Exceptions.dll

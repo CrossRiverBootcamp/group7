@@ -1,12 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "Pzs++ORzQxjPXU5Ohz5UAcCizBJalbz/H7+IXywqiS4ZO4mm/twxtgXWzjFdl8VaM9l5xSNjUaNsYYXl6ezfqA==",
-=======
-  "dgSpecHash": "+z/GwK+jhX9rNgjuqedYaIGfde4K9xhFRsg5yW3MmCPT9UQGnsncayFg3vxVBjNOBMwWJcKkbwUYoYMmtOS3fg==",
->>>>>>> 9abc94a96feaab852333e5f4d36efb30db015341
+  "dgSpecHash": "8TFKBRbI+wGyH69Lk2ASnWdlFWaXnr0JA2NSrA+R2hJdY3KrlFlYjW/v6Fn1oWeSGFZT1Gw5v20L4z2mOjJceQ==",
   "success": true,
-  "projectFilePath": "C:\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj",
+  "projectFilePath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user1\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\automapper.collection\\8.0.0\\automapper.collection.8.0.0.nupkg.sha512",
@@ -60,7 +56,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problem reading the cache file C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount.Storage\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }

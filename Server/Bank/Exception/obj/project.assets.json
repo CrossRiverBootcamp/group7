@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
+      "projectUniqueName": "C:\\pruhey xyoh\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
       "projectName": "Exceptions",
-      "projectPath": "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
+      "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
       "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-      "outputPath": "C:\\group7\\Server\\Bank\\Exception\\obj\\",
+      "outputPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\Exception\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,12 +60,16 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
-=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
->>>>>>> 9abc94a96feaab852333e5f4d36efb30db015341
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\pruhey xyoh\\group7\\Server\\Bank\\Exception\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

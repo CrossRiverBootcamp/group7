@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\group7\\Server\\Bank\\Transactions.NSB\\Transactions.NSB.csproj": {}
+    "C:\\pruhey xyoh\\group7\\Server\\Bank\\Transactions.NSB\\Transactions.NSB.csproj": {}
   },
   "projects": {
-    "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj": {
+    "C:\\pruhey xyoh\\group7\\Server\\Bank\\Exception\\Exceptions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
+        "projectUniqueName": "C:\\pruhey xyoh\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
         "projectName": "Exceptions",
-        "projectPath": "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
+        "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\group7\\Server\\Bank\\Exception\\obj\\",
+        "outputPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\Exception\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
+    "C:\\pruhey xyoh\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj",
+        "projectUniqueName": "C:\\pruhey xyoh\\group7\\Server\\Bank\\NSB\\NSB.csproj",
         "projectName": "NSB",
-        "projectPath": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj",
+        "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\NSB\\NSB.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\group7\\Server\\Bank\\NSB\\obj\\",
+        "outputPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\NSB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -126,14 +126,14 @@
         }
       }
     },
-    "C:\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj": {
+    "C:\\pruhey xyoh\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj",
+        "projectUniqueName": "C:\\pruhey xyoh\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj",
         "projectName": "Transaction.Service",
-        "projectPath": "C:\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj",
+        "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\group7\\Server\\Bank\\Transaction.Service\\obj\\",
+        "outputPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\Transaction.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -150,11 +150,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
-                "projectPath": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj"
+              "C:\\pruhey xyoh\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
+                "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\NSB\\NSB.csproj"
               },
-              "C:\\group7\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj": {
-                "projectPath": "C:\\group7\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj"
+              "C:\\pruhey xyoh\\group7\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj": {
+                "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj"
               }
             }
           }
@@ -209,14 +209,14 @@
         }
       }
     },
-    "C:\\group7\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj": {
+    "C:\\pruhey xyoh\\group7\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\group7\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj",
+        "projectUniqueName": "C:\\pruhey xyoh\\group7\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj",
         "projectName": "Transaction.Storage",
-        "projectPath": "C:\\group7\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj",
+        "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\Transaction.Storge\\Transaction.Storage.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\group7\\Server\\Bank\\Transaction.Storge\\obj\\",
+        "outputPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\Transaction.Storge\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -233,8 +233,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj": {
-                "projectPath": "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj"
+              "C:\\pruhey xyoh\\group7\\Server\\Bank\\Exception\\Exceptions.csproj": {
+                "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\Exception\\Exceptions.csproj"
               }
             }
           }
@@ -301,14 +301,14 @@
         }
       }
     },
-    "C:\\group7\\Server\\Bank\\Transactions.NSB\\Transactions.NSB.csproj": {
+    "C:\\pruhey xyoh\\group7\\Server\\Bank\\Transactions.NSB\\Transactions.NSB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\group7\\Server\\Bank\\Transactions.NSB\\Transactions.NSB.csproj",
+        "projectUniqueName": "C:\\pruhey xyoh\\group7\\Server\\Bank\\Transactions.NSB\\Transactions.NSB.csproj",
         "projectName": "Transactions.NSB",
-        "projectPath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\Transactions.NSB.csproj",
+        "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\Transactions.NSB\\Transactions.NSB.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\obj\\",
+        "outputPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\Transactions.NSB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -325,11 +325,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
-                "projectPath": "C:\\group7\\Server\\Bank\\NSB\\NSB.csproj"
+              "C:\\pruhey xyoh\\group7\\Server\\Bank\\NSB\\NSB.csproj": {
+                "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\NSB\\NSB.csproj"
               },
-              "C:\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj": {
-                "projectPath": "C:\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj"
+              "C:\\pruhey xyoh\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj": {
+                "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\Transaction.Service\\Transaction.Service.csproj"
               }
             }
           }
