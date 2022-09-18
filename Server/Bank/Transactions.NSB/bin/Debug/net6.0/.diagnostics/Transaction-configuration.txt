@@ -33,251 +33,251 @@
     "ErrorsThrownDuringScanning": false,
     "SkippedFiles": [
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Hosting.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Hosting.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Hosting.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Hosting.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Http.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Http.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Http.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Http.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Http.Extensions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Http.Extensions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Http.Features.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Http.Features.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.WebUtilities.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.WebUtilities.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Relational.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Relational.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.SqlServer.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.SqlServer.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Caching.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Caching.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Caching.Memory.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Caching.Memory.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.Binder.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.Binder.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.CommandLine.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.CommandLine.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.FileExtensions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.Json.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.Json.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.UserSecrets.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.UserSecrets.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.DependencyInjection.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.DependencyInjection.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.FileProviders.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.FileProviders.Physical.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.FileProviders.Physical.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.FileSystemGlobbing.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.FileSystemGlobbing.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Hosting.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Hosting.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Hosting.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Hosting.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.Configuration.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.Configuration.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.Console.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.Console.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.Debug.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.Debug.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.EventLog.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.EventLog.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.EventSource.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.EventSource.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.ObjectPool.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.ObjectPool.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Options.ConfigurationExtensions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Options.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Options.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Primitives.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Primitives.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.JsonWebTokens.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.JsonWebTokens.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Logging.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Logging.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Tokens.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Tokens.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Net.Http.Headers.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Net.Http.Headers.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Win32.SystemEvents.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Win32.SystemEvents.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Newtonsoft.Json.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Newtonsoft.Json.dll",
         "SkipReason": "File was explicitly excluded from scanning."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Configuration.ConfigurationManager.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Configuration.ConfigurationManager.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Data.SqlClient.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Data.SqlClient.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Diagnostics.EventLog.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Diagnostics.EventLog.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Drawing.Common.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Drawing.Common.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.IdentityModel.Tokens.Jwt.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.IdentityModel.Tokens.Jwt.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Runtime.Caching.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Runtime.Caching.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Security.Cryptography.Pkcs.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Security.Cryptography.Pkcs.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Security.Cryptography.ProtectedData.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Security.Cryptography.ProtectedData.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Security.Cryptography.Xml.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Security.Cryptography.Xml.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Security.Permissions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Security.Permissions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Windows.Extensions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Windows.Extensions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Transactions.NSB.exe",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Transactions.NSB.exe",
         "SkipReason": "File is not a .NET assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.Binder.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.Binder.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -285,39 +285,39 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.UserSecrets.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.UserSecrets.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Http.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Http.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Hosting.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Hosting.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Http.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Http.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Hosting.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Hosting.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Http.Extensions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Http.Extensions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Http.Features.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.Http.Features.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.WebUtilities.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.AspNetCore.WebUtilities.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.SqlServer.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.SqlServer.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -325,19 +325,19 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Logging.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Logging.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Options.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Options.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -345,7 +345,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -353,7 +353,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Relational.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Relational.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -361,7 +361,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -369,31 +369,31 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Caching.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Caching.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Caching.Memory.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Caching.Memory.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.FileProviders.Physical.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.FileProviders.Physical.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.CommandLine.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.CommandLine.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.FileExtensions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.Json.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Configuration.Json.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -401,11 +401,11 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.DependencyInjection.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.DependencyInjection.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.IdentityModel.Tokens.Jwt.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.IdentityModel.Tokens.Jwt.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -413,15 +413,15 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.FileProviders.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Net.Http.Headers.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Net.Http.Headers.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -429,27 +429,27 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.FileSystemGlobbing.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.FileSystemGlobbing.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Configuration.ConfigurationManager.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Configuration.ConfigurationManager.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Hosting.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Hosting.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.Configuration.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.Configuration.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Hosting.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Hosting.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -457,31 +457,31 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Primitives.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Primitives.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.Console.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.Console.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.Debug.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.Debug.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.EventLog.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.EventLog.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.EventSource.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Logging.EventSource.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.ObjectPool.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.ObjectPool.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -489,7 +489,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.Extensions.Options.ConfigurationExtensions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -497,7 +497,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.JsonWebTokens.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.JsonWebTokens.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -509,15 +509,15 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Newtonsoft.Json.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Newtonsoft.Json.dll",
         "SkipReason": "File was explicitly excluded from scanning."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -529,15 +529,15 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Tokens.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Tokens.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\Microsoft.Win32.SystemEvents.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\Microsoft.Win32.SystemEvents.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp2.1\\System.Data.SqlClient.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp2.1\\System.Data.SqlClient.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -545,35 +545,35 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp2.0\\System.Diagnostics.EventLog.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp2.0\\System.Diagnostics.EventLog.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\System.Drawing.Common.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\System.Drawing.Common.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netstandard2.0\\System.Runtime.Caching.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netstandard2.0\\System.Runtime.Caching.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\System.Security.Cryptography.Pkcs.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\System.Security.Cryptography.Pkcs.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netstandard2.0\\System.Security.Cryptography.ProtectedData.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netstandard2.0\\System.Security.Cryptography.ProtectedData.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Security.Cryptography.Xml.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Security.Cryptography.Xml.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Security.Permissions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\System.Security.Permissions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\System.Windows.Extensions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\System.Windows.Extensions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -2069,7 +2069,7 @@
     }
   ],
   "Hosting": {
-    "HostId": "3ac25b8c-aa33-1206-84c5-1b3b1d7abe8a",
+    "HostId": "36b11f39-f537-89ef-5cc0-444796010368",
     "HostDisplayName": "DESKTOP-QM3UF42",
     "MachineName": "DESKTOP-QM3UF42",
     "OSPlatform": 2,
@@ -2086,11 +2086,11 @@
       "MajorRevision": -1,
       "MinorRevision": -1
     },
-    "WorkingSet": 71905280,
+    "WorkingSet": 72126464,
     "SystemPageSize": 4096,
     "HostName": "DESKTOP-QM3UF42",
     "UserName": "user1",
-    "PathToExe": "C:\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Transactions.NSB.dll"
+    "PathToExe": "C:\\פרויקט\\group7\\Server\\Bank\\Transactions.NSB\\bin\\Debug\\net6.0\\Transactions.NSB.dll"
   },
   "Licensing": {
     "RegisteredTo": null,

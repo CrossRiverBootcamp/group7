@@ -16,6 +16,13 @@ public class EmailVerification
     [Required]
     public DateTime ExpirationTime { get; set; }
 
+    [Required]
+    [Range(0,3)]
+    public int  NumOfTrials { get; set; }
+
+    [Required]
+    public DateTime FirsteEnteringTime { get; set; }
+
 
 }
 

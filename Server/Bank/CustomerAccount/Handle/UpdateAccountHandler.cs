@@ -3,6 +3,7 @@ using AutoMapper;
 using CustomerAccount.Service.Interfaces;
 using CustomerAccount.Service.Models;
 using NSB.Command;
+using NSB.Event;
 using NServiceBus;
 using NServiceBus.Logging;
 
@@ -23,8 +24,10 @@ public class UpdateAccountHandler : IHandleMessages<UpdateAccount>
     {
         log.Info($"Received UpdateAccount, TransactionID = {message.TransactionID}");
         UpdateBalanceModel updateBalance = _mapper.Map<UpdateAccount, UpdateBalanceModel>(message);
-        await _AccountService.updateBalance(updateBalance , context);
+        AccountUpdated accountUpdated= await _AccountService.updateBalance(updateBalance );
+        await context.Publish(accountUpdated);
 
-        
+
+
     }
 }
