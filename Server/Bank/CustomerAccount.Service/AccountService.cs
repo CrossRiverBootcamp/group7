@@ -132,6 +132,7 @@ public class AccountService : IAccountService
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public EmailVerificationModel sendEmail(string email)
     {
         //generate a code
@@ -164,6 +165,9 @@ public class AccountService : IAccountService
             return null;
         }
     }
+=======
+
+>>>>>>> 9abc94a96feaab852333e5f4d36efb30db015341
 =======
 
 >>>>>>> 9abc94a96feaab852333e5f4d36efb30db015341
