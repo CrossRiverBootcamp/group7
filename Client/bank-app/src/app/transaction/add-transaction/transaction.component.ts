@@ -12,6 +12,11 @@ import Swal from 'sweetalert2';
 })
 export class TransactionComponent implements OnInit {
 
+  unexeptedErrorAlert = Swal.mixin({
+    title: "Oppps...",
+    text: "we are sorry... \n we try to fix it",
+    icon: "error"
+  });
   TransactionForm: FormGroup = new FormGroup({
     toAccount: new FormControl(0, Validators.required),
     amount: new FormControl("", [Validators.required, Validators.min(1), Validators.max(1000000)]),
@@ -34,26 +39,33 @@ export class TransactionComponent implements OnInit {
       date: new Date()
     }
     this._transactionService.createTransaction(transaction).subscribe(data => {
-      this.succses = data;
-      if (this.succses) {
-        this.TransactionForm.controls["status"].setValue("SUCCESS");
-        Swal.fire({
-          text: "the transaction has been created:)",
-          icon: "success",
-        })
+      if (data) {
+        this.succses = data;
+        if (this.succses) {
+          this.TransactionForm.controls["status"].setValue("SUCCESS");
+          Swal.fire({
+            text: "the transaction has been created:)",
+            icon: "success",
+          })
+        }
+        else {
+          this.TransactionForm.controls["status"].setValue("Faild");
+          let failureReason = this.TransactionForm.controls["failureReason"].value()
+          Swal.fire({
+            title: "Oppps...",
+            text: "the transaction failed becuse " + failureReason,
+            icon: "error",
+            cancelButtonText: "Click her to register"
+          })
+        }
       }
-
       else {
-        this.TransactionForm.controls["status"].setValue("Faild");
-        let failureReason = this.TransactionForm.controls["failureReason"].value()
-        Swal.fire({
-          title: "Oppps...",
-          text: "the transaction failed becuse " + failureReason,
-          icon: "error",
-          cancelButtonText: "Click her to register"
-        })
+        this.unexeptedErrorAlert.fire();
       }
-    });
+    }, error => {
+      this.unexeptedErrorAlert.fire();
+    }
+    );
   }
 }
 

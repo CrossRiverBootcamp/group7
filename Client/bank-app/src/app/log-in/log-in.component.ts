@@ -12,55 +12,51 @@ import Swal from 'sweetalert2';
   styleUrls: ['./log-in.component.scss']
 })
 export class LogInComponent implements OnInit {
-  newUser:LogInModel = {
+  newUser: LogInModel = {
     email: '',
     password: ''
   }
   LogInForm: FormGroup = new FormGroup({
-    email: new FormControl("", [Validators.required,Validators.email]),
-    password: new FormControl("", [Validators.required,Validators.minLength(4)])
+    email: new FormControl("", [Validators.required, Validators.email]),
+    password: new FormControl("", [Validators.required, Validators.minLength(4)])
   });
-  constructor(private _customService:CustomerService ,private _router: Router,private _currentUserService: CurrentUserService) { }
+  constructor(private _customService: CustomerService, private _router: Router, private _currentUserService: CurrentUserService) { }
 
   ngOnInit(): void {
-    if(this._currentUserService.getUser() != null) {
+    if (this._currentUserService.getUser() != null) {
       this.LogInForm.controls["email"].setValue(this._currentUserService.getUser().email);
       this.LogInForm.controls["password"].setValue(this._currentUserService.getUser().password);
     }
   }
 
-  logIn()
-  { 
+  logIn() {
     this.newUser.email = this.LogInForm.controls["email"].value;
     this.newUser.password = this.LogInForm.controls["password"].value;
-    this._customService.logIn(this.newUser).subscribe(data=>{
-      if(data != 0){
-        this._currentUserService.accuontId=data;
+    this._customService.logIn(this.newUser).subscribe(data => {
+      if (data != 0) {
+        this._currentUserService.accuontId = data;
         this._currentUserService.isLogIn();
         Swal.fire({
-          title:"Hi!!",
-          text:"wellcame :)",
+          title: "wellcame !!",
           icon: "success",
-        }).then( ()=> this._router.navigate(['account/account-info']))
+          showConfirmButton: false
+        }).then(() => this._router.navigate(['account/account-info']))
       }
-      else{
+      else {
         Swal.fire({
-          title:"Oppps...",
-          text:"we dont Know you :( ",
+          title: "Oppps...",
+          text: "we dont Know you :( ",
           icon: "error",
-          cancelButtonText:"Click her to register"    
-        }).then( ()=> this._router.navigate(['account/register']))
+          cancelButtonText: "Click her to register"
+        }).then(() => this._router.navigate(['account/register']))
       }
-    }),(error: { message: string }) =>{
+    }), (error: { message: string }) => {
       Swal.fire({
-        title:"Oppps...",
-        text:"hhhh",
+        title: "Oppps...",
+        text: "hhhh",
         icon: "error",
-        cancelButtonText:"Click her to register"    
-      }).then( ()=> this._router.navigate(['account/register']))
-    
+        cancelButtonText: "Click her to register"
+      }).then(() => this._router.navigate(['account/register']))
     };
-
-   
   }
 }

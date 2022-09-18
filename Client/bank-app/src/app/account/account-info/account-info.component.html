@@ -18,16 +18,15 @@
                 <p>{{account.firstName}} {{account.lastName}} </p>
                 <br>
                 <p>Your account created at: </p>
-                <p>{{account.openDate }} </p>
+                <p>{{account.openDate | date:'short'}} </p>
                 <p>Your balance account is: </p>
                 <p>{{account.balance}} $</p>
             </mat-card-content>
             <button mat-button> <a routerLink="/transaction/add-transaction">Create Transaction</a></button>
-            <button mat-button> <a routerLink="/operation-history">View Operations History</a></button>
+            <button mat-button> <a routerLink="/account/operation-history">View Operations History</a></button>
 
         </mat-card>
     </div>
 </body>
-<!-- | date:'short' -->
 
 </html>
