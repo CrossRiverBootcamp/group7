@@ -1,12 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "vL6kMXWtCntdx3a4WU3ndu2lwqoMchAVozNHPU4VLxsJhGkl3+X6tQ+zDtpw5bbXetuFc62SqvaFA0JsDGlpaQ==",
-=======
-  "dgSpecHash": "6keDHTmXI8DR2D76CLhWHfkdttW4gsUPye9+7nxGcfBOtJMlo3zXKrwi32fqvl7i5mRbNQsj2K8AigOcbH/7qw==",
->>>>>>> 9abc94a96feaab852333e5f4d36efb30db015341
   "success": true,
-  "projectFilePath": "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
+  "projectFilePath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\Exceptions.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

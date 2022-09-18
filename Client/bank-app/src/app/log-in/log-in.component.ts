@@ -57,7 +57,7 @@ export class LogInComponent implements OnInit {
         text:"hhhh",
         icon: "error",
         cancelButtonText:"Click her to register"    
-      }).then( ()=> this._router.navigate(['register']))
+      }).then( ()=> this._router.navigate(['account/register']))
     
     };
 
