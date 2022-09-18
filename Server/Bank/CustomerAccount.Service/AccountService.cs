@@ -18,16 +18,14 @@ public class AccountService : IAccountService
     IAccountStorage _AccountStorage;
     IEmailVerificationStorage _EmailVerificationStorage;
     IOperationHistoryStorage _OperationHistoryStorage;
-    IAuthorizationFuncs _AuthorizationFuncs;
     ISendEmail _sendEmail;
 
-    public AccountService(IAccountStorage AccountStorage, IOperationHistoryStorage OperationHistoryStorage, IMapper Mapper, IAuthorizationFuncs authorizationFuncs, IEmailVerificationStorage emailVerificationStorage , ISendEmail sendEmail)
+    public AccountService(IAccountStorage AccountStorage, IOperationHistoryStorage OperationHistoryStorage, IMapper Mapper, IEmailVerificationStorage emailVerificationStorage , ISendEmail sendEmail)
     {
         _AccountStorage = AccountStorage;
         _OperationHistoryStorage = OperationHistoryStorage;
         _EmailVerificationStorage = emailVerificationStorage;
         _IMapper = Mapper;
-        _AuthorizationFuncs = authorizationFuncs;
         _sendEmail=sendEmail;
     }
 
@@ -37,8 +35,6 @@ public class AccountService : IAccountService
         if (userIsVerify)
         {
             Customer newCustomer = _IMapper.Map<CustomerModel, Customer>(customer);
-            /* var salt = _AuthorizationFuncs.GenerateSalt(8);
-             newCustomer.Password = _AuthorizationFuncs.HashPassword(newCustomer.Password, salt, 1000, 8);*/
             AccountModel accunt = new AccountModel() { Balance = 1000, OpenDate = DateTime.Now };
             Account newAccont = _IMapper.Map<AccountModel, Account>(accunt);
             return await _AccountStorage.createNewAccount(newAccont, newCustomer);
