@@ -1,8 +1,12 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "vL6kMXWtCntdx3a4WU3ndu2lwqoMchAVozNHPU4VLxsJhGkl3+X6tQ+zDtpw5bbXetuFc62SqvaFA0JsDGlpaQ==",
+=======
+  "dgSpecHash": "6keDHTmXI8DR2D76CLhWHfkdttW4gsUPye9+7nxGcfBOtJMlo3zXKrwi32fqvl7i5mRbNQsj2K8AigOcbH/7qw==",
+>>>>>>> 9abc94a96feaab852333e5f4d36efb30db015341
   "success": true,
-  "projectFilePath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\Exception\\Exceptions.csproj",
+  "projectFilePath": "C:\\group7\\Server\\Bank\\Exception\\Exceptions.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
