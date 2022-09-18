@@ -49,8 +49,10 @@ public class CustomerStorage : ICustomerStorage
                 {
                     return false;
                 }
-                return true;
-
+                else
+                {
+                    throw new EmailAlreadyExistException();
+                }
             }
             catch
             {

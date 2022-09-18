@@ -1,5 +1,6 @@
 ﻿
 
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
@@ -12,9 +13,11 @@ public class OperationHistory
     public int ID { get; set; }
 
     [Required]
+    //[Index("IX_FirstAndSecond",1, IsUnique = true)]
     public int AccountId { get; set; }
 
-    [Required]
+    //[Required]
+    //[Index("IX_FirstAndSecond", 2, IsUnique = true)]
     public int TransactionID { get; set; }
 
     [Required]

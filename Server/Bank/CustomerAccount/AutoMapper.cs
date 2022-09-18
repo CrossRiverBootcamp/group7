@@ -11,9 +11,14 @@ public class AutoMapper : Profile
     public AutoMapper()
     {
         CreateMap<CustomerDTO, CustomerModel>();
+        CreateMap<LoginDTO, LoginModel>();
+        CreateMap<AccountCustomerInfoModel, AccountCustomerInfoDTO>();
+        CreateMap<OperationHistoryModel, OperationHistoryDTO>();
+        CreateMap<CustomerInfoModel, CustomerInfoDTO>();
+
+
         CreateMap<CustomerModel, Customer>();
         CreateMap<AccountModel, Account>();
-        CreateMap<LoginDTO, LoginModel>();
         CreateMap<Account, AccountCustomerInfoModel>().
         ForMember(des => des.FirstName, opts => opts
                         .MapFrom(src => src.Customer.FirstName))
@@ -21,14 +26,12 @@ public class AutoMapper : Profile
                         .MapFrom(src => src.Customer.LastName))
                .ForMember(des => des.Email, opts => opts
                         .MapFrom(src => src.Customer.Email));
-        CreateMap<AccountCustomerInfoModel, AccountCustomerInfoDTO>();
         CreateMap<UpdateAccount, UpdateBalanceModel>();
         CreateMap<OperationHistory, OperationHistoryModel>().
             ForMember(des => des.Amount, opts => opts
                     .MapFrom(src => src.TransactionAmount))
             .ForMember(des => des.Date, opts => opts
                     .MapFrom(src => src.OperationTime));
-        CreateMap<OperationHistoryModel, OperationHistoryDTO>();
         CreateMap<Account, CustomerInfoModel>().
         ForMember(des => des.FirstName, opts => opts
                     .MapFrom(src => src.Customer.FirstName))
@@ -36,7 +39,6 @@ public class AutoMapper : Profile
                     .MapFrom(src => src.Customer.LastName))
            .ForMember(des => des.Email, opts => opts
                     .MapFrom(src => src.Customer.Email));
-        CreateMap<CustomerInfoModel, CustomerInfoDTO>();
         CreateMap<EmailVerificationModel, EmailVerification>();
         CreateMap<CustomerModel, EmailVerificationModel>();
 

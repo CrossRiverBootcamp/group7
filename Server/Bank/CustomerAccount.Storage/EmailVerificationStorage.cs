@@ -64,8 +64,7 @@ public class EmailVerificationStorage : IEmailVerificationStorage
                 }
                 else
                 {
-                    // inner db contex 
-                    return false;
+                    throw new InnerDBContexetException();
                 }
             }
             catch

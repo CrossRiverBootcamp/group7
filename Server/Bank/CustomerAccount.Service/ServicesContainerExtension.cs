@@ -20,6 +20,7 @@ namespace CustomerAccount.Services.Extensions
             services.AddScoped<IEmailVerificationStorage, EmailVerificationStorage>();
             services.AddScoped<IAuthorizationFuncs , AuthorizationFuncs>();
             services.AddDbContextFactory<CustomerAccountDbContext>(opt => opt.UseSqlServer(connection));
+       
         }
     }
 }

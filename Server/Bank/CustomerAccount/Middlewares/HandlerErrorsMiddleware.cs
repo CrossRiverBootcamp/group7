@@ -60,6 +60,16 @@ public class HandlerErrorsMiddleware
                     await response.WriteAsync("Oppps... \n DbContext error!");
                     response.StatusCode = (int)HttpStatusCode.NotExtended;
                     break;
+                case InnerDBContexetException e:
+                    // DbContext error
+                    await response.WriteAsync("Oppps... \n DbContext inner error!");
+                    response.StatusCode = (int)HttpStatusCode.NotExtended;
+                    break;
+                case EmailAlreadyExistException e:
+                    // User already exist
+                    await response.WriteAsync("Oppps... \n  User already exist!");
+                    response.StatusCode = (int)HttpStatusCode.Unauthorized;
+                    break;
                 default:
                     // unhandled error
                     await response.WriteAsync("Oppps... \n we are trying to fix the problem!");

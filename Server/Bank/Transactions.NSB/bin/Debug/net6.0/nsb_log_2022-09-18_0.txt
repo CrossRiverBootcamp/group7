@@ -279,3 +279,38 @@ C:\pruhey xyoh\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.
 C:\pruhey xyoh\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
 2022-09-18 20:44:38.815 ERROR Your license has expired
 2022-09-18 20:44:39.303 INFO  Received Payload,  TransactionID = 1010
+2022-09-18 23:00:17.583 INFO  Logging to 'C:\pruhey xyoh\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-18 23:00:18.113 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-18 23:00:18.133 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-18 23:00:18.138 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-18 23:10:32.023 INFO  Logging to 'C:\pruhey xyoh\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-18 23:10:32.293 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-18 23:10:32.298 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-18 23:10:32.301 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-18 23:10:38.152 INFO  Executing 'C:\pruhey xyoh\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-18 23:10:38.367 INFO  Executing saga creation scripts:
+C:\pruhey xyoh\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-18 23:11:47.769 ERROR Your license has expired
+2022-09-18 23:11:48.164 INFO  Received update account balance,  TransactionID = 1010
+2022-09-18 23:12:23.397 ERROR Your license has expired
+2022-09-18 23:12:23.411 INFO  Received Payload,  TransactionID = 1011
+2022-09-18 23:12:37.217 ERROR Your license has expired
+2022-09-18 23:12:37.222 INFO  Received update account balance,  TransactionID = 1011
+2022-09-18 23:16:20.070 INFO  Logging to 'C:\pruhey xyoh\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-18 23:16:20.555 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-18 23:16:20.586 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-18 23:16:20.598 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-18 23:16:26.669 INFO  Executing 'C:\pruhey xyoh\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-18 23:16:26.883 INFO  Executing saga creation scripts:
+C:\pruhey xyoh\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-18 23:23:04.139 ERROR Your license has expired
+2022-09-18 23:23:04.349 INFO  Received Payload,  TransactionID = 1012
+2022-09-18 23:23:16.307 ERROR Your license has expired
+2022-09-18 23:23:16.409 INFO  Received update account balance,  TransactionID = 1012
+2022-09-18 23:33:25.871 INFO  Logging to 'C:\pruhey xyoh\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-18 23:33:26.243 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-18 23:33:26.252 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-18 23:33:26.258 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-18 23:33:32.320 INFO  Executing 'C:\pruhey xyoh\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-18 23:33:32.567 INFO  Executing saga creation scripts:
+C:\pruhey xyoh\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql

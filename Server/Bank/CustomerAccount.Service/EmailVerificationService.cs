@@ -54,10 +54,8 @@ public class EmailVerificationService : IEmailVerificationService
             }
             else
             {
-                throw new EmailAlreadyExist();
+                return false;
             }
-        
-
         }
         else
         {

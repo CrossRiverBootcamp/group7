@@ -8,20 +8,10 @@ namespace CustomerAccount.Service;
 
 public class SendEmail : ISendEmail
 {
-
-
-    IConfiguration _configuration;
-    public SendEmail(IConfiguration configuration)
+        public bool sendEmail(string email , string subject ,string body )
     {
-
-        _configuration = configuration;
-    }
-    public bool sendEmail(string email , string subject ,string body )
-    {
-        string emailAddress = _configuration.GetSection("Email:Address").ToString();
-        string emailPassword = _configuration.GetSection("Email:Password").ToString();
         //send a mail
-        MailAddress from = new MailAddress(emailAddress);
+        MailAddress from = new MailAddress("crossriver@outlook.co.il");
         MailAddress to = new MailAddress(email);
         MailMessage message = new MailMessage(from, to);
         message.Subject = subject;
@@ -29,7 +19,7 @@ public class SendEmail : ISendEmail
         SmtpClient SmtpServer = new SmtpClient("smtp.office365.com");
         SmtpServer.Port = 587;
         SmtpServer.UseDefaultCredentials = false;
-        SmtpServer.Credentials = new System.Net.NetworkCredential(emailAddress, emailPassword);
+        SmtpServer.Credentials = new System.Net.NetworkCredential("crossriver@outlook.co.il", "Zipi&Shira");
         SmtpServer.EnableSsl = true;
         try
         {
