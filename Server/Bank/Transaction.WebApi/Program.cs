@@ -8,7 +8,7 @@ using Microsoft.Data.SqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var databaseConnection = builder.Configuration.GetConnectionString("DatabaseConnectionZipi");
+var databaseConnection = builder.Configuration.GetConnectionString("DatabaseConnectionShira");
 
 #region NServiceBus configurations
 

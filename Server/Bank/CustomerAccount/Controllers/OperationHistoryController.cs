@@ -38,7 +38,12 @@ public class OperationHistoryController : Controller
         return customer;
     }
 
-
+    // GET/
+    [HttpGet("operationHistoryRecoreds/{accountID}")]
+    public async Task<ActionResult<int>> getOperationHistoryRecoredsCount(int accountID)
+    {
+        return await _OperationHistoryService.getOperationHistoryRecoredsCount(accountID);
+    }
 
 }
 
