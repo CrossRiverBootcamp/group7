@@ -7,8 +7,7 @@ using CustomerAccount.Storage;
 using CustomerAccount.Storage.Entites;
 using CustomerAccount.Storage.Interfaces;
 using NSB.Event;
-using NServiceBus;
-using System.Net.Mail;
+
 
 namespace CustomerAccount.Service;
 
@@ -62,9 +61,9 @@ public class AccountService : IAccountService
 
         if (await _AccountStorage.accountExist(updateBalance.FromAccountId) == false)
         {
-           return await CreateEvent(updateBalance.TransactionId, 2, "From Account is not exsist");
-           
+           return  CreateEvent(updateBalance.TransactionId, 2, "From Account is not exsist");
         }
+
         var email = (await _AccountStorage.getAccountCustomerInfo(updateBalance.FromAccountId)).Customer.Email;
 
         if (await _AccountStorage.accountExist(updateBalance.ToAccountId) == false)
@@ -72,7 +71,7 @@ public class AccountService : IAccountService
             string subject = $"Transaction to {updateBalance.ToAccountId} ";
             string body = "We are sorry You tried to make a transaction to an account that does not exist ): ";
             _sendEmail.sendEmail(email, subject, body);
-            return await CreateEvent(updateBalance.TransactionId, 2, "TO Account is not exsist");
+            return  CreateEvent(updateBalance.TransactionId, 2, "TO Account is not exsist");
           
         }
 
@@ -81,23 +80,21 @@ public class AccountService : IAccountService
             string subject = $"Transaction to {updateBalance.ToAccountId} ";
             string body = "We are sorry You tried to make a transaction, Your account does not have sufficient balance  ): ";
             _sendEmail.sendEmail(email, subject, body);
-            return await CreateEvent(updateBalance.TransactionId, 2, "The balnce is not enough");
+            return  CreateEvent(updateBalance.TransactionId, 2, "The balnce is not enough");
 
         }
         else
         {
             BalanceObject balance = await _AccountStorage.updateBalance(updateBalance.Amount, updateBalance.FromAccountId, updateBalance.ToAccountId);
             await addOperationHistory(updateBalance, balance);
-            string subject = $"Transaction to {updateBalance.ToAccountId} ";
-            string body = $"{updateBalance.Amount} were transferred to {updateBalance.ToAccountId} successfully :)";
+            string subject = $"Transaction to num account  {updateBalance.ToAccountId} ";
+            string body = $"{updateBalance.Amount} $ were transferred to num account: {updateBalance.ToAccountId} successfully :)";
             _sendEmail.sendEmail(email, subject, body);
-            return await CreateEvent(updateBalance.TransactionId, 1, null);
-           
-           
+            return  CreateEvent(updateBalance.TransactionId, 1, null);  
         }
     }
 
-    public async Task<AccountUpdated>CreateEvent(int transactionID, int status, string failureReason)
+    private  AccountUpdated CreateEvent(int transactionID, int status, string? failureReason)
     {
         AccountUpdated accountUpdated = new AccountUpdated()
         {
@@ -105,11 +102,10 @@ public class AccountService : IAccountService
             Status = status,
             FailureReason = failureReason
         };
-
         return accountUpdated;
     }
 
-    public async Task<bool> addOperationHistory(UpdateBalanceModel updateBalance, BalanceObject balance)
+    private async Task<bool> addOperationHistory(UpdateBalanceModel updateBalance, BalanceObject balance)
     {
         OperationHistory operationFrom = new OperationHistory();
         operationFrom.AccountId = updateBalance.FromAccountId;

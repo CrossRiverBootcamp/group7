@@ -22,7 +22,7 @@ public class UpdateTransactionHandler : IHandleMessages<AccountUpdated>
 
     public async Task Handle(AccountUpdated message, IMessageHandlerContext context)
     {
-        log.Info($"Received UpdateTransacion, TransactionID = {message.TransactionID}");
+        log.Info($"Received UpdateTransacion Status, TransactionID = {message.TransactionID}");
         UpdateTransactionModel updateBalance = _mapper.Map<AccountUpdated, UpdateTransactionModel>(message);
         await _transactionService.updateTransaction(updateBalance);
         

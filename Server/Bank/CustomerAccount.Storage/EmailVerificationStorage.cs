@@ -28,12 +28,13 @@ public class EmailVerificationStorage : IEmailVerificationStorage
                     emailVerification.FirsteEnteringTime = emailVerification.ExpirationTime;
                     await _BankDbContext.EmailsVerification.AddAsync(emailVerification);
                     await _BankDbContext.SaveChangesAsync();
+                    return true;
                 }
                 else
                 {
-                    await updateNumOfTrials(emailVerification);
+                   return await updateNumOfTrials(emailVerification);
                 }
-                return true;
+               
             }
             catch
             {
@@ -63,6 +64,7 @@ public class EmailVerificationStorage : IEmailVerificationStorage
                 }
                 else
                 {
+                    // inner db contex 
                     return false;
                 }
             }
@@ -73,7 +75,7 @@ public class EmailVerificationStorage : IEmailVerificationStorage
         }
     }
 
-    public async Task<bool> updateNumOfTrials(EmailVerification emailVerification)
+    private async Task<bool> updateNumOfTrials(EmailVerification emailVerification)
     {
         using var _BankDbContext = _factory.CreateDbContext();
         {
@@ -102,8 +104,6 @@ public class EmailVerificationStorage : IEmailVerificationStorage
         }
     }
 
-
-
     public async Task<bool> numOfTrialsIsOver(string email)
     {
         using var _BankDbContext = _factory.CreateDbContext();
@@ -111,7 +111,7 @@ public class EmailVerificationStorage : IEmailVerificationStorage
             try
             {
                 EmailVerification verification = await _BankDbContext.EmailsVerification.FirstOrDefaultAsync(verification => verification.Email == email);
-                if (verification!= null && verification.NumOfTrials + 1 == 4 && DateTime.Compare( verification.FirsteEnteringTime.AddMinutes(30), DateTime.Now) >0)
+                if (verification!= null && verification.NumOfTrials + 1 == 4 && DateTime.Compare(verification.FirsteEnteringTime.AddMinutes(30), DateTime.Now) >0)
                 {
                     return true;
                 }

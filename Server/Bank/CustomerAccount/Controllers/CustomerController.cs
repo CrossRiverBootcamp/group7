@@ -25,7 +25,8 @@ public class CustomerController : ControllerBase
     public async Task<ActionResult<int>> login([FromBody] LoginDTO login)
     {
         LoginModel newLogin = _IMapper.Map<LoginDTO, LoginModel>(login);
-        return await _CustomerService.login(newLogin);
+         var result = await _CustomerService.login(newLogin);
+         return Ok(result);
 
     }
 

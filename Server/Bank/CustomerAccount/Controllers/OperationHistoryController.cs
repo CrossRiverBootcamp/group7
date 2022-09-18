@@ -3,7 +3,7 @@ using CustomerAccount.Service.Interfaces;
 using CustomerAccount.Service.Models;
 using CustomerAccount.WebApi.DTO;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
+
 
 namespace CustomerAccount.WebApi.Controllers;
 
@@ -19,14 +19,14 @@ public class OperationHistoryController : Controller
         _OperationHistoryService = OperationHistoryService;
         _IMapper = IMapper;
     }
+   
     // GET/
     [HttpGet("{accountID}")]
     public async Task<ActionResult<List<OperationHistoryDTO>>> getOperationHistory(int accountID,int page, int records)
     {
-        List<OperationHistoryModel> OperationHistory = await _OperationHistoryService.getOperationHistory(accountID , page , records);
-        //לבדוק
-        List<OperationHistoryDTO> operationsList = OperationHistory.ConvertAll(operation => _IMapper.Map<OperationHistoryDTO>(operation));
-        return operationsList;
+        List<OperationHistoryModel> OperationsHistory = await _OperationHistoryService.getOperationHistory(accountID , page , records);
+        List<OperationHistoryDTO> operationsList = OperationsHistory.ConvertAll(operation => _IMapper.Map<OperationHistoryDTO>(operation));
+        return Ok(operationsList);
     }
 
     // GET/
@@ -35,10 +35,15 @@ public class OperationHistoryController : Controller
     {
         CustomerInfoModel customerInfo= await _OperationHistoryService.getCustomerInfo(accountID);
         CustomerInfoDTO customer = _IMapper.Map<CustomerInfoModel, CustomerInfoDTO>(customerInfo);
-        return customer;
+        return Ok(customer);
     }
 
-
+    // GET/
+    [HttpGet("operationHistoryRecoreds/{accountID}")]
+    public async Task<ActionResult<int>> getOperationHistoryRecoredsCount(int accountID)
+    {
+        return await _OperationHistoryService.getOperationHistoryRecoredsCount(accountID);
+    }
 
 }
 

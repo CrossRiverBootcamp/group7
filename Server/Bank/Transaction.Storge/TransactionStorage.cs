@@ -12,7 +12,7 @@ public class TransactionStorage : ITransactionStorage
     {
         _factory = factory;
     }
-    public async Task<Storage.Entites.Transaction> createTransaction(Entites.Transaction transaction)
+    public async Task<Entites.Transaction> createTransaction(Entites.Transaction transaction)
     {
         using var _TransactionDbContext = _factory.CreateDbContext();
         {
@@ -22,7 +22,7 @@ public class TransactionStorage : ITransactionStorage
                 await _TransactionDbContext.SaveChangesAsync();
                 return newTransaction;
             }
-            catch (Exception)
+            catch
             {
                 throw new DbContextException();
             }

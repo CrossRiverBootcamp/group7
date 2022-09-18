@@ -3578,7 +3578,6 @@
       "AutoMapper.Collection >= 8.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "CustomerAccount.Service >= 1.0.0",
-      "CustomerAccount.Storage >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Analyzers >= 6.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.8",
@@ -3623,11 +3622,16 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj": {
               "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj"
             },
             "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj": {
               "projectPath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount.Storage\\CustomerAccount.Storage.csproj"
+=======
+            "C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj": {
+              "projectPath": "C:\\pruhey xyoh\\group7\\Server\\Bank\\CustomerAccount.Service\\CustomerAccount.Service.csproj"
+>>>>>>> 17e3e1f5896b618e6354086126b65358ff5ecd93
             }
           }
         }

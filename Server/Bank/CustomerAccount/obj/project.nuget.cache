@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "pPD6N8/iqpdI+X7rR3O+iaHJ8/khq46VeTXeI/0YrFLm6Qoa7r8VOix22tpbKmnkoUxL4BeJaVZs2g9xb3Og4w==",
+=======
+  "dgSpecHash": "Aj20gT9jTZnfs4Uj8644abZj1tWw4ReRsz5VyGZnMRMiRJ5Jd/TCdMVWNwuGulqQYbjfXCqTDLD0p0gccJVDLw==",
+>>>>>>> 17e3e1f5896b618e6354086126b65358ff5ecd93
   "success": true,
   "projectFilePath": "C:\\Users\\01\\crossRiver\\Final_project\\Server\\Bank\\CustomerAccount\\CustomerAccount.WebApi.csproj",
   "expectedPackageFiles": [

@@ -20,6 +20,7 @@ public class TransactionService : ITransactionService
         _transactionStorage = TransactionStorage;
         _IMapper = Mapper;
     }
+
     public async Task<bool> createTransaction(TransactionModel transaction, IMessageSession messageSession)
     {
         Storage.Entites.Transaction newTransaction = _IMapper.Map<TransactionModel, Storage.Entites.Transaction>(transaction);

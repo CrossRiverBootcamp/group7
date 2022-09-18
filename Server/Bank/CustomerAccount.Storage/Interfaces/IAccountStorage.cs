@@ -11,9 +11,7 @@ public interface IAccountStorage
     public Task<bool> accountExist(int accountID);
     public Task<bool> balanceCheacking( float ammount , int accountID);
     public Task<BalanceObject> updateBalance( float ammount , int fromAccountID, int toAccountID);
-
-
-
+    public Task<int> findAccountByCustomerID(int customerID);
 
 
 }

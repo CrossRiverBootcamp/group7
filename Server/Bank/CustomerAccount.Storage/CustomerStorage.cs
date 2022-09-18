@@ -9,9 +9,11 @@ namespace CustomerAccount.Storage;
 public class CustomerStorage : ICustomerStorage
 {
     private readonly IDbContextFactory<CustomerAccountDbContext> _factory;
-    public CustomerStorage(IDbContextFactory<CustomerAccountDbContext> factory)
+    IAccountStorage _accountStorage;
+    public CustomerStorage(IDbContextFactory<CustomerAccountDbContext> factory, IAccountStorage accountStorage)
     {
         _factory = factory;
+        _accountStorage = accountStorage;
     }
 
     public async Task<int> login(string email, string password)
@@ -23,21 +25,15 @@ public class CustomerStorage : ICustomerStorage
                 Customer customer = await context.Customers.FirstOrDefaultAsync(customer => customer.Email == email && customer.Password == password);
                 if (customer != null)
                 {
-                   //return true;
-                    return await findAccountByCustomerID(customer.ID);
+                    return await _accountStorage.findAccountByCustomerID(customer.ID);
                 }
                 else
                 {
-                    //return false
                     throw new UserNotFoundException();
                 }
             }
-            catch(Exception ex)
+            catch
             {
-                if(ex is UserNotFoundException)
-                {
-                    throw new Exception();
-                }
                 throw new DbContextException();
             }
         }
@@ -63,26 +59,5 @@ public class CustomerStorage : ICustomerStorage
         }
     }
 
-    public async Task<int> findAccountByCustomerID(int customerID)
-    {
-        using var context = _factory.CreateDbContext();
-        {
-            try
-            {
-                Account account = await context.Accounts.FirstOrDefaultAsync(account => account.CustomerID == customerID);
-                if(account != null)
-                {
-                    return account.ID; ;
-                }
-                else
-                {
-                    throw new ArgumentNullException("account");
-                }
-            }
-            catch
-            {
-                throw new DbContextException();
-            }
-        }
-    }
+    
 }

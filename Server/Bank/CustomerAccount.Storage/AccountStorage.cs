@@ -27,7 +27,7 @@ public class AccountStorage : IAccountStorage
             }
             catch
             {
-                return false;
+                throw new DbContextException();
             }
         }
     }
@@ -39,7 +39,8 @@ public class AccountStorage : IAccountStorage
         {
             try
             {
-                var account = await _BankDbContext.Accounts.Where(account => account.ID == accountID).Include(A=>A.Customer).FirstOrDefaultAsync();
+                var account = await _BankDbContext.Accounts.Where(account => account.ID == accountID)
+                    .Include(customer=> customer.Customer).FirstOrDefaultAsync();
                 if (account != null)
                 {
                     return account;
@@ -62,13 +63,11 @@ public class AccountStorage : IAccountStorage
         {
             try
             {
-                
                 if (await _BankDbContext.Accounts.FirstOrDefaultAsync(account => account.ID == accountID) == null)
                 {
                     return false;
                 }
                 return true;
-
             }
             catch
             {
@@ -89,7 +88,6 @@ public class AccountStorage : IAccountStorage
                     return false;
                 }
                 return true;
-
             }
             catch
             {
@@ -117,6 +115,29 @@ public class AccountStorage : IAccountStorage
                 await _BankDbContext.SaveChangesAsync();
                 return balance;
 
+            }
+            catch
+            {
+                throw new DbContextException();
+            }
+        }
+    }
+
+    public async Task<int> findAccountByCustomerID(int customerID)
+    {
+        using var context = _factory.CreateDbContext();
+        {
+            try
+            {
+                Account account = await context.Accounts.FirstOrDefaultAsync(account => account.CustomerID == customerID);
+                if (account != null)
+                {
+                    return account.ID; ;
+                }
+                else
+                {
+                    throw new ArgumentNullException("account");
+                }
             }
             catch
             {
