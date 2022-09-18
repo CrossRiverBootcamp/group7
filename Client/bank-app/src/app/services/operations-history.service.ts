@@ -22,4 +22,7 @@ export class OperationsHistoryService {
   getTransactionDetails(accountId: number):Observable<TransactionDetailsModel> {
     return this._http.get<TransactionDetailsModel>(this.baseUrl+"transactionDetailes/"+accountId)
   }
+  getOperationHistoryRecoredsCount(accountId: number):Observable<number> {
+    return this._http.get<number>(this.baseUrl+"operationHistoryRecoreds/"+accountId)
+  }
 }

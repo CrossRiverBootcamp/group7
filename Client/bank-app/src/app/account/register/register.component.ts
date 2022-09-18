@@ -16,23 +16,12 @@ import { EmailVerifictionComponent } from '../email-verifiction/email-verifictio
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
-  //  registerAlert = Swal.mixin({
-  //   title: "Check your email for varifiction code",
-  //   input: "password",
-  //   inputAttributes: {required: "true"},
-  //   validationMessage: "This field is required",
-  //   showDenyButton: true,
-  //   denyButtonText: "Send the code again",
-  //   denyButtonColor: "blue",
-  //   confirmButtonColor: "blue",
-  //   timer: 300000
-  // })
   invalidCodeAlert = Swal.mixin({
     title: "Oppps...",
     text: "the code is invalid :(  \n let's try again",
     icon: "error"
   });
-  regiseringFaildAlert=Swal.mixin({
+  regiseringFaildAlert = Swal.mixin({
     title: "Oppps...",
     text: "the registering didn't succeeds :(  \n let's try again",
     icon: "error"
@@ -51,6 +40,11 @@ export class RegisterComponent implements OnInit {
     email: new FormControl("", [Validators.required, Validators.email]),
     password: new FormControl("", [Validators.required, Validators.minLength(4)])
   });
+  unexeptedErrorAlert = Swal.mixin({
+    title: "Oppps...",
+    text: "we are sorry... \n we try to fix it",
+    icon: "error"
+  });
   code!: string;
   constructor(public dialog: MatDialog, private _accountService: AccountService, private _emailVerificationService: EmailVerificationService, private _router: Router, private _currentUserService: CurrentUserService) { }
 
@@ -60,7 +54,6 @@ export class RegisterComponent implements OnInit {
   openDialog(): void {
     const dialogRef = this.dialog.open(EmailVerifictionComponent);
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
       if (result) {
         this.code = result;
         this.register(this.code);
@@ -68,7 +61,6 @@ export class RegisterComponent implements OnInit {
       else {
         this.sendEmail();
       }
-
     });
   }
 
@@ -76,48 +68,21 @@ export class RegisterComponent implements OnInit {
     if (code) {
       this.newCustomer.verificationCode = code;
       this.newCustomer.ExpirationTime = new Date();
-      this._emailVerificationService.verifyCustomer(this.newCustomer).subscribe(CorrectCode => {
+      this._accountService.createNewAccount(this.newCustomer).subscribe(CorrectCode => {
         if (CorrectCode) {
           this.logIn()
         }
         else {
-          this.invalidCodeAlert.fire();
-          ///??????????
+          this.invalidCodeAlert.fire()
+            .then(data => {
+              this.openDialog();
+            })
         }
+      }, error => {
+        this.unexeptedErrorAlert.fire();
       });
     }
   }
-  // this.updateRegisterModel()
-  // this._accountService.createNewAccount(this.newCustomer.email).subscribe(data => {
-  //   if (data) {
-  //     this.registerAlert.fire()
-  //       .then(data => {
-  //           this.newCustomer.verificationCode = data.value;
-  //           this.newCustomer.ExpirationTime = new Date();
-  //           this._emailVerificationService.verifyCustomer(this.newCustomer).subscribe(data => {
-  //             if (data) {
-  //               this.logIn()
-  //             }
-  //             //the code isn't correct
-  //             else {
-  //               this.invalidCodeAlert.fire()
-  //               .then(data=>this.registerAlert.fire())
-  //             }
-  //           });
-
-  //         //sending the email again
-  //          if (data.isDenied) {
-  //           this._accountService.createNewAccount(this.newCustomer.email).subscribe(data => 
-  //             this.registerAlert.fire()
-  //           )  
-  //         }
-  //       })
-  //   }
-  //   //the registering is faild
-  //   else {
-  //     this.regiseringFaildAlert.fire()
-  //   }
-  // })
 
   logIn() {
     let user: LogInModel = {
@@ -125,7 +90,7 @@ export class RegisterComponent implements OnInit {
       password: this.newCustomer.password
     }
     this._currentUserService.user = user;
-    this._router.navigate(['account/logIn']);
+    this._router.navigate(['logIn']);
   }
 
   updateRegisterModel() {
@@ -136,15 +101,16 @@ export class RegisterComponent implements OnInit {
   }
 
   sendEmail() {
-      this.updateRegisterModel();
-      this._accountService.createNewAccount(this.newCustomer.email).subscribe(sendingEmail => {
-      console.log("sending...");
+    this.updateRegisterModel();
+    this._emailVerificationService.verifyCustomer(this.newCustomer.email).subscribe(sendingEmail => {
       if (sendingEmail) {
         this.openDialog();
       }
       else {
         this.regiseringFaildAlert.fire()
       }
+    }, error => {
+      this.unexeptedErrorAlert.fire();
     });
   }
 }

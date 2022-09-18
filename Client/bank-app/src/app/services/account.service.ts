@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 import { Observable } from 'rxjs';
 import { AccountModel } from '../models/account.model';
+import { registeringModel } from '../models/registering.model';
 
 @Injectable({
   providedIn: 'root'
@@ -14,8 +15,7 @@ export class AccountService {
   getAccountInfoById(accountId: number):Observable<AccountModel> {
     return this._http.get<AccountModel>(this.baseUrl+accountId)
   }
-  createNewAccount(email: string):Observable<boolean> {
-    return this._http.post<boolean>(this.baseUrl,JSON.stringify(email),{headers: {'Content-Type': 'application/json'}})
+  createNewAccount(customer: registeringModel):Observable<boolean> {
+    return this._http.post<boolean>(this.baseUrl,customer)
   }
-  
 }

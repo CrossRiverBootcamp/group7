@@ -23,14 +23,10 @@
                 <input matInput placeholder="Amount" formControlName="amount" required />
               </mat-form-field>
               <br>
-              <mat-form-field class="example-full-width">
-                <input matInput placeholder="Date" formControlName="date" required />
-              </mat-form-field>
-              <br>
             </mat-card-content>
             <button mat-stroked-button color="primary" class="btn-block" (click)="sendTransaction()">Send transaction</button>
           </form>
-          <button mat-button> <a routerLink="/transaction/operation-history">View Operations History</a></button>
+          <button mat-button> <a routerLink="/account/operation-history">View Operations History</a></button>
         </mat-card>
       </div>
 </body>
