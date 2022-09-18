@@ -80,14 +80,17 @@ public class EmailVerificationStorage : IEmailVerificationStorage
             try
             {
                 EmailVerification verification = await _BankDbContext.EmailsVerification.FirstOrDefaultAsync(verification => verification.Email == emailVerification.Email);
-                if(DateTime.Compare(verification.FirsteEnteringTime.AddMinutes(30) , verification.ExpirationTime) <0 )
+                if(DateTime.Compare(verification.FirsteEnteringTime.AddMinutes(30) , emailVerification.ExpirationTime) <0 )
                 {
                     verification.NumOfTrials = 1;
-                    verification.FirsteEnteringTime = verification.ExpirationTime;
+                    verification.FirsteEnteringTime = emailVerification.ExpirationTime;
+                    verification.VerificationCode=emailVerification.VerificationCode;
                 }
                 else
                 {
                     verification.NumOfTrials += 1;
+                    verification.ExpirationTime = emailVerification.ExpirationTime;
+                    verification.VerificationCode = emailVerification.VerificationCode;
                 }
                 await _BankDbContext.SaveChangesAsync();
                 return true;
@@ -108,7 +111,7 @@ public class EmailVerificationStorage : IEmailVerificationStorage
             try
             {
                 EmailVerification verification = await _BankDbContext.EmailsVerification.FirstOrDefaultAsync(verification => verification.Email == email);
-                if (verification!= null && verification.NumOfTrials + 1 == 4 && DateTime.Compare( verification.FirsteEnteringTime.AddMinutes(30), verification.ExpirationTime) >0)
+                if (verification!= null && verification.NumOfTrials + 1 == 4 && DateTime.Compare( verification.FirsteEnteringTime.AddMinutes(30), DateTime.Now) >0)
                 {
                     return true;
                 }

@@ -1,0 +1,10 @@
+﻿2022-09-17 23:28:41.663 INFO  Logging to 'C:\פרויקט\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\' with level Info
+2022-09-17 23:28:42.210 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-22'.
+2022-09-17 23:28:42.233 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.7.4&t=0&p=windows
+2022-09-17 23:28:47.918 INFO  Executing 'C:\פרויקט\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-09-17 23:28:48.086 INFO  Executing saga creation scripts:
+C:\פרויקט\group7\Server\Bank\Transactions.NSB\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\TransactionPolicy_Create.sql
+2022-09-17 23:29:35.053 ERROR Your license has expired
+2022-09-17 23:29:35.503 INFO  Received Payload,  TransactionID = 1004
+2022-09-17 23:29:44.777 ERROR Your license has expired
+2022-09-17 23:29:44.886 INFO  Received AccountUpdated,  TransactionID = 1004

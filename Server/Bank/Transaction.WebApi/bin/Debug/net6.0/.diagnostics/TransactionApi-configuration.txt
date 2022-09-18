@@ -37,91 +37,91 @@
     "ErrorsThrownDuringScanning": false,
     "SkippedFiles": [
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Design.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Design.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Relational.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Relational.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.SqlServer.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.SqlServer.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.Extensions.Caching.Memory.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.Extensions.Caching.Memory.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.JsonWebTokens.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.JsonWebTokens.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Logging.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Logging.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Tokens.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Tokens.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.Win32.SystemEvents.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.Win32.SystemEvents.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Newtonsoft.Json.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Newtonsoft.Json.dll",
         "SkipReason": "File was explicitly excluded from scanning."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.Configuration.ConfigurationManager.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.Configuration.ConfigurationManager.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.Data.SqlClient.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.Data.SqlClient.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.Drawing.Common.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.Drawing.Common.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.IdentityModel.Tokens.Jwt.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.IdentityModel.Tokens.Jwt.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.Runtime.Caching.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.Runtime.Caching.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.Security.Cryptography.ProtectedData.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.Security.Cryptography.ProtectedData.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.Security.Permissions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.Security.Permissions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.Windows.Extensions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.Windows.Extensions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Transaction.WebApi.exe",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Transaction.WebApi.exe",
         "SkipReason": "File is not a .NET assembly."
       },
       {
@@ -129,7 +129,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Design.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Design.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -165,7 +165,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Relational.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Relational.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -173,11 +173,11 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.SqlServer.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.SqlServer.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -189,7 +189,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.Security.Permissions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.Security.Permissions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -209,11 +209,11 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Logging.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Logging.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -221,7 +221,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netstandard2.0\\System.Runtime.Caching.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netstandard2.0\\System.Runtime.Caching.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -229,7 +229,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.IdentityModel.Tokens.Jwt.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.IdentityModel.Tokens.Jwt.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -241,7 +241,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.JsonWebTokens.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.JsonWebTokens.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -253,15 +253,15 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Newtonsoft.Json.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Newtonsoft.Json.dll",
         "SkipReason": "File was explicitly excluded from scanning."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -273,7 +273,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Tokens.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Tokens.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -293,7 +293,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\Microsoft.Win32.SystemEvents.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\Microsoft.Win32.SystemEvents.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -313,7 +313,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.Configuration.ConfigurationManager.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\System.Configuration.ConfigurationManager.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -341,19 +341,19 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\System.Windows.Extensions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\System.Windows.Extensions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp2.1\\System.Data.SqlClient.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp2.1\\System.Data.SqlClient.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\System.Drawing.Common.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\System.Drawing.Common.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netstandard2.0\\System.Security.Cryptography.ProtectedData.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netstandard2.0\\System.Security.Cryptography.ProtectedData.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -2280,7 +2280,7 @@
     }
   ],
   "Hosting": {
-    "HostId": "fa39c9c1-d921-0fe4-ba3e-2f87ebfaab99",
+    "HostId": "0a987fd6-d9af-5b54-1fcc-0a60cf75a7ff",
     "HostDisplayName": "DESKTOP-QM3UF42",
     "MachineName": "DESKTOP-QM3UF42",
     "OSPlatform": 2,
@@ -2297,11 +2297,11 @@
       "MajorRevision": -1,
       "MinorRevision": -1
     },
-    "WorkingSet": 74321920,
+    "WorkingSet": 73875456,
     "SystemPageSize": 4096,
     "HostName": "DESKTOP-QM3UF42",
     "UserName": "user1",
-    "PathToExe": "C:\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Transaction.WebApi.dll"
+    "PathToExe": "C:\\פרויקט\\group7\\Server\\Bank\\Transaction.WebApi\\bin\\Debug\\net6.0\\Transaction.WebApi.dll"
   },
   "Licensing": {
     "RegisteredTo": null,

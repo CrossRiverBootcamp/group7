@@ -32,26 +32,7 @@ public class AccountStorage : IAccountStorage
         }
     }
 
-    public async Task<bool> emailExist(string email)
-    {
-        using var _BankDbContext = _factory.CreateDbContext();
-        {
-            try
-            {
-               if(await _BankDbContext.Customers.FirstOrDefaultAsync(customer => customer.Email== email) ==null )
-                {
-                    return false;
-                }
-                return true;
-
-            }
-            catch
-            {
-                throw new DbContextException();
-            }
-        }
-    }
-
+  
     public async Task<Account> getAccountCustomerInfo(int accountID)
     {
         using var _BankDbContext = _factory.CreateDbContext();

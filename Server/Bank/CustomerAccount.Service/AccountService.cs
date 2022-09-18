@@ -20,15 +20,18 @@ public class AccountService : IAccountService
     IEmailVerificationStorage _EmailVerificationStorage;
     IOperationHistoryStorage _OperationHistoryStorage;
     IAuthorizationFuncs _AuthorizationFuncs;
+    ISendEmail _sendEmail;
 
-    public AccountService(IAccountStorage AccountStorage, IOperationHistoryStorage OperationHistoryStorage, IMapper Mapper, IAuthorizationFuncs authorizationFuncs, IEmailVerificationStorage emailVerificationStorage)
+    public AccountService(IAccountStorage AccountStorage, IOperationHistoryStorage OperationHistoryStorage, IMapper Mapper, IAuthorizationFuncs authorizationFuncs, IEmailVerificationStorage emailVerificationStorage , ISendEmail sendEmail)
     {
         _AccountStorage = AccountStorage;
         _OperationHistoryStorage = OperationHistoryStorage;
         _EmailVerificationStorage = emailVerificationStorage;
         _IMapper = Mapper;
         _AuthorizationFuncs = authorizationFuncs;
+        _sendEmail=sendEmail;
     }
+
     public async Task<bool> createNewAccount(CustomerModel customer)
     {
         bool userIsVerify = await _EmailVerificationStorage.verifyUser(customer.VerificationCode,customer.Email);
@@ -54,42 +57,47 @@ public class AccountService : IAccountService
         return accountInfo;
     }
 
-    public async Task<bool> updateBalance(UpdateBalanceModel updateBalance, IMessageHandlerContext context)
+    public async Task<AccountUpdated> updateBalance(UpdateBalanceModel updateBalance)
     {
 
         if (await _AccountStorage.accountExist(updateBalance.FromAccountId) == false)
         {
-            publishEvent(updateBalance.TransactionId, 2, "From Account is not exsist", context);
-            return false;
+           return await CreateEvent(updateBalance.TransactionId, 2, "From Account is not exsist");
+           
         }
+        var email = (await _AccountStorage.getAccountCustomerInfo(updateBalance.FromAccountId)).Customer.Email;
 
         if (await _AccountStorage.accountExist(updateBalance.ToAccountId) == false)
         {
-            publishEvent(updateBalance.TransactionId, 2, "TO Account is not exsist", context);
-            return false;
+            string subject = $"Transaction to {updateBalance.ToAccountId} ";
+            string body = "We are sorry You tried to make a transaction to an account that does not exist ): ";
+            _sendEmail.sendEmail(email, subject, body);
+            return await CreateEvent(updateBalance.TransactionId, 2, "TO Account is not exsist");
+          
         }
 
         if (await _AccountStorage.balanceCheacking(updateBalance.Amount, updateBalance.FromAccountId) == false)
         {
-            publishEvent(updateBalance.TransactionId, 2, "The balnce is not enough", context);
-            return false;
+            string subject = $"Transaction to {updateBalance.ToAccountId} ";
+            string body = "We are sorry You tried to make a transaction, Your account does not have sufficient balance  ): ";
+            _sendEmail.sendEmail(email, subject, body);
+            return await CreateEvent(updateBalance.TransactionId, 2, "The balnce is not enough");
+
         }
-        //????????????????????? לבדוק מצב שהוא לא הצליח לעדכן את החשבון
         else
         {
             BalanceObject balance = await _AccountStorage.updateBalance(updateBalance.Amount, updateBalance.FromAccountId, updateBalance.ToAccountId);
             await addOperationHistory(updateBalance, balance);
-            AccountUpdated accountUpdated = new AccountUpdated()
-            {
-                TransactionID = updateBalance.TransactionId,
-                Status = 1
-            };
-            await context.Publish(accountUpdated);
-            return true;
+            string subject = $"Transaction to {updateBalance.ToAccountId} ";
+            string body = $"{updateBalance.Amount} were transferred to {updateBalance.ToAccountId} successfully :)";
+            _sendEmail.sendEmail(email, subject, body);
+            return await CreateEvent(updateBalance.TransactionId, 1, null);
+           
+           
         }
     }
 
-    public async Task<bool> publishEvent(int transactionID, int status, string failureReason, IMessageHandlerContext context)
+    public async Task<AccountUpdated>CreateEvent(int transactionID, int status, string failureReason)
     {
         AccountUpdated accountUpdated = new AccountUpdated()
         {
@@ -97,8 +105,8 @@ public class AccountService : IAccountService
             Status = status,
             FailureReason = failureReason
         };
-        await context.Publish(accountUpdated);
-        return false;
+
+        return accountUpdated;
     }
 
     public async Task<bool> addOperationHistory(UpdateBalanceModel updateBalance, BalanceObject balance)
@@ -123,53 +131,3 @@ public class AccountService : IAccountService
     }
 
 }
-
-//if (await _AccountStorage.accountExist(updateBalance.FromAccountId) == false)
-//        {
-//            AccountUpdated accountUpdated = new AccountUpdated()
-//            {
-//                TransactionID = updateBalance.TransactionId,
-//                Status = 2,
-//                FailureReason = "From Account is not exsist"
-//            };
-//await context.Publish(accountUpdated);
-//            return false;
-//        }
-
-//        if (await _AccountStorage.accountExist(updateBalance.ToAccountId) == false)
-//{
-//    AccountUpdated accountUpdated = new AccountUpdated()
-//    {
-//        TransactionID = updateBalance.TransactionId,
-//        Status = 2,
-//        FailureReason = "To Account is not exsist"
-//    };
-//    await context.Publish(accountUpdated);
-//    return false;
-//}
-
-//if (await _AccountStorage.balanceCheacking(updateBalance.Amount, updateBalance.FromAccountId) == false)
-//{
-//    AccountUpdated accountUpdated = new AccountUpdated()
-//    {
-//        TransactionID = updateBalance.TransactionId,
-//        Status = 2,
-//        FailureReason = "The balnce is not enough"
-//    };
-//    await context.Publish(accountUpdated);
-//    return false;
-//}
-//????????????????????? לבדוק מצב שהוא לא הצליח לעדכן את החשבון
-//else
-//{
-//    await _AccountStorage.updateBalance(updateBalance.Amount, updateBalance.FromAccountId, updateBalance.ToAccountId);
-//bool reslt = await addOperationHistory(updateBalance);
-//AccountUpdated accountUpdated = new AccountUpdated()
-//{
-//    TransactionID = updateBalance.TransactionId,
-//    Status = 1
-//};
-
-//await context.Publish(accountUpdated);
-//return true;
-//}

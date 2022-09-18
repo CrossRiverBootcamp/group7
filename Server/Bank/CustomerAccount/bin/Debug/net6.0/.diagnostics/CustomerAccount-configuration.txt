@@ -14,10 +14,6 @@
         "FileVersion": "1.1.0"
       },
       {
-        "FullName": "CustomerAccount.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "FileVersion": "1.0.0"
-      },
-      {
         "FullName": "NServiceBus.Persistence.Sql, Version=6.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c",
         "FileVersion": "6.5.1"
       },
@@ -37,91 +33,91 @@
     "ErrorsThrownDuringScanning": false,
     "SkippedFiles": [
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Design.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Design.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Relational.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Relational.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.SqlServer.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.SqlServer.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.Extensions.Caching.Memory.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.Extensions.Caching.Memory.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.JsonWebTokens.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.JsonWebTokens.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Logging.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Logging.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Tokens.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Tokens.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.Win32.SystemEvents.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.Win32.SystemEvents.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Newtonsoft.Json.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Newtonsoft.Json.dll",
         "SkipReason": "File was explicitly excluded from scanning."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.Configuration.ConfigurationManager.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.Configuration.ConfigurationManager.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.Data.SqlClient.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.Data.SqlClient.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.Drawing.Common.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.Drawing.Common.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.IdentityModel.Tokens.Jwt.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.IdentityModel.Tokens.Jwt.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.Runtime.Caching.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.Runtime.Caching.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.Security.Cryptography.ProtectedData.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.Security.Cryptography.ProtectedData.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.Security.Permissions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.Security.Permissions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.Windows.Extensions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.Windows.Extensions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\CustomerAccount.WebApi.exe",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\CustomerAccount.WebApi.exe",
         "SkipReason": "File is not a .NET assembly."
       },
       {
@@ -141,7 +137,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Relational.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Relational.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -149,11 +145,11 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.SqlServer.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.SqlServer.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -165,7 +161,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.Security.Permissions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.Security.Permissions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -181,7 +177,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.IdentityModel.Tokens.Jwt.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.IdentityModel.Tokens.Jwt.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -205,11 +201,11 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Logging.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Logging.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -217,7 +213,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Design.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.EntityFrameworkCore.Design.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -225,7 +221,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netstandard2.0\\System.Runtime.Caching.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netstandard2.0\\System.Runtime.Caching.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -233,7 +229,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.JsonWebTokens.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.JsonWebTokens.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -245,15 +241,15 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Newtonsoft.Json.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Newtonsoft.Json.dll",
         "SkipReason": "File was explicitly excluded from scanning."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -265,7 +261,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Tokens.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\Microsoft.IdentityModel.Tokens.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -285,7 +281,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\Microsoft.Win32.SystemEvents.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\Microsoft.Win32.SystemEvents.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -305,7 +301,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.Configuration.ConfigurationManager.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\System.Configuration.ConfigurationManager.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -325,19 +321,19 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\System.Windows.Extensions.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\System.Windows.Extensions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp2.1\\System.Data.SqlClient.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp2.1\\System.Data.SqlClient.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\System.Drawing.Common.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netcoreapp3.0\\System.Drawing.Common.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netstandard2.0\\System.Security.Cryptography.ProtectedData.dll",
+        "FilePath": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\runtimes\\win\\lib\\netstandard2.0\\System.Security.Cryptography.ProtectedData.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -2280,7 +2276,7 @@
     }
   ],
   "Hosting": {
-    "HostId": "6ab62bad-07ec-827b-ccab-8b2d1b70cdda",
+    "HostId": "44517698-d988-3b8d-a4b2-3cc7318c84db",
     "HostDisplayName": "DESKTOP-QM3UF42",
     "MachineName": "DESKTOP-QM3UF42",
     "OSPlatform": 2,
@@ -2297,11 +2293,11 @@
       "MajorRevision": -1,
       "MinorRevision": -1
     },
-    "WorkingSet": 89280512,
+    "WorkingSet": 75571200,
     "SystemPageSize": 4096,
     "HostName": "DESKTOP-QM3UF42",
     "UserName": "user1",
-    "PathToExe": "C:\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\CustomerAccount.WebApi.dll"
+    "PathToExe": "C:\\פרויקט\\group7\\Server\\Bank\\CustomerAccount\\bin\\Debug\\net6.0\\CustomerAccount.WebApi.dll"
   },
   "Licensing": {
     "RegisteredTo": null,
