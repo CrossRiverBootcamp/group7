@@ -8,10 +8,12 @@ namespace CustomerAccount.Storage;
 public class AccountStorage : IAccountStorage
 {
     private readonly IDbContextFactory<CustomerAccountDbContext> _factory;
+
     public AccountStorage(IDbContextFactory<CustomerAccountDbContext> factory)
     {
         _factory = factory;
     }
+
     public async Task<bool> createNewAccount(Account account, Customer customer)
     {
         using var _BankDbContext = _factory.CreateDbContext();
@@ -30,26 +32,7 @@ public class AccountStorage : IAccountStorage
         }
     }
 
-    public async Task<bool> emailExist(string email)
-    {
-        using var _BankDbContext = _factory.CreateDbContext();
-        {
-            try
-            {
-               if(await _BankDbContext.Customers.FirstOrDefaultAsync(customer => customer.Email== email) ==null )
-                {
-                    return false;
-                }
-                return true;
-
-            }
-            catch
-            {
-                throw new DbContextException();
-            }
-        }
-    }
-
+  
     public async Task<Account> getAccountCustomerInfo(int accountID)
     {
         using var _BankDbContext = _factory.CreateDbContext();
@@ -115,22 +98,24 @@ public class AccountStorage : IAccountStorage
         }
     }
 
-  
-
-    public async Task<bool> updateBalance(float ammount, int fromAccountID, int toAccountID)
+    public async Task<BalanceObject> updateBalance(float ammount, int fromAccountID, int toAccountID)   
     {
         using var _BankDbContext = _factory.CreateDbContext();
         {
             try
             {
                 var fromAccount = await _BankDbContext.Accounts.FirstOrDefaultAsync(account => account.ID == fromAccountID);
-                fromAccount.Balance-=ammount;
-                //???????
-                float balanceFrom = fromAccount.Balance;
+                fromAccount.Balance -= ammount;
                 var toAccount = await _BankDbContext.Accounts.FirstOrDefaultAsync(account => account.ID == toAccountID);
-                toAccount.Balance+= ammount;
+                toAccount.Balance += ammount;
+                BalanceObject balance = new BalanceObject()
+                {
+                    fromBalance = fromAccount.Balance,
+                    toBalance = toAccount.Balance,
+
+                };
                 await _BankDbContext.SaveChangesAsync();
-                return true;
+                return balance;
 
             }
             catch

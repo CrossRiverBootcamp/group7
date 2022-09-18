@@ -1,12 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using NSB.Command;
 using NServiceBus;
 using NServiceBus.Logging;
 using System.Data.SqlClient;
-using Transaction.Service;
-using Transaction.Service.Interfaces;
-using Transaction.Services.Extensions;
+
 
 public class Program
 {
@@ -21,12 +18,6 @@ public class Program
                 .AddJsonFile("appsettings.json", false)
                 .Build();
 
-        //???????????למה צריך?
-        var containerSettings = endpointConfiguration.UseContainer(new DefaultServiceProviderFactory());
-        containerSettings.ServiceCollection.AddServiceExtension(config.GetConnectionString("NSBConnectionZipi"));
-        containerSettings.ServiceCollection.AddScoped<ITransactionService, TransactionService>();
-        containerSettings.ServiceCollection.AddAutoMapper(typeof(Program));
-
         endpointConfiguration.EnableInstallers();
         endpointConfiguration.EnableOutbox();
 
@@ -34,8 +25,9 @@ public class Program
         persistence.ConnectionBuilder(
             connectionBuilder: () =>
             {
-                return new SqlConnection(config.GetConnectionString("NSBConnectionShira"));
+                return new SqlConnection(config.GetConnectionString("NSBConnectionZipi"));
             });
+
         var dialect = persistence.SqlDialect<SqlDialect.MsSqlServer>();
 
         //var recoverability = endpointConfiguration.Recoverability();

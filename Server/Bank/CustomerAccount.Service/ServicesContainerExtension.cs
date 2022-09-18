@@ -18,6 +18,7 @@ namespace CustomerAccount.Services.Extensions
             services.AddScoped<IAccountStorage, AccountStorage>();
             services.AddScoped<IOperationHistoryStorage, OperationHistoryStorage>();
             services.AddScoped<IEmailVerificationStorage, EmailVerificationStorage>();
+            services.AddScoped<ISendEmail, SendEmail>();
             services.AddScoped<IAuthorizationFuncs , AuthorizationFuncs>();
             services.AddDbContextFactory<CustomerAccountDbContext>(opt => opt.UseSqlServer(connection));
         }

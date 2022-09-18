@@ -37,9 +37,8 @@ public class AutoMapper : Profile
            .ForMember(des => des.Email, opts => opts
                     .MapFrom(src => src.Customer.Email));
         CreateMap<CustomerInfoModel, CustomerInfoDTO>();
-        CreateMap<EmailVerificationDTO, EmailVerificationModel>();
         CreateMap<EmailVerificationModel, EmailVerification>();
-        CreateMap<EmailVerificationModel, Customer>();
+        CreateMap<CustomerModel, EmailVerificationModel>();
 
     }
 }

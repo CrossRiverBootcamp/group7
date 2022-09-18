@@ -86,6 +86,12 @@ namespace CustomerAccount.Storage.Migrations
                     b.Property<DateTime>("ExpirationTime")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime>("FirsteEnteringTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("NumOfTrials")
+                        .HasColumnType("int");
+
                     b.Property<string>("VerificationCode")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
